@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
+		219EE4451AD0DB8500045DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4441AD0DB8500045DF2 /* ViewController.swift */; };
+		219EE4481AD0DB8500045DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219EE4461AD0DB8500045DF2 /* Main.storyboard */; };
+		219EE44A1AD0DB8500045DF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219EE4491AD0DB8500045DF2 /* Images.xcassets */; };
+		219EE44D1AD0DB8500045DF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 219EE44B1AD0DB8500045DF2 /* LaunchScreen.xib */; };
+		219EE4591AD0DB8600045DF2 /* OctominoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4581AD0DB8600045DF2 /* OctominoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		219EE4531AD0DB8600045DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 219EE4351AD0DB8500045DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 219EE43C1AD0DB8500045DF2;
+			remoteInfo = Octomino;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		219EE43D1AD0DB8500045DF2 /* Octomino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octomino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		219EE4411AD0DB8500045DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219EE4421AD0DB8500045DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		219EE4441AD0DB8500045DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		219EE4471AD0DB8500045DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		219EE4491AD0DB8500045DF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		219EE44C1AD0DB8500045DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		219EE4521AD0DB8600045DF2 /* OctominoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctominoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		219EE4571AD0DB8600045DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219EE4581AD0DB8600045DF2 /* OctominoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctominoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		219EE43A1AD0DB8500045DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219EE44F1AD0DB8600045DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		219EE4341AD0DB8500045DF2 = {
+			isa = PBXGroup;
+			children = (
+				219EE43F1AD0DB8500045DF2 /* Octomino */,
+				219EE4551AD0DB8600045DF2 /* OctominoTests */,
+				219EE43E1AD0DB8500045DF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		219EE43E1AD0DB8500045DF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				219EE43D1AD0DB8500045DF2 /* Octomino.app */,
+				219EE4521AD0DB8600045DF2 /* OctominoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		219EE43F1AD0DB8500045DF2 /* Octomino */ = {
+			isa = PBXGroup;
+			children = (
+				219EE4421AD0DB8500045DF2 /* AppDelegate.swift */,
+				219EE4441AD0DB8500045DF2 /* ViewController.swift */,
+				219EE4461AD0DB8500045DF2 /* Main.storyboard */,
+				219EE4491AD0DB8500045DF2 /* Images.xcassets */,
+				219EE44B1AD0DB8500045DF2 /* LaunchScreen.xib */,
+				219EE4401AD0DB8500045DF2 /* Supporting Files */,
+			);
+			path = Octomino;
+			sourceTree = "<group>";
+		};
+		219EE4401AD0DB8500045DF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				219EE4411AD0DB8500045DF2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		219EE4551AD0DB8600045DF2 /* OctominoTests */ = {
+			isa = PBXGroup;
+			children = (
+				219EE4581AD0DB8600045DF2 /* OctominoTests.swift */,
+				219EE4561AD0DB8600045DF2 /* Supporting Files */,
+			);
+			path = OctominoTests;
+			sourceTree = "<group>";
+		};
+		219EE4561AD0DB8600045DF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				219EE4571AD0DB8600045DF2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		219EE43C1AD0DB8500045DF2 /* Octomino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219EE45C1AD0DB8600045DF2 /* Build configuration list for PBXNativeTarget "Octomino" */;
+			buildPhases = (
+				219EE4391AD0DB8500045DF2 /* Sources */,
+				219EE43A1AD0DB8500045DF2 /* Frameworks */,
+				219EE43B1AD0DB8500045DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Octomino;
+			productName = Octomino;
+			productReference = 219EE43D1AD0DB8500045DF2 /* Octomino.app */;
+			productType = "com.apple.product-type.application";
+		};
+		219EE4511AD0DB8600045DF2 /* OctominoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219EE45F1AD0DB8600045DF2 /* Build configuration list for PBXNativeTarget "OctominoTests" */;
+			buildPhases = (
+				219EE44E1AD0DB8600045DF2 /* Sources */,
+				219EE44F1AD0DB8600045DF2 /* Frameworks */,
+				219EE4501AD0DB8600045DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				219EE4541AD0DB8600045DF2 /* PBXTargetDependency */,
+			);
+			name = OctominoTests;
+			productName = OctominoTests;
+			productReference = 219EE4521AD0DB8600045DF2 /* OctominoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		219EE4351AD0DB8500045DF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Head Down Development";
+				TargetAttributes = {
+					219EE43C1AD0DB8500045DF2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					219EE4511AD0DB8600045DF2 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 219EE43C1AD0DB8500045DF2;
+					};
+				};
+			};
+			buildConfigurationList = 219EE4381AD0DB8500045DF2 /* Build configuration list for PBXProject "Octomino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 219EE4341AD0DB8500045DF2;
+			productRefGroup = 219EE43E1AD0DB8500045DF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				219EE43C1AD0DB8500045DF2 /* Octomino */,
+				219EE4511AD0DB8600045DF2 /* OctominoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		219EE43B1AD0DB8500045DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219EE4481AD0DB8500045DF2 /* Main.storyboard in Resources */,
+				219EE44D1AD0DB8500045DF2 /* LaunchScreen.xib in Resources */,
+				219EE44A1AD0DB8500045DF2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219EE4501AD0DB8600045DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		219EE4391AD0DB8500045DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219EE4451AD0DB8500045DF2 /* ViewController.swift in Sources */,
+				219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219EE44E1AD0DB8600045DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219EE4591AD0DB8600045DF2 /* OctominoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		219EE4541AD0DB8600045DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 219EE43C1AD0DB8500045DF2 /* Octomino */;
+			targetProxy = 219EE4531AD0DB8600045DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		219EE4461AD0DB8500045DF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				219EE4471AD0DB8500045DF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		219EE44B1AD0DB8500045DF2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				219EE44C1AD0DB8500045DF2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		219EE45A1AD0DB8600045DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		219EE45B1AD0DB8600045DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		219EE45D1AD0DB8600045DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Octomino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		219EE45E1AD0DB8600045DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Octomino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		219EE4601AD0DB8600045DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OctominoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
+			};
+			name = Debug;
+		};
+		219EE4611AD0DB8600045DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OctominoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		219EE4381AD0DB8500045DF2 /* Build configuration list for PBXProject "Octomino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219EE45A1AD0DB8600045DF2 /* Debug */,
+				219EE45B1AD0DB8600045DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		219EE45C1AD0DB8600045DF2 /* Build configuration list for PBXNativeTarget "Octomino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219EE45D1AD0DB8600045DF2 /* Debug */,
+				219EE45E1AD0DB8600045DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		219EE45F1AD0DB8600045DF2 /* Build configuration list for PBXNativeTarget "OctominoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219EE4601AD0DB8600045DF2 /* Debug */,
+				219EE4611AD0DB8600045DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 219EE4351AD0DB8500045DF2 /* Project object */;
+}
