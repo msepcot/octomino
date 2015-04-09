@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TwoKeyFormationCell-Identifier" id="gTV-IL-0wX" customClass="TwoKeyFormationCell" customModule="Octomino" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card Outline" translatesAutoresizingMaskIntoConstraints="NO" id="7oE-cp-hZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-fk-LEv">
+                        <rect key="frame" x="15" y="15" width="40" height="43"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsj-l8-Frw">
+                        <rect key="frame" x="15" y="8" width="570" height="481"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Compressed Diamonds - Compressed Diamonds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JD4-4l-YNO">
+                        <rect key="frame" x="15" y="497" width="570" height="20"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key" translatesAutoresizingMaskIntoConstraints="NO" id="pCL-tr-79Q">
+                        <rect key="frame" x="15" y="525" width="20" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="kI2-s1-9S5"/>
+                            <constraint firstAttribute="width" constant="20" id="qf2-V5-JEL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outside Center and Inside Center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fZt-4Y-acf">
+                        <rect key="frame" x="39" y="522" width="546" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Top: Check their diamond, back of diamond guarantee right grip." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-My-Qyx">
+                        <rect key="frame" x="15" y="540" width="570" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key" translatesAutoresizingMaskIntoConstraints="NO" id="Xtb-75-hcF">
+                        <rect key="frame" x="15" y="559" width="20" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="AX2-jl-igA"/>
+                            <constraint firstAttribute="width" constant="20" id="r96-s7-R2e"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outside Center and Inside Center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cdo-7D-w0R">
+                        <rect key="frame" x="39" y="556" width="546" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Bottom: Check their diamond, back of diamond guarantee right grip." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="spA-Vf-P4Y">
+                        <rect key="frame" x="15" y="574" width="570" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="UPG-My-Qyx" firstAttribute="top" secondItem="pCL-tr-79Q" secondAttribute="bottom" constant="5" id="0lv-Er-dIL"/>
+                <constraint firstItem="spA-Vf-P4Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="1ux-hJ-b0i"/>
+                <constraint firstItem="cdo-7D-w0R" firstAttribute="top" secondItem="UPG-My-Qyx" secondAttribute="bottom" constant="5" id="49n-mU-wju"/>
+                <constraint firstAttribute="trailing" secondItem="JD4-4l-YNO" secondAttribute="trailing" constant="15" id="A2u-pL-yvb"/>
+                <constraint firstItem="eoe-fk-LEv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="ANh-Le-d4I"/>
+                <constraint firstItem="fZt-4Y-acf" firstAttribute="leading" secondItem="pCL-tr-79Q" secondAttribute="trailing" constant="4" id="B7U-Ch-0xW"/>
+                <constraint firstItem="dsj-l8-Frw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="C62-F3-hrS"/>
+                <constraint firstItem="eoe-fk-LEv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="IYI-an-Kz1"/>
+                <constraint firstItem="JD4-4l-YNO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="JEr-fw-7kk"/>
+                <constraint firstItem="UPG-My-Qyx" firstAttribute="top" secondItem="fZt-4Y-acf" secondAttribute="bottom" constant="3" id="Lmh-Ul-Onw"/>
+                <constraint firstItem="cdo-7D-w0R" firstAttribute="leading" secondItem="Xtb-75-hcF" secondAttribute="trailing" constant="4" id="NZ7-zd-SiB"/>
+                <constraint firstAttribute="trailing" secondItem="UPG-My-Qyx" secondAttribute="trailing" constant="15" id="Ne8-B9-l0j"/>
+                <constraint firstItem="fZt-4Y-acf" firstAttribute="top" secondItem="JD4-4l-YNO" secondAttribute="bottom" constant="5" id="XD1-jZ-Kxb"/>
+                <constraint firstAttribute="trailing" secondItem="dsj-l8-Frw" secondAttribute="trailing" constant="15" id="XjA-Bz-aqV"/>
+                <constraint firstAttribute="trailing" secondItem="fZt-4Y-acf" secondAttribute="trailing" constant="15" id="dHO-qN-hwV"/>
+                <constraint firstItem="spA-Vf-P4Y" firstAttribute="top" secondItem="cdo-7D-w0R" secondAttribute="bottom" constant="3" id="dTp-lo-VYl"/>
+                <constraint firstItem="7oE-cp-hZ4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e7h-5G-3o5"/>
+                <constraint firstItem="dsj-l8-Frw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="eet-ZJ-kCu"/>
+                <constraint firstItem="spA-Vf-P4Y" firstAttribute="top" secondItem="Xtb-75-hcF" secondAttribute="bottom" constant="5" id="ep6-xq-nYQ"/>
+                <constraint firstAttribute="trailing" secondItem="7oE-cp-hZ4" secondAttribute="trailing" id="fRS-nx-oU6"/>
+                <constraint firstAttribute="bottom" secondItem="spA-Vf-P4Y" secondAttribute="bottom" constant="15" id="g3X-ag-pe1"/>
+                <constraint firstAttribute="trailing" secondItem="spA-Vf-P4Y" secondAttribute="trailing" constant="15" id="i7w-Xp-I2h"/>
+                <constraint firstItem="JD4-4l-YNO" firstAttribute="top" secondItem="dsj-l8-Frw" secondAttribute="bottom" constant="8" id="jO2-JU-w6K"/>
+                <constraint firstItem="7oE-cp-hZ4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mou-zh-hDB"/>
+                <constraint firstAttribute="bottom" secondItem="7oE-cp-hZ4" secondAttribute="bottom" id="oYe-G0-S0n"/>
+                <constraint firstAttribute="trailing" secondItem="cdo-7D-w0R" secondAttribute="trailing" constant="15" id="rCG-dX-eDP"/>
+                <constraint firstItem="pCL-tr-79Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="tO0-4Y-Fhm"/>
+                <constraint firstItem="UPG-My-Qyx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="vgi-C8-0Xx"/>
+                <constraint firstItem="Xtb-75-hcF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="yGB-Ig-pFK"/>
+            </constraints>
+            <connections>
+                <outlet property="formationIdentifier" destination="eoe-fk-LEv" id="sUD-KW-9pF"/>
+                <outlet property="formationImageView" destination="dsj-l8-Frw" id="I7O-Mo-h3o"/>
+                <outlet property="formationKeyDescriptionBottom" destination="spA-Vf-P4Y" id="6eN-uF-acv"/>
+                <outlet property="formationKeyDescriptionTop" destination="UPG-My-Qyx" id="Jze-iW-0KI"/>
+                <outlet property="formationKeyPositionBottom" destination="cdo-7D-w0R" id="jXk-8y-0gE"/>
+                <outlet property="formationKeyPositionTop" destination="fZt-4Y-acf" id="YRI-tc-Jpn"/>
+                <outlet property="formationName" destination="JD4-4l-YNO" id="a2t-bL-z9N"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="17" width="350" height="590"/>
+        <image name="Card Outline" width="21" height="21"/>
+        <image name="Key" width="30" height="14"/>
+    </resources>
+</document>

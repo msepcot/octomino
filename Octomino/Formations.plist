@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Randoms</key>
+	<array>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>X</string>
+			<key>Name</key>
+			<string>Exit Frame</string>
+			<key>KeyPosition</key>
+			<string></string>
+			<key>KeyDescription</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>A</string>
+			<key>Name</key>
+			<string>Caterpillar</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check forward and look at each other.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>B</string>
+			<key>Name</key>
+			<string>Stairstep</string>
+			<key>KeyPosition</key>
+			<string>Inside Rear</string>
+			<key>KeyDescription</key>
+			<string>Tail guarantees left grip on Outside Rear.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>C</string>
+			<key>Name</key>
+			<string>Hourglass</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right. See Outside Front and Inside Rear headswitch to know their sides are built.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>D</string>
+			<key>Name</key>
+			<string>Hope Diamond</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>E</string>
+			<key>Name</key>
+			<string>Rubick</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>F</string>
+			<key>Name</key>
+			<string>Diamond Flake</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check left.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>G</string>
+			<key>Name</key>
+			<string>Arrowhead</string>
+			<key>KeyPosition</key>
+			<string>Inside Rear</string>
+			<key>KeyDescription</key>
+			<string>Outside Rear and Tail guarantee outside grips.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>H</string>
+			<key>Name</key>
+			<string>Iriquois</string>
+			<key>KeyPosition</key>
+			<string>Outside Center</string>
+			<key>KeyDescription</key>
+			<string>Check front, eyes from Tail to ensure compressed.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>J</string>
+			<key>Name</key>
+			<string>Springbok</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Build center donut first, then check outsides.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>K</string>
+			<key>Name</key>
+			<string>Crossbow</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>L</string>
+			<key>Name</key>
+			<string>Open Facing Diamond</string>
+			<key>KeyPosition</key>
+			<string>Inside Rear</string>
+			<key>KeyDescription</key>
+			<string>Tail guarantees grip.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>M</string>
+			<key>Name</key>
+			<string>Double Spiders</string>
+			<key>KeyPosition</key>
+			<string>Tail</string>
+			<key>KeyDescription</key>
+			<string>Inside Center and Outside Center look back when grips are complete.</string>
+		</dict>
+	</array>
+	<key>Blocks</key>
+	<array>
+		<dict>
+			<key>Class</key>
+			<string>TwoKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>1</string>
+			<key>Name</key>
+			<string>Donut Flake - Donut Flake</string>
+			<key>Top-KeyPosition</key>
+			<string>Outside Front and Inside Rear</string>
+			<key>Top-KeyDescription</key>
+			<string>Top: See pod build in front and feel grips behind.</string>
+			<key>Bottom-KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>Bottom-KeyDescription</key>
+			<string>Bottom: See pod build in front and feel grips behind.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>3</string>
+			<key>Name</key>
+			<string>Double Chinese Tees - Double Donuts</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Top: Check their chinese tee and look at each other. Bottom: Check their donut and look at each other.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>4</string>
+			<key>Name</key>
+			<string>Snowflake - In-Out</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Top: Feel grips on cats and check right. Bottom: Check right.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>5</string>
+			<key>Name</key>
+			<string>Crank - Crank</string>
+			<key>KeyPosition</key>
+			<string>Outside Front and Inside Rear</string>
+			<key>KeyDescription</key>
+			<string>Check cat and sidebodies in front of them.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>6</string>
+			<key>Name</key>
+			<string>Star - Star</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>7</string>
+			<key>Name</key>
+			<string>Nacho - Nacho</string>
+			<key>KeyPosition</key>
+			<string>Outside Front and Inside Rear</string>
+			<key>KeyDescription</key>
+			<string>Check left.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>8</string>
+			<key>Name</key>
+			<string>Frisbee - Frisbee</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check their side.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>10</string>
+			<key>Name</key>
+			<string>Donut - Donut</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check forward.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>13</string>
+			<key>Name</key>
+			<string>Double Satellite - Double Satellite</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Outside Front</string>
+			<key>KeyDescription</key>
+			<string>Check their sides, see grips between IC and IR, then look in.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>14</string>
+			<key>Name</key>
+			<string>Accordion - Opposed Stairstep</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>TwoKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>16</string>
+			<key>Name</key>
+			<string>Canadian Tees - Monopods</string>
+			<key>Top-KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>Top-KeyDescription</key>
+			<string>Top: Check their piece and look at each other.</string>
+			<key>Bottom-KeyPosition</key>
+			<string>Outside Front and Inside Rear</string>
+			<key>Bottom-KeyDescription</key>
+			<string>Bottom: Check their piece and look at each other.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>17</string>
+			<key>Name</key>
+			<string>Buzzard - Buzzard</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>18</string>
+			<key>Name</key>
+			<string>Sidebody Donut - Sidebody Donut</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check right. Either center can key the bottom.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>19</string>
+			<key>Name</key>
+			<string>Compressed Diamonds - Compressed Diamonds</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check their diamond, back of diamonds guarantee right grip.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>21</string>
+			<key>Name</key>
+			<string>Stereopod - Stereopod</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Feel their pods, back of pods guarantee grips. Inside Center waits for Outside Front to look back when they pick up Point.</string>
+		</dict>
+	</array>
+</dict>
+</plist>
