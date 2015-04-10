@@ -12,7 +12,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card Outline" translatesAutoresizingMaskIntoConstraints="NO" id="7oE-cp-hZ4">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card Outline (White)" translatesAutoresizingMaskIntoConstraints="NO" id="7oE-cp-hZ4">
                         <rect key="frame" x="16" y="0.0" width="568" height="600"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-fk-LEv">
@@ -115,7 +115,7 @@
     </objects>
     <resources>
         <image name="17" width="350" height="590"/>
-        <image name="Card Outline" width="21" height="21"/>
+        <image name="Card Outline (White)" width="21" height="21"/>
         <image name="Key" width="30" height="14"/>
     </resources>
 </document>
