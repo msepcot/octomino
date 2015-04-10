@@ -9,7 +9,8 @@
 import UIKit
 
 class MainViewController: UIViewController,
-    UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
+    UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,
+    UIScrollViewDelegate
 {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var formationPageControl: UIPageControl!
@@ -23,9 +24,11 @@ class MainViewController: UIViewController,
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        self.collectionView.backgroundColor = nil
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+
+        self.formationPageControl.addTarget(self, action: "pageChanged:", forControlEvents: .ValueChanged)
+        self.randomOrBlockControl.addTarget(self, action: "segmentChanged:", forControlEvents: .ValueChanged)
 
         let oneKeyNib = UINib(nibName: "OneKeyFormationCell", bundle: nil)
         self.collectionView.registerNib(oneKeyNib,
@@ -42,6 +45,14 @@ class MainViewController: UIViewController,
                 self.blocks  = formations["Blocks"]  as! [[String: String]]
             }
         }
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        self.collectionView.contentOffset = CGPoint(x: self.collectionView.bounds.width, y: 0)
+        self.formationPageControl.numberOfPages = self.randoms.count
+        self.formationPageControl.currentPage = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -108,5 +119,72 @@ class MainViewController: UIViewController,
         return 0
     }
 
-}
+// MARK: UIScrollViewDelegate methods
 
+    func adjustPaging(scrollView: UIScrollView) {
+        let pageWidth = scrollView.bounds.width
+        let page = Int(scrollView.contentOffset.x / pageWidth)
+        let contentWidth = scrollView.contentSize.width
+
+        if page == 0 {
+            scrollView.contentOffset = CGPoint(x: contentWidth - pageWidth * 2, y: 0)
+            self.randomOrBlockControl.selectedSegmentIndex = 1
+            self.formationPageControl.numberOfPages = self.blocks.count
+            self.formationPageControl.currentPage = self.blocks.count - 1
+        } else if page == (self.randoms.count + self.blocks.count + 1) {
+            scrollView.contentOffset = CGPoint(x: pageWidth, y: 0)
+            self.randomOrBlockControl.selectedSegmentIndex = 0
+            self.formationPageControl.numberOfPages = self.randoms.count
+            self.formationPageControl.currentPage = 0
+        } else if page < self.randoms.count + 1 {
+            self.randomOrBlockControl.selectedSegmentIndex = 0
+            self.formationPageControl.numberOfPages = self.randoms.count
+            self.formationPageControl.currentPage = page - 1
+        } else {
+            self.randomOrBlockControl.selectedSegmentIndex = 1
+            self.formationPageControl.numberOfPages = self.blocks.count
+            self.formationPageControl.currentPage = page - self.randoms.count - 1
+        }
+    }
+
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        self.adjustPaging(scrollView)
+    }
+
+    func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+        self.adjustPaging(scrollView)
+    }
+
+// MARK: UIPageControl notification
+
+    func pageChanged(pageControl: UIPageControl) {
+        let page = pageControl.currentPage
+        let pageWidth = Int(self.collectionView.bounds.width)
+
+        if self.randomOrBlockControl.selectedSegmentIndex == 0 {
+            // Randoms - skip the first page in the collectionView
+            self.collectionView.contentOffset = CGPoint(x: pageWidth * (page + 1), y: 0)
+        } else {
+            // Blocks - skip over the randoms
+            let collectionViewPage = page + self.randoms.count + 1
+            self.collectionView.contentOffset = CGPoint(x: pageWidth * collectionViewPage, y: 0)
+        }
+    }
+
+// MARK: UISegmentedControl notification
+
+    func segmentChanged(segmentedControl: UISegmentedControl) {
+        let pageWidth = Int(self.collectionView.bounds.width)
+
+        if segmentedControl.selectedSegmentIndex == 0 {
+            self.collectionView.contentOffset = CGPoint(x: pageWidth, y: 0)
+            self.formationPageControl.numberOfPages = self.randoms.count
+            self.formationPageControl.currentPage = 0
+        } else {
+            self.collectionView.contentOffset = CGPoint(x: pageWidth * (self.randoms.count + 1), y: 0)
+            self.formationPageControl.numberOfPages = self.blocks.count
+            self.formationPageControl.currentPage = 0
+        }
+    }
+
+}

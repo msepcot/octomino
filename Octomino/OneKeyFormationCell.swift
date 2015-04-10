@@ -16,6 +16,8 @@ class OneKeyFormationCell: FormationCell {
     @IBOutlet weak var formationKeyPosition: UILabel!
     @IBOutlet weak var formationKeyDescription: UILabel!
 
+    @IBOutlet weak var keyImageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,5 +29,15 @@ class OneKeyFormationCell: FormationCell {
         self.formationName.text           = dictionary["Name"]
         self.formationKeyPosition.text    = dictionary["KeyPosition"]
         self.formationKeyDescription.text = dictionary["KeyDescription"]
+
+        if let position = dictionary["KeyPosition"] where position.isEmpty {
+            self.keyImageView.hidden = true
+            self.formationKeyPosition.hidden = true
+            self.formationKeyDescription.hidden = true
+        } else {
+            self.keyImageView.hidden = false
+            self.formationKeyPosition.hidden = false
+            self.formationKeyDescription.hidden = false
+        }
     }
 }

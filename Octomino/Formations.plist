@@ -160,6 +160,54 @@
 			<key>KeyDescription</key>
 			<string>Inside Center and Outside Center look back when grips are complete.</string>
 		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>N</string>
+			<key>Name</key>
+			<string>Zipper Flake</string>
+			<key>KeyPosition</key>
+			<string>Outside Center</string>
+			<key>KeyDescription</key>
+			<string>Point and Inside Front wait to see center build, then guarantee grips.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>O</string>
+			<key>Name</key>
+			<string>Compressed Accordion</string>
+			<key>KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Check left, see heads looking back at them.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>P</string>
+			<key>Name</key>
+			<string>Venus</string>
+			<key>KeyPosition</key>
+			<string>Inside Center</string>
+			<key>KeyDescription</key>
+			<string>Inside Front or Outside Front guarantees bipole grips, taking Point first, then Inside Center.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>Q</string>
+			<key>Name</key>
+			<string>Compass</string>
+			<key>KeyPosition</key>
+			<string>Inside Rear</string>
+			<key>KeyDescription</key>
+			<string>See donuts build and Outside Front headswitch left.</string>
+		</dict>
 	</array>
 	<key>Blocks</key>
 	<array>
