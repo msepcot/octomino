@@ -19,6 +19,7 @@ class MainViewController: UIViewController,
 
     var randoms: [[String: String]]!
     var blocks:  [[String: String]]!
+    var firstLoad = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,14 +46,18 @@ class MainViewController: UIViewController,
                 self.blocks  = formations["Blocks"]  as! [[String: String]]
             }
         }
+
+        self.formationPageControl.numberOfPages = self.randoms.count
+        self.formationPageControl.currentPage = 0
     }
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.collectionView.contentOffset = CGPoint(x: self.collectionView.bounds.width, y: 0)
-        self.formationPageControl.numberOfPages = self.randoms.count
-        self.formationPageControl.currentPage = 0
+        if self.firstLoad {
+            self.collectionView.contentOffset = CGPoint(x: self.collectionView.bounds.width, y: 0)
+            self.firstLoad = false
+        }
     }
 
     override func didReceiveMemoryWarning() {

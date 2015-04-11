@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122E6581AD8A6070008B92D /* InfoViewController.swift */; };
 		212666771AD42E4A00B13622 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
 		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
 		219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4441AD0DB8500045DF2 /* MainViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2122E6581AD8A6070008B92D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		212666761AD42E4A00B13622 /* Formations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Formations.plist; sourceTree = "<group>"; };
 		219EE43D1AD0DB8500045DF2 /* Octomino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octomino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EE4411AD0DB8500045DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				21A0ABAA1AD38AD50015EE54 /* OneKeyFormationCell.xib */,
 				21A0ABAD1AD38B7E0015EE54 /* TwoKeyFormationCell.swift */,
 				21A0ABAE1AD38B7E0015EE54 /* TwoKeyFormationCell.xib */,
+				2122E6581AD8A6070008B92D /* InfoViewController.swift */,
 			);
 			path = Octomino;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				21A0ABAF1AD38B7E0015EE54 /* TwoKeyFormationCell.swift in Sources */,
 				219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */,
 				219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */,
+				2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */,
 				21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
