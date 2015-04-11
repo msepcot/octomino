@@ -19,7 +19,9 @@ class MainViewController: UIViewController,
 
     var randoms: [[String: String]]!
     var blocks:  [[String: String]]!
+
     var firstLoad = true
+    var editingIndexPath: NSIndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,10 @@ class MainViewController: UIViewController,
         self.collectionView.registerNib(twoKeyNib,
             forCellWithReuseIdentifier: "TwoKeyFormationCell-Identifier")
 
+        let notesNib = UINib(nibName: "NotesCell", bundle: nil)
+        self.collectionView.registerNib(notesNib,
+            forCellWithReuseIdentifier: "NotesCell-Identifier")
+
         let path = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist")
         if let path = path {
             if let formations = NSDictionary(contentsOfFile: path) {
@@ -48,7 +54,7 @@ class MainViewController: UIViewController,
         }
 
         self.formationPageControl.numberOfPages = self.randoms.count
-        self.formationPageControl.currentPage = 0
+        self.formationPageControl.currentPage   = 0
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -76,6 +82,16 @@ class MainViewController: UIViewController,
     func collectionView(collectionView: UICollectionView,
         cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
+        if let editingIndexPath = self.editingIndexPath where editingIndexPath.isEqual(indexPath) {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("NotesCell-Identifier", forIndexPath: indexPath) as! NotesCell
+
+            let doubleTap = UITapGestureRecognizer(target: self, action: "dismissNotes:")
+            doubleTap.numberOfTapsRequired = 2
+            cell.addGestureRecognizer(doubleTap)
+
+            return cell
+        }
+
         var cell: FormationCell
         var klass: String?
         var formation: [String: String]?
@@ -104,6 +120,10 @@ class MainViewController: UIViewController,
 
         cell = collectionView.dequeueReusableCellWithReuseIdentifier(klass! + "-Identifier", forIndexPath: indexPath) as! FormationCell
         cell.populateCell(formation!)
+
+        var doubleTap = UITapGestureRecognizer(target: self, action: "viewNotes:")
+        doubleTap.numberOfTapsRequired = 2
+        cell.addGestureRecognizer(doubleTap)
 
         return cell
     }
@@ -192,4 +212,23 @@ class MainViewController: UIViewController,
         }
     }
 
+// MARK: Notes
+
+    func viewNotes(sender: UITapGestureRecognizer) {
+        let row: Int
+        if self.randomOrBlockControl.selectedSegmentIndex == 0 {
+            row = self.formationPageControl.currentPage + 1
+        } else {
+            row = self.formationPageControl.currentPage + self.randoms.count
+        }
+
+        self.editingIndexPath = NSIndexPath(forRow: row, inSection: 0)
+        self.collectionView.reloadItemsAtIndexPaths([self.editingIndexPath!])
+    }
+
+    func dismissNotes(sender: UITapGestureRecognizer) {
+        let oldEditingIndexPath = editingIndexPath!
+        self.editingIndexPath = nil
+        self.collectionView.reloadItemsAtIndexPaths([oldEditingIndexPath])
+    }
 }

@@ -65,7 +65,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Card Outline (Blue)" width="20" height="20"/>
+        <image name="Card Outline (Blue)" width="21" height="21"/>
         <image name="Octomino" width="345" height="626"/>
     </resources>
 </document>
