@@ -15,25 +15,88 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card Outline (White)" translatesAutoresizingMaskIntoConstraints="NO" id="NSI-iT-5Hf">
                         <rect key="frame" x="16" y="0.0" width="568" height="600"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsM-7N-9wP">
-                        <rect key="frame" x="272" y="289" width="57" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPQ-6f-hPC">
+                        <rect key="frame" x="32" y="16" width="24" height="43"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Formation Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gy-sy-LSr">
+                        <rect key="frame" x="64" y="27" width="504" height="20"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCL-2l-6Ro">
+                        <rect key="frame" x="32" y="67" width="536" height="517"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRX-cl-tTZ">
+                                <rect key="frame" x="0.0" y="0.0" width="159" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to edit." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI7-z9-eev">
+                                <rect key="frame" x="0.0" y="25" width="159" height="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coach Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD6-ES-1E9">
+                                <rect key="frame" x="0.0" y="74" width="159" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coaching notes go here." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhX-8P-fhp">
+                                <rect key="frame" x="0.0" y="99" width="159" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BRX-cl-tTZ" firstAttribute="top" secondItem="BCL-2l-6Ro" secondAttribute="top" id="0pt-Oe-Cxo"/>
+                            <constraint firstAttribute="bottom" secondItem="OhX-8P-fhp" secondAttribute="bottom" id="DP5-9b-1RH"/>
+                            <constraint firstItem="mD6-ES-1E9" firstAttribute="top" secondItem="OI7-z9-eev" secondAttribute="bottom" constant="32" id="FyA-5A-hhQ"/>
+                            <constraint firstItem="OhX-8P-fhp" firstAttribute="top" secondItem="mD6-ES-1E9" secondAttribute="bottom" constant="8" id="N5f-HI-Xax"/>
+                            <constraint firstAttribute="trailing" secondItem="OI7-z9-eev" secondAttribute="trailing" id="Ooy-hY-b36"/>
+                            <constraint firstItem="BRX-cl-tTZ" firstAttribute="leading" secondItem="BCL-2l-6Ro" secondAttribute="leading" id="U3m-o2-XoQ"/>
+                            <constraint firstAttribute="trailing" secondItem="BRX-cl-tTZ" secondAttribute="trailing" id="Vw0-8R-r9t"/>
+                            <constraint firstAttribute="trailing" secondItem="OhX-8P-fhp" secondAttribute="trailing" id="WU2-II-1Zk"/>
+                            <constraint firstItem="OI7-z9-eev" firstAttribute="leading" secondItem="BCL-2l-6Ro" secondAttribute="leading" id="e2s-E1-FdI"/>
+                            <constraint firstItem="OI7-z9-eev" firstAttribute="top" secondItem="BRX-cl-tTZ" secondAttribute="bottom" constant="8" id="fqN-qP-YKB"/>
+                            <constraint firstItem="mD6-ES-1E9" firstAttribute="leading" secondItem="BCL-2l-6Ro" secondAttribute="leading" id="lRO-Do-z00"/>
+                            <constraint firstItem="OhX-8P-fhp" firstAttribute="leading" secondItem="BCL-2l-6Ro" secondAttribute="leading" id="nxy-zW-C03"/>
+                            <constraint firstAttribute="trailing" secondItem="mD6-ES-1E9" secondAttribute="trailing" id="teb-tc-Mys"/>
+                        </constraints>
+                    </scrollView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="BCL-2l-6Ro" secondAttribute="trailing" constant="32" id="2Y4-7f-xOf"/>
                 <constraint firstAttribute="trailing" secondItem="NSI-iT-5Hf" secondAttribute="trailing" constant="16" id="BF0-62-kU2"/>
-                <constraint firstAttribute="centerY" secondItem="IsM-7N-9wP" secondAttribute="centerY" id="Njd-n1-ZlQ"/>
+                <constraint firstItem="8gy-sy-LSr" firstAttribute="leading" secondItem="sPQ-6f-hPC" secondAttribute="trailing" constant="8" id="BHe-ZA-yCz"/>
+                <constraint firstItem="BCL-2l-6Ro" firstAttribute="top" secondItem="sPQ-6f-hPC" secondAttribute="bottom" constant="8" id="BvR-jZ-dd3"/>
+                <constraint firstAttribute="trailing" secondItem="8gy-sy-LSr" secondAttribute="trailing" constant="32" id="CZU-sd-n6Z"/>
+                <constraint firstItem="BCL-2l-6Ro" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="KHh-p8-k7d"/>
+                <constraint firstItem="sPQ-6f-hPC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="SWf-1J-k04"/>
                 <constraint firstItem="NSI-iT-5Hf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="a8N-IC-mpv"/>
-                <constraint firstAttribute="centerX" secondItem="IsM-7N-9wP" secondAttribute="centerX" id="cEV-Dc-Rne"/>
+                <constraint firstItem="sPQ-6f-hPC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="bKj-Ps-V2N"/>
+                <constraint firstItem="8gy-sy-LSr" firstAttribute="centerY" secondItem="sPQ-6f-hPC" secondAttribute="centerY" id="d6Q-rx-REt"/>
                 <constraint firstItem="NSI-iT-5Hf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="orK-Iz-ZTS"/>
+                <constraint firstAttribute="bottom" secondItem="BCL-2l-6Ro" secondAttribute="bottom" constant="16" id="rqM-jv-ChM"/>
                 <constraint firstAttribute="bottom" secondItem="NSI-iT-5Hf" secondAttribute="bottom" id="yzR-7K-pod"/>
             </constraints>
             <size key="customSize" width="314" height="421"/>
-            <point key="canvasLocation" x="303" y="322.5"/>
+            <connections>
+                <outlet property="coachNotes" destination="OhX-8P-fhp" id="fiX-vN-Kxs"/>
+                <outlet property="formationIdentifier" destination="sPQ-6f-hPC" id="tJf-ze-Xeq"/>
+                <outlet property="formationName" destination="8gy-sy-LSr" id="w9l-Bl-d3K"/>
+                <outlet property="playerNotes" destination="OI7-z9-eev" id="H96-8C-cfT"/>
+            </connections>
+            <point key="canvasLocation" x="303" y="322"/>
         </collectionViewCell>
     </objects>
     <resources>

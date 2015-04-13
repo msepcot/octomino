@@ -82,19 +82,10 @@ class MainViewController: UIViewController,
     func collectionView(collectionView: UICollectionView,
         cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
-        if let editingIndexPath = self.editingIndexPath where editingIndexPath.isEqual(indexPath) {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("NotesCell-Identifier", forIndexPath: indexPath) as! NotesCell
-
-            let doubleTap = UITapGestureRecognizer(target: self, action: "dismissNotes:")
-            doubleTap.numberOfTapsRequired = 2
-            cell.addGestureRecognizer(doubleTap)
-
-            return cell
-        }
-
         var cell: FormationCell
         var klass: String?
         var formation: [String: String]?
+        var doubleTap: UITapGestureRecognizer?
 
         if indexPath.row == 0 {
             formation = self.blocks.last
@@ -118,12 +109,22 @@ class MainViewController: UIViewController,
             }
         }
 
+        if let editingIndexPath = self.editingIndexPath where editingIndexPath.isEqual(indexPath) {
+            klass = "NotesCell"
+            doubleTap = UITapGestureRecognizer(target: self, action: "dismissNotes:")
+        }
+
         cell = collectionView.dequeueReusableCellWithReuseIdentifier(klass! + "-Identifier", forIndexPath: indexPath) as! FormationCell
         cell.populateCell(formation!)
 
-        var doubleTap = UITapGestureRecognizer(target: self, action: "viewNotes:")
-        doubleTap.numberOfTapsRequired = 2
-        cell.addGestureRecognizer(doubleTap)
+        if doubleTap == nil {
+            doubleTap = UITapGestureRecognizer(target: self, action: "viewNotes:")
+        }
+
+        if let doubleTap = doubleTap {
+            doubleTap.numberOfTapsRequired = 2
+            cell.addGestureRecognizer(doubleTap)
+        }
 
         return cell
     }
