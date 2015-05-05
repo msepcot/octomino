@@ -241,15 +241,19 @@
 		</dict>
 		<dict>
 			<key>Class</key>
-			<string>OneKeyFormationCell</string>
+			<string>TwoKeyFormationCell</string>
 			<key>Identifier</key>
 			<string>4</string>
 			<key>Name</key>
 			<string>Snowflake - In-Out</string>
-			<key>KeyPosition</key>
+			<key>Top-KeyPosition</key>
 			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Top: Feel grips on cats and check right. Bottom: Check right.</string>
+			<key>Top-KeyDescription</key>
+			<string>Top: Feel grips on cats and check right.</string>
+			<key>Bottom-KeyPosition</key>
+			<string>Outside Rear and Inside Front</string>
+			<key>Bottom-KeyDescription</key>
+			<string>Bottom: Check right.</string>
 		</dict>
 		<dict>
 			<key>Class</key>

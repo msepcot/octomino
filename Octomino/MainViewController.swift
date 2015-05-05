@@ -71,7 +71,7 @@ class MainViewController: UIViewController,
         // Dispose of any resources that can be recreated.
     }
 
-// MARK: UICollectionViewDelegate methods
+// MARK: - UICollectionViewDelegate methods
 
     func collectionView(collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int
@@ -129,7 +129,7 @@ class MainViewController: UIViewController,
         return cell
     }
 
-// MARK: UICollectionViewDelegateFlowLayout methods
+// MARK: - UICollectionViewDelegateFlowLayout methods
 
     func collectionView(collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
@@ -145,7 +145,7 @@ class MainViewController: UIViewController,
         return 0
     }
 
-// MARK: UIScrollViewDelegate methods
+// MARK: - UIScrollViewDelegate methods
 
     func adjustPaging(scrollView: UIScrollView) {
         let pageWidth = scrollView.bounds.width
@@ -171,6 +171,8 @@ class MainViewController: UIViewController,
             self.formationPageControl.numberOfPages = self.blocks.count
             self.formationPageControl.currentPage = page - self.randoms.count - 1
         }
+
+        self.editingIndexPath = nil
     }
 
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
@@ -181,7 +183,7 @@ class MainViewController: UIViewController,
         self.adjustPaging(scrollView)
     }
 
-// MARK: UIPageControl notification
+// MARK: - UIPageControl notification
 
     func pageChanged(pageControl: UIPageControl) {
         let page = pageControl.currentPage
@@ -197,7 +199,7 @@ class MainViewController: UIViewController,
         }
     }
 
-// MARK: UISegmentedControl notification
+// MARK: - UISegmentedControl notification
 
     func segmentChanged(segmentedControl: UISegmentedControl) {
         let pageWidth = Int(self.collectionView.bounds.width)
@@ -213,7 +215,7 @@ class MainViewController: UIViewController,
         }
     }
 
-// MARK: Notes
+// MARK: - Notes
 
     func viewNotes(sender: UITapGestureRecognizer) {
         let row: Int

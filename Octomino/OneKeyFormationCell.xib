@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -38,22 +38,34 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Positions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IW6-dG-Aeu">
-                        <rect key="frame" x="70" y="549" width="498" height="17"/>
+                        <rect key="frame" x="70" y="549" width="466" height="17"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Key description." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2HC-0u-kZw">
-                        <rect key="frame" x="32" y="570" width="536" height="14"/>
+                        <rect key="frame" x="32" y="570" width="504" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjl-8W-Oln">
+                        <rect key="frame" x="546" y="562" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Gj4-fI-DVW"/>
+                            <constraint firstAttribute="width" constant="22" id="daf-TH-QX1"/>
+                        </constraints>
+                        <state key="normal" image="Build"/>
+                        <connections>
+                            <action selector="buildButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iXn-Eg-e3c"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
                 <constraint firstItem="E62-uA-kds" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="8p8-S7-vmj"/>
+                <constraint firstAttribute="trailing" secondItem="vjl-8W-Oln" secondAttribute="trailing" constant="32" id="97e-hu-Zet"/>
                 <constraint firstItem="2HC-0u-kZw" firstAttribute="top" secondItem="IW6-dG-Aeu" secondAttribute="bottom" constant="4" id="Cjq-72-0HS"/>
                 <constraint firstItem="vAV-LQ-c4E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="EFB-d5-BZU"/>
                 <constraint firstItem="KT9-5p-olC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="G5X-LG-tdc"/>
@@ -68,15 +80,17 @@
                 <constraint firstItem="KT9-5p-olC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="YrJ-ie-G1F"/>
                 <constraint firstItem="2HC-0u-kZw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="cAf-AZ-bRT"/>
                 <constraint firstItem="IW6-dG-Aeu" firstAttribute="leading" secondItem="E62-uA-kds" secondAttribute="trailing" constant="8" id="cmp-cv-Ohz"/>
-                <constraint firstAttribute="trailing" secondItem="IW6-dG-Aeu" secondAttribute="trailing" constant="32" id="f3H-SV-KbJ"/>
+                <constraint firstAttribute="trailing" secondItem="IW6-dG-Aeu" secondAttribute="trailing" constant="64" id="f3H-SV-KbJ"/>
                 <constraint firstItem="2ts-0Q-DUw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="hMD-q5-WM2"/>
                 <constraint firstItem="J02-oe-Gdh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="iB8-7n-pXC"/>
-                <constraint firstAttribute="trailing" secondItem="2HC-0u-kZw" secondAttribute="trailing" constant="32" id="jLq-9I-p8b"/>
+                <constraint firstAttribute="trailing" secondItem="2HC-0u-kZw" secondAttribute="trailing" constant="64" id="jLq-9I-p8b"/>
                 <constraint firstItem="vAV-LQ-c4E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="36" id="oXs-fa-NK7"/>
                 <constraint firstAttribute="bottom" secondItem="2ts-0Q-DUw" secondAttribute="bottom" id="vHE-W1-GTt"/>
+                <constraint firstAttribute="bottom" secondItem="vjl-8W-Oln" secondAttribute="bottom" constant="16" id="wWf-Eo-qCf"/>
             </constraints>
             <size key="customSize" width="600" height="603"/>
             <connections>
+                <outlet property="formationBuildButton" destination="vjl-8W-Oln" id="1hd-mN-XeN"/>
                 <outlet property="formationIdentifier" destination="KT9-5p-olC" id="oHW-mu-fId"/>
                 <outlet property="formationImageView" destination="vAV-LQ-c4E" id="ZTV-Ay-ywZ"/>
                 <outlet property="formationKeyDescription" destination="2HC-0u-kZw" id="R6T-vt-MlM"/>
@@ -88,8 +102,9 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="Build" width="22" height="22"/>
         <image name="Card Outline (White)" width="21" height="21"/>
         <image name="Key" width="30" height="14"/>
-        <image name="X" width="285" height="379"/>
+        <image name="X" width="285" height="378"/>
     </resources>
 </document>

@@ -9,14 +9,13 @@
 import UIKit
 
 class OneKeyFormationCell: FormationCell {
-
     @IBOutlet weak var formationImageView: UIImageView!
     @IBOutlet weak var formationIdentifier: UILabel!
     @IBOutlet weak var formationName: UILabel!
+    @IBOutlet weak var keyImageView: UIImageView!
     @IBOutlet weak var formationKeyPosition: UILabel!
     @IBOutlet weak var formationKeyDescription: UILabel!
-
-    @IBOutlet weak var keyImageView: UIImageView!
+    @IBOutlet weak var formationBuildButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,5 +38,17 @@ class OneKeyFormationCell: FormationCell {
             self.formationKeyPosition.hidden = false
             self.formationKeyDescription.hidden = false
         }
+    }
+
+    @IBAction func buildButtonPressed(sender: AnyObject) {
+        UIView.animateWithDuration(0.3, animations: { () -> Void in
+            let alpha = 1.0 - self.formationImageView.alpha
+
+            self.formationImageView.alpha       = alpha
+            self.formationName.alpha            = alpha
+            self.keyImageView.alpha             = alpha
+            self.formationKeyPosition.alpha     = alpha
+            self.formationKeyDescription.alpha  = alpha
+        })
     }
 }
