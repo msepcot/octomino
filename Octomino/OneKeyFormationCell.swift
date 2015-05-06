@@ -9,6 +9,7 @@
 import UIKit
 
 class OneKeyFormationCell: FormationCell {
+    @IBOutlet weak var cardFront: UIView!
     @IBOutlet weak var formationImageView: UIImageView!
     @IBOutlet weak var formationIdentifier: UILabel!
     @IBOutlet weak var formationName: UILabel!
@@ -16,6 +17,12 @@ class OneKeyFormationCell: FormationCell {
     @IBOutlet weak var formationKeyPosition: UILabel!
     @IBOutlet weak var formationKeyDescription: UILabel!
     @IBOutlet weak var formationBuildButton: UIButton!
+
+    @IBOutlet weak var cardBack: UIView!
+    @IBOutlet weak var formationIdentifierBack: UILabel!
+    @IBOutlet weak var formationNameBack: UILabel!
+    @IBOutlet weak var formationCoachNotes: UITextView!
+    @IBOutlet weak var formationBackButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,26 +36,33 @@ class OneKeyFormationCell: FormationCell {
         self.formationKeyPosition.text    = dictionary["KeyPosition"]
         self.formationKeyDescription.text = dictionary["KeyDescription"]
 
-        if let position = dictionary["KeyPosition"] where position.isEmpty {
-            self.keyImageView.hidden = true
-            self.formationKeyPosition.hidden = true
-            self.formationKeyDescription.hidden = true
+        self.formationIdentifierBack.text = dictionary["Identifier"]
+        self.formationNameBack.text       = dictionary["Name"]
+        self.formationCoachNotes.text     = dictionary["CoachNotes"]
+
+        if self.formationCoachNotes.text.isEmpty {
+            self.formationBuildButton.hidden = true
         } else {
+            self.formationBuildButton.hidden = false
+        }
+
+        if let position = dictionary["KeyPosition"] {
             self.keyImageView.hidden = false
             self.formationKeyPosition.hidden = false
             self.formationKeyDescription.hidden = false
+        } else {
+            self.keyImageView.hidden = true
+            self.formationKeyPosition.hidden = true
+            self.formationKeyDescription.hidden = true
         }
     }
 
     @IBAction func buildButtonPressed(sender: AnyObject) {
         UIView.animateWithDuration(0.3, animations: { () -> Void in
-            let alpha = 1.0 - self.formationImageView.alpha
+            let hidden = !self.cardFront.hidden
 
-            self.formationImageView.alpha       = alpha
-            self.formationName.alpha            = alpha
-            self.keyImageView.alpha             = alpha
-            self.formationKeyPosition.alpha     = alpha
-            self.formationKeyDescription.alpha  = alpha
+            self.cardFront.hidden = hidden
+            self.cardBack.hidden  = !hidden
         })
     }
 }

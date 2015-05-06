@@ -20,8 +20,6 @@
 		21A0ABAF1AD38B7E0015EE54 /* TwoKeyFormationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0ABAD1AD38B7E0015EE54 /* TwoKeyFormationCell.swift */; };
 		21A0ABB01AD38B7E0015EE54 /* TwoKeyFormationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A0ABAE1AD38B7E0015EE54 /* TwoKeyFormationCell.xib */; };
 		21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A250BB1AD5FBB400B1E8DD /* FormationCell.swift */; };
-		21ADA1A21AD8DF0F00B20C78 /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADA1A01AD8DF0F00B20C78 /* NotesCell.swift */; };
-		21ADA1A31AD8DF0F00B20C78 /* NotesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21ADA1A11AD8DF0F00B20C78 /* NotesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +50,6 @@
 		21A0ABAD1AD38B7E0015EE54 /* TwoKeyFormationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoKeyFormationCell.swift; sourceTree = "<group>"; };
 		21A0ABAE1AD38B7E0015EE54 /* TwoKeyFormationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoKeyFormationCell.xib; sourceTree = "<group>"; };
 		21A250BB1AD5FBB400B1E8DD /* FormationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCell.swift; sourceTree = "<group>"; };
-		21ADA1A01AD8DF0F00B20C78 /* NotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
-		21ADA1A11AD8DF0F00B20C78 /* NotesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +98,6 @@
 				219EE44B1AD0DB8500045DF2 /* LaunchScreen.xib */,
 				219EE4401AD0DB8500045DF2 /* Supporting Files */,
 				21A250BB1AD5FBB400B1E8DD /* FormationCell.swift */,
-				21ADA1A01AD8DF0F00B20C78 /* NotesCell.swift */,
-				21ADA1A11AD8DF0F00B20C78 /* NotesCell.xib */,
 				21A0ABA91AD38AD50015EE54 /* OneKeyFormationCell.swift */,
 				21A0ABAA1AD38AD50015EE54 /* OneKeyFormationCell.xib */,
 				21A0ABAD1AD38B7E0015EE54 /* TwoKeyFormationCell.swift */,
@@ -224,7 +218,6 @@
 				212666771AD42E4A00B13622 /* Formations.plist in Resources */,
 				219EE44D1AD0DB8500045DF2 /* LaunchScreen.xib in Resources */,
 				21A0ABAC1AD38AD50015EE54 /* OneKeyFormationCell.xib in Resources */,
-				21ADA1A31AD8DF0F00B20C78 /* NotesCell.xib in Resources */,
 				219EE44A1AD0DB8500045DF2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +241,6 @@
 				219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */,
 				219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */,
 				2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */,
-				21ADA1A21AD8DF0F00B20C78 /* NotesCell.swift in Sources */,
 				21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

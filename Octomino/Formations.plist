@@ -11,10 +11,6 @@
 			<string>X</string>
 			<key>Name</key>
 			<string>Exit Frame</string>
-			<key>KeyPosition</key>
-			<string></string>
-			<key>KeyDescription</key>
-			<string></string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -27,6 +23,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check forward and look at each other.</string>
+			<key>CoachNotes</key>
+			<string>First, set up a star. Then, turn out to a donut while watching clone the entire time. Build like a donut, referencing across, then take grips: first right, then left.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -39,6 +37,8 @@
 			<string>Inside Rear</string>
 			<key>KeyDescription</key>
 			<string>Tail guarantees left grip on Outside Rear.</string>
+			<key>CoachNotes</key>
+			<string>First, set up the center diamond. Outside Center and Inside Center set up parallel with each other, one body width apart. Outside Front and Inside Front set up and present legs first before taking grips on Point.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -51,6 +51,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right. See Outside Front and Inside Rear headswitch to know their sides are built.</string>
+			<key>CoachNotes</key>
+			<string>First, set up the center bipole. Outside Front and Inside Rear set up in bipole before looking out to take grips, then headswitch over left shoulder. Point, Inside Front, Outside Rear, and Tail wait for Outside Front and Inside Rear to be in place before turning out.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -63,6 +65,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right.</string>
+			<key>CoachNotes</key>
+			<string>First, set up between Outside Front, Inside Front, Inside Rear, and Outside Rear. All infacing in square, then turn out together. Continue to reference off each other and reference strong with center four. Point and Tail wait to turn out last after the rest is built. Inside Front/Outside Front and Inside Rear/Outside Rear see grips out of periphery. Continue to work levels and setups.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -75,6 +79,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right.</string>
+			<key>CoachNotes</key>
+			<string>First, set up a stairstep picture between Outside Center, Inside Center, Outside Rear, and Inside Front. Inside Front and Outside Rear keep referencing stairstep setup and take grips out of corner of eye. Outside Front and Inside Rear wait long and then turn out, stay looking over left shoulder. Point and Tail present last, building deeply compressed.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -87,6 +93,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check left.</string>
+			<key>CoachNotes</key>
+			<string>First, build the center stairstep diamond, then take outside grips. Outside Rear and Inside Front can cheat cat. Point and Tail build the compresseds deep. Outsides build off of the opposite center to avoid orbiting.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -99,6 +107,8 @@
 			<string>Inside Rear</string>
 			<key>KeyDescription</key>
 			<string>Outside Rear and Tail guarantee outside grips.</string>
+			<key>CoachNotes</key>
+			<string>Centers set up in a line with Inside Rear, one body width apart. Outside Front and Inside Front set up even with each other and present legs first, before looking out for Point&apos;s grip. Point waits long before turning out. Outside Rear and Tail guarantee outside grips for Inside Rear.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -111,6 +121,8 @@
 			<string>Outside Center</string>
 			<key>KeyDescription</key>
 			<string>Check front, eyes from Tail to ensure compressed.</string>
+			<key>CoachNotes</key>
+			<string>Set up like a 4-Way Block 9 for the center four. Outsides let center four set up the Block 9 picture first. Work levels, keeping the fall rate of the compressed. The compressed will tend to float.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -123,6 +135,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Build center donut first, then check outsides.</string>
+			<key>CoachNotes</key>
+			<string>First, build the center donut. Inside Front and Outside Rear wait long for Inside Center and Outside Center to look out to guarantee grips.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -135,6 +149,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right.</string>
+			<key>CoachNotes</key>
+			<string>Outside Center and Inside Center prioritize the center compressed. Inside Front and Outside Front build with hips close to each other to make it easy for Point to take grips. Inside Rear and Outside Rear do the same for Tail.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -147,6 +163,8 @@
 			<string>Inside Rear</string>
 			<key>KeyDescription</key>
 			<string>Tail guarantees grip.</string>
+			<key>CoachNotes</key>
+			<string>Outside Center and Inside Center set up with each other and Inside Rear and Outside Rear in a 4-Way infacing box picture. Inside Front and Outside Front wait to see picture, then turn out (inside turn), guaranteeing pictures and grips first, then see Point grips in periphery, continuing to work the center picture. Outside Front escalates global thermonuclear war. Point waits the longest, turning out to guarantee grips.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -159,6 +177,9 @@
 			<string>Tail</string>
 			<key>KeyDescription</key>
 			<string>Inside Center and Outside Center look back when grips are complete.</string>
+			<key>CoachNotes</key>
+			<string>First, build the center diamond. Then, line up in even lines with the front line guaranteeing grips. Outside Center and Inside Center build one body width apart.
+Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap positions depending on the previous and next points.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -171,6 +192,8 @@
 			<string>Outside Center</string>
 			<key>KeyDescription</key>
 			<string>Point and Inside Front wait to see center build, then guarantee grips.</string>
+			<key>CoachNotes</key>
+			<string>First, Outside Center, Inside Center, Outside Front, and Inside Rear build center for angle. Then, Inside Center and Outside Front look out to build cats. Inside Center and Outside Front should be close enought to almost take arm grips. Point and Inside Front wait to see the center build, then guarantee grips. Inside Front and Point keep hips close.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -183,6 +206,8 @@
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check left, see heads looking back at them.</string>
+			<key>CoachNotes</key>
+			<string>First, build on level and deeply compressed. Then, take grips. Outsides watch inward the entire time as it builds. Let it build from the center out. Keep working LEVELS even after the build. Outsides should see themselves on level with the rest of compressed. If you see backpacks, ARCH!</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -195,6 +220,8 @@
 			<string>Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Inside Front or Outside Front guarantees bipole grips, taking Point first, then Inside Center.</string>
+			<key>CoachNotes</key>
+			<string>Inside Rear and Inside Center set up in a cat picture with Outside Center perpendicular. Outside Front and Tail are parallel with Outside Center. Tail and Outside Rear set up a donut picture. Point waits to present grips after Inside Front and Outside Front are ready.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -207,6 +234,8 @@
 			<string>Inside Rear</string>
 			<key>KeyDescription</key>
 			<string>See donuts build and Outside Front headswitch left.</string>
+			<key>CoachNotes</key>
+			<string>First, Outside Front builds cat grips with Inside Rear, looking over right shoulder. Then, looks out to take grips and headswitches left to let Inside Rear know it is complete. Outside Rear and Inside Front should be parallel with the cat in the center, about one body width apart and centerpoint in line with grips. Outside Center, Inside Center, Point, and Tail let Outside Rear and Inside Front set up before building donuts. Present legs first, then take grips.</string>
 		</dict>
 	</array>
 	<key>Blocks</key>
@@ -325,7 +354,7 @@
 			<key>KeyPosition</key>
 			<string>Outside Center and Outside Front</string>
 			<key>KeyDescription</key>
-			<string>Check their sides, see grips between IC and IR, then look in.</string>
+			<string>Check their sides, see grips between Inside Center and Inside Rear, then look in.</string>
 		</dict>
 		<dict>
 			<key>Class</key>

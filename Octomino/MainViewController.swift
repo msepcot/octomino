@@ -85,7 +85,6 @@ class MainViewController: UIViewController,
         var cell: FormationCell
         var klass: String?
         var formation: [String: String]?
-        var doubleTap: UITapGestureRecognizer?
 
         if indexPath.row == 0 {
             formation = self.blocks.last
@@ -109,22 +108,8 @@ class MainViewController: UIViewController,
             }
         }
 
-        if let editingIndexPath = self.editingIndexPath where editingIndexPath.isEqual(indexPath) {
-            klass = "NotesCell"
-            doubleTap = UITapGestureRecognizer(target: self, action: "dismissNotes:")
-        }
-
         cell = collectionView.dequeueReusableCellWithReuseIdentifier(klass! + "-Identifier", forIndexPath: indexPath) as! FormationCell
         cell.populateCell(formation!)
-
-        if doubleTap == nil {
-            doubleTap = UITapGestureRecognizer(target: self, action: "viewNotes:")
-        }
-
-        if let doubleTap = doubleTap {
-            doubleTap.numberOfTapsRequired = 2
-            cell.addGestureRecognizer(doubleTap)
-        }
 
         return cell
     }
@@ -213,25 +198,5 @@ class MainViewController: UIViewController,
             self.formationPageControl.numberOfPages = self.blocks.count
             self.formationPageControl.currentPage = 0
         }
-    }
-
-// MARK: - Notes
-
-    func viewNotes(sender: UITapGestureRecognizer) {
-        let row: Int
-        if self.randomOrBlockControl.selectedSegmentIndex == 0 {
-            row = self.formationPageControl.currentPage + 1
-        } else {
-            row = self.formationPageControl.currentPage + self.randoms.count
-        }
-
-        self.editingIndexPath = NSIndexPath(forRow: row, inSection: 0)
-        self.collectionView.reloadItemsAtIndexPaths([self.editingIndexPath!])
-    }
-
-    func dismissNotes(sender: UITapGestureRecognizer) {
-        let oldEditingIndexPath = editingIndexPath!
-        self.editingIndexPath = nil
-        self.collectionView.reloadItemsAtIndexPaths([oldEditingIndexPath])
     }
 }
