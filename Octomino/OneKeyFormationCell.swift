@@ -44,6 +44,7 @@ class OneKeyFormationCell: FormationCell {
             self.formationBuildButton.hidden = true
         } else {
             self.formationBuildButton.hidden = false
+            self.formationCoachNotes.contentOffset = CGPointZero
         }
 
         if let position = dictionary["KeyPosition"] {

@@ -179,6 +179,7 @@
 			<string>Inside Center and Outside Center look back when grips are complete.</string>
 			<key>CoachNotes</key>
 			<string>First, build the center diamond. Then, line up in even lines with the front line guaranteeing grips. Outside Center and Inside Center build one body width apart.
+
 Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap positions depending on the previous and next points.</string>
 		</dict>
 		<dict>
@@ -255,6 +256,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>Bottom-KeyDescription</key>
 			<string>Bottom: See pod build in front and feel grips behind.</string>
+			<key>CoachNotes</key>
+			<string>First, build the center donut. Outsides build straight on picture with clones, with a straight line bisecting the outsides going through the donut grips.
+
+On the key, flakers reference across and squeeze in to build the donut. See the intermediate tight star picture. Donut references clone to straight on picture, resisting backing out too far. Reference across through the move. The first donut minimizes the step out, forcing the outsides to push in.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -267,6 +272,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Top: Check their chinese tee and look at each other. Bottom: Check their donut and look at each other.</string>
+			<key>CoachNotes</key>
+			<string>The build should look like a 4-Way Bunyip for Outside Center, Inside Center, Outside Front, and Inside Rear. Outside Front and Inside Rear face in until they can see where Outside Center and Inside Center are set. Then, turn in toward center while looking over left shoulder to keep a strong reference on the other center. As the piece builds, the center keeps flying and working the Bunyip picture. Keep looking over left shoulder, seeing the outside compressed grip out of the corner of your eye. Take grips, then focus back on the center build, maintaining levels. Centers keep a fast fall rate. The compressed tends to fload.
+
+On key, Outside Front and Inside Rear build a bipole with a late head switch to build the donut. Bipole build for Outside Center, Inside Center, Outside Front, and Inside Rear. Outsides take donut grips only after the center bipole setup is complete.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -283,6 +292,12 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Rear and Inside Front</string>
 			<key>Bottom-KeyDescription</key>
 			<string>Bottom: Check right.</string>
+			<key>CoachNotes</key>
+			<string>Outsides build a tight cat picture, cheated to the right side, with their head next to their piece partner&apos;s right knee. Look across at clone and be prepared to squeeze in on the key. Cats build with grips at eye level, not high.
+
+On key, insides, looking at the wing next to them, turn out left. Outsides drive in toward their clone, not toward the grip. Outsides keep looking over right shoulder, working off what they can see for clues on levels and squeezing in toward center. Insides work to keep their centerpoints from drifting out. Keep driving in to create an even circle shape. Target the right leg grip just to the left of where the arm grip was.
+
+Alternate Build: Outsides can cheat left, with the insides turning out to the right on the key.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -295,6 +310,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Front and Inside Rear</string>
 			<key>KeyDescription</key>
 			<string>Check cat and sidebodies in front of them.</string>
+			<key>CoachNotes</key>
+			<string>First, build the star between Outside Front and Inside Rear. Inside Front and Inside Center set up off of Outside Front. Outside Center and Outside Rear set up off of Inside Rear.
+
+On the key, Inside Front, Outside Center, Inside Center, and Inside Rear wait for the outsides to let go. The person being sidebodied has a mellow move. Make a late, mellow headswitch, maintaining levels and keep the sidebody square. For the people taking the sidebodies, keep the build square, pull in and turn on center, making late and mellow headswitches. The front two pieces watch Inside Rear. The rear two pieces watch Outside Front. Pause at 180 degrees, seeing all four people taking sidebodies in a line.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -307,6 +326,8 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right.</string>
+			<key>CoachNotes</key>
+			<string>The pieces move clockwise. The partner on the left steps into the center, creating a 4-Way donut picture while looking long over their left shoulder. The partner on the right stays hip to hip with their partner throughout the move. See a picture with all legs in, facing out. Stop in this picture. Stay looking long over left shoulder to see where the grip is targeted before headswitching. See the second donut picture before the close. Continue to work on keeping levels the same between all pieces.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -319,6 +340,12 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Front and Inside Rear</string>
 			<key>KeyDescription</key>
 			<string>Check left.</string>
+			<key>CoachNotes</key>
+			<string>First, build two-way stars. Outside Center and Inside Center set up in an offset open picture. Outside Rear and Inside Front do the same. Half-stars set up across from each other.
+
+On key, Outside Rear and Inside Front drive hips in toward the center, making bipole picture with each other as Outside Center and Inside Center squeeze pieces to assist in making that picture happen. Two-way stars see halfway picture that looks like a Nacho with half-stars facing outward. Then, Outside Rear and Inside Front switch roles with Outside Center and Inside Center to complete the 360. Outside Center and Inside Center watch long over their right shoulder, headswitching after they make a bipole picture with each other. Outsdie Rear and Inside Front anchor hard on the close, building an offset picture with each other. Keep the fall rate fast for the half-stars.
+
+Half-Stars: The partner on the right steps into the center, creating a half donut picture with the opposite (like Block 6). Look long over right shoulder. The left partner stays hip to hip with their partner throughout the move. See a picture with all legs in, facing out. Stop in this picture. Stay looking long over left shoulder to see where the grip is targeted before headswitching. See the second half-donut picture before closing. Work to keep levels the same between pieces.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -331,6 +358,12 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check their side.</string>
+			<key>CoachNotes</key>
+			<string>First, build the center bipole. Outsides present their leg first, then take grips. Donuts take high grips.
+
+On the key, donut pieces spin forward first, seeing a compressed picture as they cross. The remaining pairs coordinate to do the same, seeing compressed pictures as they cross. On close, Outside Front and Inside Rear step forward toward each other and hold their headswitch long to guarantee positioning. Everyone in the donuts should work to keep levels the same and keep a good donut shape.
+
+Solo Flyers: step forward, turn left 270, watch donuts rotate, keeping an eye on Inside Rear and Outside Front targets. Present leg, then finish the turn. Expect gap at the close of the formation to be clockwise from where it started.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -343,6 +376,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check forward.</string>
+			<key>CoachNotes</key>
+			<string>Build across from your clone. Set up in a star picture, then everyone turns left, ending up parallel with your clone.
+
+On key, everyone turns 450 degrees to an infacing star picture, then continues the turn together to close the donut.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -355,6 +392,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Outside Front</string>
 			<key>KeyDescription</key>
 			<string>Check their sides, see grips between Inside Center and Inside Rear, then look in.</string>
+			<key>CoachNotes</key>
+			<string>Cats should build in a straight line. Reference off the next person in the cat for set up. Point, Outside Cetner, and Tail reference Inside Center. Outside Front, Outside Rear, and Inside Front reference Inside Rear.
+
+On key, front of cats make a small step toward solo flyers. Fronts should prioritize levels within piece first, then with the other cat. Back of cats get in tight on grips and turn on center in a 1-2 move. See legs cross the center close together on the 1, while the fronts make a mellow headswitch. Solo flyers turn out, looking long over shoulder, and move aggressively toward the closing cats. Squeeze in at the piece to avoid stepping backward.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -367,6 +408,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right.</string>
+			<key>CoachNotes</key>
+			<string>Build double high grips with piece partner, low grips otherwise. Keep the build open enough to give room for the move. Build parallel with your side of the accordion and straight along the grip line. 
+
+The block move is a 1-2 staged move with P/IF and OC/IR going over and IC/OF and T/OR going under. Center pieces lead, rotate the piece 180 degrees and stop. Time the second rotation together. Centers see that outsides are done with the first move before continuing to the second move. The second move is less than 180 degrees to build a stairstep along the same line as the original accordion. Build the center stairstep first. Outsides follow the timing on 1 and 2 moves, see the centers start before you go, and watch through the center to guarantee the piece stays on the correct side of the formation.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -383,6 +428,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Front and Inside Rear</string>
 			<key>Bottom-KeyDescription</key>
 			<string>Bottom: Check their piece and look at each other.</string>
+			<key>CoachNotes</key>
+			<string>Build pieces close together, with Outside Center and Inside Center in a donut picture. Tails of cats should be close to the insides on the front of the other piece to minimize their move. Outside Front and Inside Rear face in long until they can see where Inside Center and Outside Center are setting up, then set up in out-turned stairstep picture with each other and IC/OC, looking over right should the entire time. Picture should be right knee even with the opposite center. Work fall rate and proximity the entire time. Let Point and Tail have complete responsibility for the outside grip. Centers keep referencing and flying strong pictures as the pieces build.
+
+On key, heads should already be close to cat grip. Back of cats slide over to present grips to fronts of pieces. All 6 (except Point and Tail) look across at clone and set up a 6-Way donut picture. Outside Front and Inside Rear go from bipole picture looking over right shoulder, to the donut picture, then take grips, check off outside grip, and mutually key.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -395,6 +444,12 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right.</string>
+			<key>CoachNotes</key>
+			<string>First, build the center stairstep, then the compresseds. Build the pieces deep, with high grips and bent arms, and hold them tight.
+
+On key, solo flyers watch long to maintain levels. Compresseds turn 360 degrees forward, keeping up fall rate and squeezing hip in through their piece partner. As insides of compresseds step out, look long over right shoulder. Outsides step into center, seeing opposite compressed picture, looking long as rotation continues. Turn piece slowly and under control. Prioritize center grips.
+
+Alternatively, try spinning the copresseds backward for more control.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -407,6 +462,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check right. Either center can key the bottom.</string>
+			<key>CoachNotes</key>
+			<string>First, centers build the donut. Outsides let the center build, then set up straight sidebodies, perpendicular and on level.
+
+On key, centers step out short and stop, making sure timing is the same. Look long over right shoulder, see reverse star picture, and let outsides finish the furn. Focus on maintaining levels. Outsides let centers step out, keep them from stepping out too far (communicating through grips), then drive forward as you turn. See all of the outsides&apos; legs cross through the center at the same time. Anchor and rotate the centers back into a donut. Continue to work levels, timing, and proximity.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -419,6 +478,10 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Check their diamond, back of diamonds guarantee right grip.</string>
+			<key>CoachNotes</key>
+			<string>Set up deep compressed between Inside Center and Outside Center. Inside Rear and Outside Front set up in a stairstep picture. Back of diamonds take high grips. Outsides of diamonds set up parallel with Inside Center and Outside Center, keeping hips close in and parallel for the back of the diamond.
+
+On key, heads of diamond step out SMALL at 45, look long over left shoulder, squeeze back, and keep level. Rear of diamonds drive toward each other. Outside Rear goes over Inside Front. As soon as the backs cross, stop with right knee down. Anchor where clone was and pull back. Once Outside Rear and Inside Front have crossed, diamonds go backward until fronts pass each other, then Inside Rear goes over Outside Front, and diamonds move forward. Sides of diamonds stay even with each other. Stop together.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -431,6 +494,12 @@ Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap po
 			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
 			<string>Feel their pods, back of pods guarantee grips. Inside Center waits for Outside Front to look back when they pick up Point.</string>
+			<key>CoachNotes</key>
+			<string>Pods build cheated around to side so that Outside Rear and Inside Front are in a cat picutre on Outside Center and Inside Center. Tail and Inside Rear are perpendicular, forming a quasi-donut picture between Inside Center, Outside Center, Tail, and Inside Rear. Point cheats right. OR/T and IF/IR take double high grips between pod.
+
+On key, front of pods step out small toward cat, looking over inside shoulder. Tail and Inside Rear drive hips toward cat to cog. Inside Rear goes through center first, then anchors and helps Outside Front and Inside Rear do the same. Pods should look through center to keep levels and proximity. Cat turns 180 degrees to create a 3-Way picture with Tail and Inside Rear, then is patient as Outside Rear and Inside Front make the same picture, staying on level and in center between pieces. As Outside Rear and Inside Front pass through center, cat initiates the second 180 to guarantee legs to Inside Center and Outside Center. Point squeezes back and drives in and Outside Front switches places with Point in the first 180 degree turn. Point fades out easy as Outside Front drives the second 180 degree turn.
+
+Alternate engineering with Inside Center and Inside Front switched.</string>
 		</dict>
 	</array>
 </dict>

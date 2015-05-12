@@ -10,6 +10,7 @@ import UIKit
 
 class TwoKeyFormationCell: FormationCell {
 
+    @IBOutlet weak var cardFront: UIView!
     @IBOutlet weak var formationIdentifier: UILabel!
     @IBOutlet weak var formationImageView: UIImageView!
     @IBOutlet weak var formationName: UILabel!
@@ -17,6 +18,13 @@ class TwoKeyFormationCell: FormationCell {
     @IBOutlet weak var formationKeyDescriptionTop: UILabel!
     @IBOutlet weak var formationKeyPositionBottom: UILabel!
     @IBOutlet weak var formationKeyDescriptionBottom: UILabel!
+    @IBOutlet weak var formationBuildButton: UIButton!
+
+    @IBOutlet weak var cardBack: UIView!
+    @IBOutlet weak var formationIdentifierBack: UILabel!
+    @IBOutlet weak var formationNameBack: UILabel!
+    @IBOutlet weak var formationCoachNotes: UITextView!
+    @IBOutlet weak var formationBackButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,5 +39,25 @@ class TwoKeyFormationCell: FormationCell {
         self.formationKeyDescriptionTop.text    = dictionary["Top-KeyDescription"]
         self.formationKeyPositionBottom.text    = dictionary["Bottom-KeyPosition"]
         self.formationKeyDescriptionBottom.text = dictionary["Bottom-KeyDescription"]
+
+        self.formationIdentifierBack.text       = dictionary["Identifier"]
+        self.formationNameBack.text             = dictionary["Name"]
+        self.formationCoachNotes.text           = dictionary["CoachNotes"]
+
+        if self.formationCoachNotes.text.isEmpty {
+            self.formationBuildButton.hidden = true
+        } else {
+            self.formationBuildButton.hidden = false
+            self.formationCoachNotes.contentOffset = CGPointZero
+        }
+}
+
+    @IBAction func buildButtonPressed(sender: AnyObject) {
+        UIView.animateWithDuration(0.3, animations: { () -> Void in
+            let hidden = !self.cardFront.hidden
+
+            self.cardFront.hidden = hidden
+            self.cardBack.hidden  = !hidden
+        })
     }
 }
