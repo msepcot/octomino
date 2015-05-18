@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Octomino WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Octomino.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>219EE4511AD0DB8600045DF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21A8604C1B039F7E006ED4D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
