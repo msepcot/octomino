@@ -31,6 +31,13 @@ class TwoKeyFormationCell: FormationCell {
         // Initialization code
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        self.cardFront.hidden = false
+        self.cardBack.hidden  = true
+    }
+
     override func populateCell(dictionary: [String: String]) {
         self.formationIdentifier.text           = dictionary["Identifier"]
         self.formationImageView.image           = UIImage(named: dictionary["Identifier"]!)
@@ -60,4 +67,5 @@ class TwoKeyFormationCell: FormationCell {
             self.cardBack.hidden  = !hidden
         })
     }
+
 }

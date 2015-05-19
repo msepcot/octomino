@@ -8,10 +8,9 @@
 
 import UIKit
 
-class MainViewController: UIViewController,
-    UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,
-    UIScrollViewDelegate
-{
+class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,
+    UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var formationPageControl: UIPageControl!
     @IBOutlet weak var randomOrBlockControl: UISegmentedControl!
@@ -199,4 +198,5 @@ class MainViewController: UIViewController,
             self.formationPageControl.currentPage = 0
         }
     }
+
 }

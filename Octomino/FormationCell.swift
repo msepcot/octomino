@@ -9,7 +9,7 @@
 import UIKit
 
 class FormationCell: UICollectionViewCell {
-    func populateCell(dictionary: [String: String]) {
-        
-    }
+
+    func populateCell(dictionary: [String: String]) {}
+
 }

@@ -9,6 +9,7 @@
 import UIKit
 
 class OneKeyFormationCell: FormationCell {
+
     @IBOutlet weak var cardFront: UIView!
     @IBOutlet weak var formationImageView: UIImageView!
     @IBOutlet weak var formationIdentifier: UILabel!
@@ -27,6 +28,13 @@ class OneKeyFormationCell: FormationCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        self.cardFront.hidden = false
+        self.cardBack.hidden  = true
     }
 
     override func populateCell(dictionary: [String: String]) {
@@ -66,4 +74,5 @@ class OneKeyFormationCell: FormationCell {
             self.cardBack.hidden  = !hidden
         })
     }
+
 }
