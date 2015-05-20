@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.headdowndevelopment.Octomino.watchkitapp</string>
+	<string>com.sepcot.Octomino.watchkitapp</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.headdowndevelopment.Octomino</string>
+	<string>com.sepcot.Octomino</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
