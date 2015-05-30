@@ -3,7 +3,7 @@
 //  OctominoTests
 //
 //  Created by Michael Sepcot on 4/4/15.
-//  Copyright (c) 2015 Head Down Development. All rights reserved.
+//  Copyright (c) 2015 Michael Sepcot. All rights reserved.
 //
 
 import UIKit

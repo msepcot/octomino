@@ -3,7 +3,7 @@
 //  Octomino
 //
 //  Created by Michael Sepcot on 4/6/15.
-//  Copyright (c) 2015 Head Down Development. All rights reserved.
+//  Copyright (c) 2015 Michael Sepcot. All rights reserved.
 //
 
 import UIKit
@@ -57,15 +57,19 @@ class TwoKeyFormationCell: FormationCell {
             self.formationBuildButton.hidden = false
             self.formationCoachNotes.contentOffset = CGPointZero
         }
-}
+    }
 
     @IBAction func buildButtonPressed(sender: AnyObject) {
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
-            let hidden = !self.cardFront.hidden
+        let hidden = !self.cardFront.hidden
 
-            self.cardFront.hidden = hidden
-            self.cardBack.hidden  = !hidden
-        })
+        UIView.beginAnimations("cardFlip", context: nil)
+        UIView.setAnimationDuration(0.8)
+        UIView.setAnimationTransition(hidden ? .FlipFromRight : .FlipFromLeft, forView: self, cache: true)
+
+        self.cardFront.hidden = hidden
+        self.cardBack.hidden  = !hidden
+
+        UIView.commitAnimations()
     }
 
 }
