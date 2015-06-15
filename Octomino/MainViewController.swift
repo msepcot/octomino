@@ -17,10 +17,12 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var informationButton: UIButton!
 
     var randoms: [[String: String]]!
+    var randomIndex = 0
+
     var blocks:  [[String: String]]!
+    var blockIndex = 0
 
     var firstLoad = true
-    var editingIndexPath: NSIndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -156,7 +158,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
             self.formationPageControl.currentPage = page - self.randoms.count - 1
         }
 
-        self.editingIndexPath = nil
+        if self.randomOrBlockControl.selectedSegmentIndex == 0 {
+            self.randomIndex = self.formationPageControl.currentPage
+        } else {
+            self.blockIndex = self.formationPageControl.currentPage
+        }
     }
 
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
@@ -176,10 +182,12 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         if self.randomOrBlockControl.selectedSegmentIndex == 0 {
             // Randoms - skip the first page in the collectionView
             self.collectionView.contentOffset = CGPoint(x: pageWidth * (page + 1), y: 0)
+            self.randomIndex = page
         } else {
             // Blocks - skip over the randoms
             let collectionViewPage = page + self.randoms.count + 1
             self.collectionView.contentOffset = CGPoint(x: pageWidth * collectionViewPage, y: 0)
+            self.blockIndex = page
         }
     }
 
@@ -189,13 +197,13 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         let pageWidth = Int(self.collectionView.bounds.width)
 
         if segmentedControl.selectedSegmentIndex == 0 {
-            self.collectionView.contentOffset = CGPoint(x: pageWidth, y: 0)
+            self.collectionView.contentOffset = CGPoint(x: pageWidth * (self.randomIndex + 1), y: 0)
             self.formationPageControl.numberOfPages = self.randoms.count
-            self.formationPageControl.currentPage = 0
+            self.formationPageControl.currentPage = self.randomIndex
         } else {
-            self.collectionView.contentOffset = CGPoint(x: pageWidth * (self.randoms.count + 1), y: 0)
+            self.collectionView.contentOffset = CGPoint(x: pageWidth * (self.randoms.count + self.blockIndex + 1), y: 0)
             self.formationPageControl.numberOfPages = self.blocks.count
-            self.formationPageControl.currentPage = 0
+            self.formationPageControl.currentPage = self.blockIndex
         }
     }
 
