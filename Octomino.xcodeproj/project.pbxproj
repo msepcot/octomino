@@ -11,6 +11,8 @@
 		212666771AD42E4A00B13622 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
 		2143FA331B06BBF4009AF434 /* RandomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA321B06BBF4009AF434 /* RandomController.swift */; };
 		2143FA351B06BC03009AF434 /* BlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA341B06BC03009AF434 /* BlockController.swift */; };
+		216703EF1B3F4506003AE4EA /* Octomino WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		216703F21B3F4506003AE4EA /* Octomino WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */; };
 		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
 		219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4441AD0DB8500045DF2 /* MainViewController.swift */; };
 		219EE4481AD0DB8500045DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219EE4461AD0DB8500045DF2 /* Main.storyboard */; };
@@ -24,14 +26,26 @@
 		21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A250BB1AD5FBB400B1E8DD /* FormationCell.swift */; };
 		21A860481B039F7E006ED4D3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A860471B039F7E006ED4D3 /* InterfaceController.swift */; };
 		21A8604A1B039F7E006ED4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A860491B039F7E006ED4D3 /* Images.xcassets */; };
-		21A8604E1B039F7E006ED4D3 /* Octomino WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */; };
 		21A860561B039F7E006ED4D3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A860541B039F7E006ED4D3 /* Interface.storyboard */; };
 		21A860581B039F7E006ED4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A860571B039F7E006ED4D3 /* Images.xcassets */; };
-		21A8605B1B039F7E006ED4D3 /* Octomino WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		21A860661B03A552006ED4D3 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		216703ED1B3F4506003AE4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 219EE4351AD0DB8500045DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21A860421B039F7E006ED4D3;
+			remoteInfo = "Octomino WatchKit Extension";
+		};
+		216703F01B3F4506003AE4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 219EE4351AD0DB8500045DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21A8604C1B039F7E006ED4D3;
+			remoteInfo = "Octomino WatchKit App";
+		};
 		219EE4531AD0DB8600045DF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 219EE4351AD0DB8500045DF2 /* Project object */;
@@ -39,32 +53,29 @@
 			remoteGlobalIDString = 219EE43C1AD0DB8500045DF2;
 			remoteInfo = Octomino;
 		};
-		21A8604F1B039F7E006ED4D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 219EE4351AD0DB8500045DF2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21A8604C1B039F7E006ED4D3;
-			remoteInfo = "Octomino WatchKit App";
-		};
-		21A860591B039F7E006ED4D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 219EE4351AD0DB8500045DF2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21A860421B039F7E006ED4D3;
-			remoteInfo = "Octomino WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		21A860621B039F7F006ED4D3 /* Embed App Extensions */ = {
+		216703F31B3F4506003AE4EA /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				21A8605B1B039F7E006ED4D3 /* Octomino WatchKit Extension.appex in Embed App Extensions */,
+				216703EF1B3F4506003AE4EA /* Octomino WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216703F41B3F4506003AE4EA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				216703F21B3F4506003AE4EA /* Octomino WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -239,12 +250,12 @@
 				219EE4391AD0DB8500045DF2 /* Sources */,
 				219EE43A1AD0DB8500045DF2 /* Frameworks */,
 				219EE43B1AD0DB8500045DF2 /* Resources */,
-				21A860621B039F7F006ED4D3 /* Embed App Extensions */,
+				216703F41B3F4506003AE4EA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				21A8605A1B039F7E006ED4D3 /* PBXTargetDependency */,
+				216703F11B3F4506003AE4EA /* PBXTargetDependency */,
 			);
 			name = Octomino;
 			productName = Octomino;
@@ -280,27 +291,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				21A860501B039F7E006ED4D3 /* PBXTargetDependency */,
 			);
 			name = "Octomino WatchKit Extension";
 			productName = "Octomino WatchKit Extension";
 			productReference = 21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		21A8604C1B039F7E006ED4D3 /* Octomino WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21A860601B039F7F006ED4D3 /* Build configuration list for PBXNativeTarget "Octomino WatchKit App" */;
 			buildPhases = (
 				21A8604B1B039F7E006ED4D3 /* Resources */,
+				216703F31B3F4506003AE4EA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				216703EE1B3F4506003AE4EA /* PBXTargetDependency */,
 			);
 			name = "Octomino WatchKit App";
 			productName = "Octomino WatchKit App";
 			productReference = 21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -309,7 +321,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Head Down Development";
 				TargetAttributes = {
 					219EE43C1AD0DB8500045DF2 = {
@@ -376,7 +388,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A8604E1B039F7E006ED4D3 /* Octomino WatchKit App.app in Resources */,
 				21A8604A1B039F7E006ED4D3 /* Images.xcassets in Resources */,
 				21A860661B03A552006ED4D3 /* Formations.plist in Resources */,
 			);
@@ -428,20 +439,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		216703EE1B3F4506003AE4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21A860421B039F7E006ED4D3 /* Octomino WatchKit Extension */;
+			targetProxy = 216703ED1B3F4506003AE4EA /* PBXContainerItemProxy */;
+		};
+		216703F11B3F4506003AE4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21A8604C1B039F7E006ED4D3 /* Octomino WatchKit App */;
+			targetProxy = 216703F01B3F4506003AE4EA /* PBXContainerItemProxy */;
+		};
 		219EE4541AD0DB8600045DF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 219EE43C1AD0DB8500045DF2 /* Octomino */;
 			targetProxy = 219EE4531AD0DB8600045DF2 /* PBXContainerItemProxy */;
-		};
-		21A860501B039F7E006ED4D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21A8604C1B039F7E006ED4D3 /* Octomino WatchKit App */;
-			targetProxy = 21A8604F1B039F7E006ED4D3 /* PBXContainerItemProxy */;
-		};
-		21A8605A1B039F7E006ED4D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21A860421B039F7E006ED4D3 /* Octomino WatchKit Extension */;
-			targetProxy = 21A860591B039F7E006ED4D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -493,6 +504,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -559,6 +571,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Octomino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -570,6 +583,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Octomino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -588,6 +602,7 @@
 				);
 				INFOPLIST_FILE = OctominoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
 			};
@@ -603,6 +618,7 @@
 				);
 				INFOPLIST_FILE = OctominoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
 			};
@@ -621,8 +637,12 @@
 				INFOPLIST_FILE = "Octomino WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sepcot.Octomino.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -635,8 +655,12 @@
 				INFOPLIST_FILE = "Octomino WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sepcot.Octomino.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -646,6 +670,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -653,11 +678,12 @@
 				);
 				IBSC_MODULE = Octomino_WatchKit_Extension;
 				INFOPLIST_FILE = "Octomino WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sepcot.Octomino.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -667,14 +693,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IBSC_MODULE = Octomino_WatchKit_Extension;
 				INFOPLIST_FILE = "Octomino WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sepcot.Octomino.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
