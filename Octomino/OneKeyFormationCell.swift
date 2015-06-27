@@ -55,7 +55,7 @@ class OneKeyFormationCell: FormationCell {
             self.formationCoachNotes.contentOffset = CGPointZero
         }
 
-        if let position = dictionary["KeyPosition"] {
+        if let _ = dictionary["KeyPosition"] {
             self.keyImageView.hidden = false
             self.formationKeyPosition.hidden = false
             self.formationKeyDescription.hidden = false
