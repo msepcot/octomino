@@ -67,16 +67,7 @@ class OneKeyFormationCell: FormationCell {
     }
 
     @IBAction func buildButtonPressed(sender: AnyObject) {
-        let hidden = !cardFront.hidden
-
-        UIView.beginAnimations("cardFlip", context: nil)
-        UIView.setAnimationDuration(0.8)
-        UIView.setAnimationTransition(hidden ? .FlipFromRight : .FlipFromLeft, forView: self, cache: true)
-
-        cardFront.hidden = hidden
-        cardBack.hidden  = !hidden
-
-        UIView.commitAnimations()
+        flipViews(front: cardFront, back: cardBack)
     }
 
 }
