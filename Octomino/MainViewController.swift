@@ -8,8 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,
-    UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var formationPageControl: UIPageControl!
@@ -28,42 +27,41 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
 
-        self.formationPageControl.addTarget(self, action: "pageChanged:", forControlEvents: .ValueChanged)
-        self.randomOrBlockControl.addTarget(self, action: "segmentChanged:", forControlEvents: .ValueChanged)
+        formationPageControl.addTarget(self, action: "pageChanged:",    forControlEvents: .ValueChanged)
+        randomOrBlockControl.addTarget(self, action: "segmentChanged:", forControlEvents: .ValueChanged)
 
         let oneKeyNib = UINib(nibName: "OneKeyFormationCell", bundle: nil)
-        self.collectionView.registerNib(oneKeyNib,
+        collectionView.registerNib(oneKeyNib,
             forCellWithReuseIdentifier: "OneKeyFormationCell-Identifier")
 
         let twoKeyNib = UINib(nibName: "TwoKeyFormationCell", bundle: nil)
-        self.collectionView.registerNib(twoKeyNib,
+        collectionView.registerNib(twoKeyNib,
             forCellWithReuseIdentifier: "TwoKeyFormationCell-Identifier")
 
         let notesNib = UINib(nibName: "NotesCell", bundle: nil)
-        self.collectionView.registerNib(notesNib,
+        collectionView.registerNib(notesNib,
             forCellWithReuseIdentifier: "NotesCell-Identifier")
 
-        let path = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist")
-        if let path = path {
-            if let formations = NSDictionary(contentsOfFile: path) {
-                self.randoms = formations["Randoms"] as! [[String: String]]
-                self.blocks  = formations["Blocks"]  as! [[String: String]]
-            }
+        if  let path = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist"),
+            let formations = NSDictionary(contentsOfFile: path)
+        {
+            randoms = formations["Randoms"] as! [[String: String]]
+            blocks  = formations["Blocks"]  as! [[String: String]]
         }
 
-        self.formationPageControl.numberOfPages = self.randoms.count
-        self.formationPageControl.currentPage   = 0
+        formationPageControl.numberOfPages = randoms.count
+        formationPageControl.currentPage   = 0
     }
 
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
 
-        if self.firstLoad {
-            self.collectionView.contentOffset = CGPoint(x: self.collectionView.bounds.width, y: 0)
-            self.firstLoad = false
+        if firstLoad {
+            collectionView.contentOffset = CGPoint(x: collectionView.bounds.width, y: 0)
+            firstLoad = false
         }
     }
 
@@ -72,7 +70,49 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         // Dispose of any resources that can be recreated.
     }
 
-// MARK: - UICollectionViewDelegate methods
+    // MARK: - UIPageControl notification
+
+    func pageChanged(pageControl: UIPageControl) {
+        let page = pageControl.currentPage
+        let pageWidth = Int(collectionView.bounds.width)
+
+        if randomOrBlockControl.selectedSegmentIndex == 0 {
+            // Randoms - skip the first page in the collectionView
+            collectionView.contentOffset = CGPoint(x: pageWidth * (page + 1), y: 0)
+            randomIndex = page
+        } else {
+            // Blocks - skip over the randoms
+            let collectionViewPage = page + randoms.count + 1
+            collectionView.contentOffset = CGPoint(x: pageWidth * collectionViewPage, y: 0)
+            blockIndex = page
+        }
+    }
+
+    // MARK: - UISegmentedControl notification
+
+    func segmentChanged(segmentedControl: UISegmentedControl) {
+        let pageWidth = Int(collectionView.bounds.width)
+
+        if segmentedControl.selectedSegmentIndex == 0 {
+            collectionView.contentOffset = CGPoint(x: pageWidth * (randomIndex + 1), y: 0)
+            formationPageControl.numberOfPages = randoms.count
+            formationPageControl.currentPage = randomIndex
+        } else {
+            collectionView.contentOffset = CGPoint(x: pageWidth * (randoms.count + blockIndex + 1), y: 0)
+            formationPageControl.numberOfPages = blocks.count
+            formationPageControl.currentPage = blockIndex
+        }
+    }
+
+}
+
+// MARK: - UICollectionViewDataSource
+
+extension MainViewController: UICollectionViewDataSource {}
+
+// MARK: - UICollectionViewDelegate
+
+extension MainViewController: UICollectionViewDelegate {
 
     func collectionView(collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int
@@ -83,45 +123,37 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(collectionView: UICollectionView,
         cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
-        var cell: FormationCell
-        var klass: String?
-        var formation: [String: String]?
+        let formation: [String: String]!
 
         if indexPath.row == 0 {
-            formation = self.blocks.last
-            if let formation = formation {
-                klass = formation["Class"]
-            }
-        } else if indexPath.row == (self.randoms.count + self.blocks.count + 1) {
-            formation = self.randoms.first
-            if let formation = formation {
-                klass = formation["Class"]
-            }
-        } else if indexPath.row <= self.randoms.count {
-            formation = self.randoms[indexPath.row - 1]
-            if let formation = formation {
-                klass = formation["Class"]
-            }
+            formation = blocks.last
+        } else if indexPath.row == (randoms.count + blocks.count + 1) {
+            formation = randoms.first
+        } else if indexPath.row <= randoms.count {
+            formation = randoms[indexPath.row - 1]
         } else {
-            formation = self.blocks[indexPath.row - self.randoms.count - 1]
-            if let formation = formation {
-                klass = formation["Class"]
-            }
+            formation = blocks[indexPath.row - randoms.count - 1]
         }
 
-        cell = collectionView.dequeueReusableCellWithReuseIdentifier(klass! + "-Identifier", forIndexPath: indexPath) as! FormationCell
-        cell.populateCell(formation!)
+        let reuseIdentifier = "\(formation["Class"]!)-Identifier"
+
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! FormationCell
+        cell.populateCell(formation)
 
         return cell
     }
 
-// MARK: - UICollectionViewDelegateFlowLayout methods
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
-        return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
+        return collectionView.bounds.size
     }
 
     func collectionView(collectionView: UICollectionView,
@@ -131,7 +163,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         return 0
     }
 
-// MARK: - UIScrollViewDelegate methods
+}
+
+// MARK: - UIScrollViewDelegate
+
+extension MainViewController: UIScrollViewDelegate {
 
     func adjustPaging(scrollView: UIScrollView) {
         let pageWidth = scrollView.bounds.width
@@ -140,71 +176,37 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
 
         if page == 0 {
             scrollView.contentOffset = CGPoint(x: contentWidth - pageWidth * 2, y: 0)
-            self.randomOrBlockControl.selectedSegmentIndex = 1
-            self.formationPageControl.numberOfPages = self.blocks.count
-            self.formationPageControl.currentPage = self.blocks.count - 1
-        } else if page == (self.randoms.count + self.blocks.count + 1) {
+            randomOrBlockControl.selectedSegmentIndex = 1
+            formationPageControl.numberOfPages = blocks.count
+            formationPageControl.currentPage = blocks.count - 1
+        } else if page == (randoms.count + blocks.count + 1) {
             scrollView.contentOffset = CGPoint(x: pageWidth, y: 0)
-            self.randomOrBlockControl.selectedSegmentIndex = 0
-            self.formationPageControl.numberOfPages = self.randoms.count
-            self.formationPageControl.currentPage = 0
-        } else if page < self.randoms.count + 1 {
-            self.randomOrBlockControl.selectedSegmentIndex = 0
-            self.formationPageControl.numberOfPages = self.randoms.count
-            self.formationPageControl.currentPage = page - 1
+            randomOrBlockControl.selectedSegmentIndex = 0
+            formationPageControl.numberOfPages = randoms.count
+            formationPageControl.currentPage = 0
+        } else if page < randoms.count + 1 {
+            randomOrBlockControl.selectedSegmentIndex = 0
+            formationPageControl.numberOfPages = randoms.count
+            formationPageControl.currentPage = page - 1
         } else {
-            self.randomOrBlockControl.selectedSegmentIndex = 1
-            self.formationPageControl.numberOfPages = self.blocks.count
-            self.formationPageControl.currentPage = page - self.randoms.count - 1
+            randomOrBlockControl.selectedSegmentIndex = 1
+            formationPageControl.numberOfPages = blocks.count
+            formationPageControl.currentPage = page - randoms.count - 1
         }
 
-        if self.randomOrBlockControl.selectedSegmentIndex == 0 {
-            self.randomIndex = self.formationPageControl.currentPage
+        if randomOrBlockControl.selectedSegmentIndex == 0 {
+            randomIndex = formationPageControl.currentPage
         } else {
-            self.blockIndex = self.formationPageControl.currentPage
+            blockIndex = formationPageControl.currentPage
         }
     }
 
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        self.adjustPaging(scrollView)
+        adjustPaging(scrollView)
     }
 
     func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
-        self.adjustPaging(scrollView)
-    }
-
-// MARK: - UIPageControl notification
-
-    func pageChanged(pageControl: UIPageControl) {
-        let page = pageControl.currentPage
-        let pageWidth = Int(self.collectionView.bounds.width)
-
-        if self.randomOrBlockControl.selectedSegmentIndex == 0 {
-            // Randoms - skip the first page in the collectionView
-            self.collectionView.contentOffset = CGPoint(x: pageWidth * (page + 1), y: 0)
-            self.randomIndex = page
-        } else {
-            // Blocks - skip over the randoms
-            let collectionViewPage = page + self.randoms.count + 1
-            self.collectionView.contentOffset = CGPoint(x: pageWidth * collectionViewPage, y: 0)
-            self.blockIndex = page
-        }
-    }
-
-// MARK: - UISegmentedControl notification
-
-    func segmentChanged(segmentedControl: UISegmentedControl) {
-        let pageWidth = Int(self.collectionView.bounds.width)
-
-        if segmentedControl.selectedSegmentIndex == 0 {
-            self.collectionView.contentOffset = CGPoint(x: pageWidth * (self.randomIndex + 1), y: 0)
-            self.formationPageControl.numberOfPages = self.randoms.count
-            self.formationPageControl.currentPage = self.randomIndex
-        } else {
-            self.collectionView.contentOffset = CGPoint(x: pageWidth * (self.randoms.count + self.blockIndex + 1), y: 0)
-            self.formationPageControl.numberOfPages = self.blocks.count
-            self.formationPageControl.currentPage = self.blockIndex
-        }
+        adjustPaging(scrollView)
     }
 
 }

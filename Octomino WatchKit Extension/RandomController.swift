@@ -9,7 +9,6 @@
 import WatchKit
 import Foundation
 
-
 class RandomController: WKInterfaceController {
 
     @IBOutlet weak var formationImage: WKInterfaceImage!
@@ -17,34 +16,22 @@ class RandomController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+
+        guard let config = context as? [String: Int], let index = config["index"] else { return }
+
         // Configure interface objects here.
-        let config = context as! [String : Int]
-        let index = config["index"]
 
-        let path = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist")
-        if let index = index, let path = path {
-            if let formations = NSDictionary(contentsOfFile: path) {
-                if let randoms = formations["Randoms"] as? [[String : String]] {
-                    let formation = randoms[index]
+        if  let path        = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist"),
+            let formations  = NSDictionary(contentsOfFile: path),
+            let randoms     = formations["Randoms"] as? [[String : String]]
+        {
+            let formation = randoms[index]
 
-                    self.setTitle(formation["Identifier"]! + ": " + formation["Name"]!)
+            setTitle("\(formation["Identifier"]!): \(formation["Name"]!)")
 
-                    self.formationImage.setImageNamed(formation["Identifier"])
-                    self.formationName.setText(formation["Name"])
-                }
-            }
+            formationImage.setImageNamed(formation["Identifier"])
+            formationName.setText(formation["Name"])
         }
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
     }
 
 }

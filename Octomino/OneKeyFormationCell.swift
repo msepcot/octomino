@@ -33,48 +33,48 @@ class OneKeyFormationCell: FormationCell {
     override func prepareForReuse() {
         super.prepareForReuse()
 
-        self.cardFront.hidden = false
-        self.cardBack.hidden  = true
+        cardFront.hidden = false
+        cardBack.hidden  = true
     }
 
     override func populateCell(dictionary: [String: String]) {
-        self.formationIdentifier.text     = dictionary["Identifier"]
-        self.formationImageView.image     = UIImage(named: dictionary["Identifier"]!)
-        self.formationName.text           = dictionary["Name"]
-        self.formationKeyPosition.text    = dictionary["KeyPosition"]
-        self.formationKeyDescription.text = dictionary["KeyDescription"]
+        formationIdentifier.text     = dictionary["Identifier"]
+        formationImageView.image     = UIImage(named: dictionary["Identifier"]!)
+        formationName.text           = dictionary["Name"]
+        formationKeyPosition.text    = dictionary["KeyPosition"]
+        formationKeyDescription.text = dictionary["KeyDescription"]
 
-        self.formationIdentifierBack.text = dictionary["Identifier"]
-        self.formationNameBack.text       = dictionary["Name"]
-        self.formationCoachNotes.text     = dictionary["CoachNotes"]
+        formationIdentifierBack.text = dictionary["Identifier"]
+        formationNameBack.text       = dictionary["Name"]
+        formationCoachNotes.text     = dictionary["CoachNotes"]
 
-        if self.formationCoachNotes.text.isEmpty {
-            self.formationBuildButton.hidden = true
+        if formationCoachNotes.text.isEmpty {
+            formationBuildButton.hidden = true
         } else {
-            self.formationBuildButton.hidden = false
-            self.formationCoachNotes.contentOffset = CGPointZero
+            formationBuildButton.hidden = false
+            formationCoachNotes.contentOffset = CGPointZero
         }
 
         if let _ = dictionary["KeyPosition"] {
-            self.keyImageView.hidden = false
-            self.formationKeyPosition.hidden = false
-            self.formationKeyDescription.hidden = false
+            keyImageView.hidden = false
+            formationKeyPosition.hidden = false
+            formationKeyDescription.hidden = false
         } else {
-            self.keyImageView.hidden = true
-            self.formationKeyPosition.hidden = true
-            self.formationKeyDescription.hidden = true
+            keyImageView.hidden = true
+            formationKeyPosition.hidden = true
+            formationKeyDescription.hidden = true
         }
     }
 
     @IBAction func buildButtonPressed(sender: AnyObject) {
-        let hidden = !self.cardFront.hidden
+        let hidden = !cardFront.hidden
 
         UIView.beginAnimations("cardFlip", context: nil)
         UIView.setAnimationDuration(0.8)
         UIView.setAnimationTransition(hidden ? .FlipFromRight : .FlipFromLeft, forView: self, cache: true)
 
-        self.cardFront.hidden = hidden
-        self.cardBack.hidden  = !hidden
+        cardFront.hidden = hidden
+        cardBack.hidden  = !hidden
 
         UIView.commitAnimations()
     }

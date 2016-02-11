@@ -19,36 +19,24 @@ class BlockController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+
+        guard let config = context as? [String: Int], let index = config["index"] else { return }
+
         // Configure interface objects here.
-        let config = context as! [String : Int]
-        let index = config["index"]
 
-        let path = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist")
-        if let index = index, let path = path {
-            if let formations = NSDictionary(contentsOfFile: path) {
-                if let blocks = formations["Blocks"] as? [[String : String]] {
-                    let formation = blocks[index]
+        if  let path        = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist"),
+            let formations  = NSDictionary(contentsOfFile: path),
+            let blocks      = formations["Blocks"] as? [[String : String]]
+        {
+            let formation = blocks[index]
 
-                    self.setTitle(formation["Identifier"]! + ": " + formation["Name"]!)
+            setTitle("\(formation["Identifier"]!): \(formation["Name"]!)")
 
-                    self.formationImageTop.setImageNamed(formation["Identifier"]! + "a")
-                    self.formationImageInter.setImageNamed(formation["Identifier"]! + "b")
-                    self.formationImageBottom.setImageNamed(formation["Identifier"]! + "c")
-                    self.formationName.setText(formation["Name"])
-                }
-            }
+            formationImageTop.setImageNamed("\(formation["Identifier"]!)a")
+            formationImageInter.setImageNamed("\(formation["Identifier"]!)b")
+            formationImageBottom.setImageNamed("\(formation["Identifier"]!)c")
+            formationName.setText(formation["Name"])
         }
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
     }
 
 }

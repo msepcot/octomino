@@ -15,7 +15,7 @@ class InfoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let tap = UITapGestureRecognizer(target: self, action: "dismiss")
-        self.view.addGestureRecognizer(tap)
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +26,7 @@ class InfoViewController: UIViewController {
 // MARK: - UITapGestureRecognizer
 
     func dismiss() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 }
