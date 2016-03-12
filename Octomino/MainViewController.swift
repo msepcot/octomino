@@ -107,7 +107,7 @@ class MainViewController: UIViewController {
 
     func segmentReselected(segmentedControl: UISegmentedControl) {
         if segmentedControl.selectedSegmentIndex == 0 {
-            randomIndex = 0
+            randomIndex = 1
         } else {
             blockIndex = 0
         }
