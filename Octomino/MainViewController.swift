@@ -32,6 +32,7 @@ class MainViewController: UIViewController {
 
         formationPageControl.addTarget(self, action: "pageChanged:",    forControlEvents: .ValueChanged)
         randomOrBlockControl.addTarget(self, action: "segmentChanged:", forControlEvents: .ValueChanged)
+        randomOrBlockControl.addTarget(self, action: "segmentReselected:", forControlEvents: .Reselected)
 
         let oneKeyNib = UINib(nibName: "OneKeyFormationCell", bundle: nil)
         collectionView.registerNib(oneKeyNib,
@@ -102,6 +103,16 @@ class MainViewController: UIViewController {
             formationPageControl.numberOfPages = blocks.count
             formationPageControl.currentPage = blockIndex
         }
+    }
+
+    func segmentReselected(segmentedControl: UISegmentedControl) {
+        if segmentedControl.selectedSegmentIndex == 0 {
+            randomIndex = 0
+        } else {
+            blockIndex = 0
+        }
+
+        segmentChanged(segmentedControl)
     }
 
 }
