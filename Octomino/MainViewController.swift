@@ -30,9 +30,9 @@ class MainViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        formationPageControl.addTarget(self, action: "pageChanged:",    forControlEvents: .ValueChanged)
-        randomOrBlockControl.addTarget(self, action: "segmentChanged:", forControlEvents: .ValueChanged)
-        randomOrBlockControl.addTarget(self, action: "segmentReselected:", forControlEvents: .Reselected)
+        formationPageControl.addTarget(self, action: #selector(MainViewController.pageChanged(_:)), forControlEvents: .ValueChanged)
+        randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentChanged(_:)), forControlEvents: .ValueChanged)
+        randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentReselected(_:)), forControlEvents: .Reselected)
 
         let oneKeyNib = UINib(nibName: "OneKeyFormationCell", bundle: nil)
         collectionView.registerNib(oneKeyNib,
