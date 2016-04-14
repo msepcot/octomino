@@ -14,7 +14,7 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let tap = UITapGestureRecognizer(target: self, action: "dismiss")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(InfoViewController.dismiss))
         view.addGestureRecognizer(tap)
     }
 
