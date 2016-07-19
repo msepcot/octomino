@@ -22,12 +22,12 @@ class OneKeyFormationCell: FormationCell {
     @IBOutlet weak var cardBack: UIView!
     @IBOutlet weak var formationIdentifierBack: UILabel!
     @IBOutlet weak var formationNameBack: UILabel!
+    @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var formationCoachNotes: UITextView!
     @IBOutlet weak var formationBackButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func prepareForReuse() {
@@ -70,4 +70,19 @@ class OneKeyFormationCell: FormationCell {
         flipViews(front: cardFront, back: cardBack)
     }
 
+    @IBAction func editButtonTapped(sender: UIButton) {
+        let editable = !formationCoachNotes.editable
+        formationCoachNotes.editable = editable
+
+        if editable {
+            sender.setTitle("Done", forState: .Normal)
+            formationCoachNotes.becomeFirstResponder()
+            // TODO save data
+        } else {
+            sender.setTitle("Edit", forState: .Normal)
+            formationCoachNotes.resignFirstResponder()
+        }
+    }
+
 }
+

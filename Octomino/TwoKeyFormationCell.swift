@@ -23,6 +23,7 @@ class TwoKeyFormationCell: FormationCell {
     @IBOutlet weak var cardBack: UIView!
     @IBOutlet weak var formationIdentifierBack: UILabel!
     @IBOutlet weak var formationNameBack: UILabel!
+    @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var formationCoachNotes: UITextView!
     @IBOutlet weak var formationBackButton: UIButton!
 
@@ -61,6 +62,20 @@ class TwoKeyFormationCell: FormationCell {
 
     @IBAction func buildButtonPressed(sender: AnyObject) {
         flipViews(front: cardFront, back: cardBack)
+    }
+
+    @IBAction func editButtonTapped(sender: UIButton) {
+        let editable = !formationCoachNotes.editable
+        formationCoachNotes.editable = editable
+
+        if editable {
+            sender.setTitle("Done", forState: .Normal)
+            formationCoachNotes.becomeFirstResponder()
+            // TODO save data
+        } else {
+            sender.setTitle("Edit", forState: .Normal)
+            formationCoachNotes.resignFirstResponder()
+        }
     }
 
 }
