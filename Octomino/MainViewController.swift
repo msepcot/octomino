@@ -30,23 +30,23 @@ class MainViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        formationPageControl.addTarget(self, action: #selector(MainViewController.pageChanged(_:)), forControlEvents: .ValueChanged)
-        randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentChanged(_:)), forControlEvents: .ValueChanged)
-        randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentReselected(_:)), forControlEvents: .Reselected)
+        formationPageControl.addTarget(self, action: #selector(MainViewController.pageChanged(_:)), for: .valueChanged)
+        randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentChanged(_:)), for: .valueChanged)
+        randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentReselected(_:)), for: .reselected)
 
         let oneKeyNib = UINib(nibName: "OneKeyFormationCell", bundle: nil)
-        collectionView.registerNib(oneKeyNib,
+        collectionView.register(oneKeyNib,
             forCellWithReuseIdentifier: "OneKeyFormationCell-Identifier")
 
         let twoKeyNib = UINib(nibName: "TwoKeyFormationCell", bundle: nil)
-        collectionView.registerNib(twoKeyNib,
+        collectionView.register(twoKeyNib,
             forCellWithReuseIdentifier: "TwoKeyFormationCell-Identifier")
 
         let notesNib = UINib(nibName: "NotesCell", bundle: nil)
-        collectionView.registerNib(notesNib,
+        collectionView.register(notesNib,
             forCellWithReuseIdentifier: "NotesCell-Identifier")
 
-        if  let path = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist"),
+        if  let path = Bundle.main.path(forResource: "Formations", ofType: "plist"),
             let formations = NSDictionary(contentsOfFile: path)
         {
             randoms = formations["Randoms"] as! [[String: String]]
@@ -73,7 +73,7 @@ class MainViewController: UIViewController {
 
     // MARK: - UIPageControl notification
 
-    func pageChanged(pageControl: UIPageControl) {
+    func pageChanged(_ pageControl: UIPageControl) {
         let page = pageControl.currentPage
         let pageWidth = Int(collectionView.bounds.width)
 
@@ -91,7 +91,7 @@ class MainViewController: UIViewController {
 
     // MARK: - UISegmentedControl notification
 
-    func segmentChanged(segmentedControl: UISegmentedControl) {
+    func segmentChanged(_ segmentedControl: UISegmentedControl) {
         let pageWidth = Int(collectionView.bounds.width)
 
         if segmentedControl.selectedSegmentIndex == 0 {
@@ -105,7 +105,7 @@ class MainViewController: UIViewController {
         }
     }
 
-    func segmentReselected(segmentedControl: UISegmentedControl) {
+    func segmentReselected(_ segmentedControl: UISegmentedControl) {
         if segmentedControl.selectedSegmentIndex == 0 {
             randomIndex = 1
         } else {
@@ -125,15 +125,11 @@ extension MainViewController: UICollectionViewDataSource {}
 
 extension MainViewController: UICollectionViewDelegate {
 
-    func collectionView(collectionView: UICollectionView,
-        numberOfItemsInSection section: Int) -> Int
-    {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return randoms.count + blocks.count + 2 // add two for copy of first and last formation
     }
 
-    func collectionView(collectionView: UICollectionView,
-        cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
-    {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let formation: [String: String]!
 
         if indexPath.row == 0 {
@@ -148,8 +144,8 @@ extension MainViewController: UICollectionViewDelegate {
 
         let reuseIdentifier = "\(formation["Class"]!)-Identifier"
 
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! FormationCell
-        cell.populateCell(formation)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FormationCell
+        cell.populateCell(dictionary: formation)
 
         return cell
     }
@@ -160,16 +156,16 @@ extension MainViewController: UICollectionViewDelegate {
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
 
-    func collectionView(collectionView: UICollectionView,
+    func collectionView(_ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+        sizeForItemAt indexPath: IndexPath) -> CGSize
     {
         return collectionView.bounds.size
     }
 
-    func collectionView(collectionView: UICollectionView,
+    func collectionView(_ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
-        minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat
+        minimumLineSpacingForSectionAt section: Int) -> CGFloat
     {
         return 0
     }
@@ -212,12 +208,12 @@ extension MainViewController: UIScrollViewDelegate {
         }
     }
 
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        adjustPaging(scrollView)
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        adjustPaging(scrollView: scrollView)
     }
 
-    func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
-        adjustPaging(scrollView)
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        adjustPaging(scrollView: scrollView)
     }
 
 }

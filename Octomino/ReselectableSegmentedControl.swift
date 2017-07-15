@@ -10,22 +10,22 @@
 import UIKit
 
 extension UIControlEvents {
-    static let Reselected = UIControlEvents(rawValue: 1 << 28)
+    static let reselected = UIControlEvents(rawValue: 1 << 28)
 }
 
-let Reselected = UIControlEvents(rawValue: 1 << 28)
+let reselected = UIControlEvents(rawValue: 1 << 28)
 
 class ReselectableSegmentedControl: UISegmentedControl {
     @IBInspectable var allowReselection: Bool = true
 
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         let previousSelectedSegmentIndex = self.selectedSegmentIndex
 
-        super.touchesEnded(touches, withEvent: event)
+        super.touchesEnded(touches, with: event)
 
         if allowReselection && previousSelectedSegmentIndex == self.selectedSegmentIndex {
-            if let touch = touches.first where CGRectContainsPoint(bounds, touch.locationInView(self)) {
-                self.sendActionsForControlEvents(.Reselected)
+            if let touch = touches.first, bounds.contains(touch.location(in: self)) {
+                self.sendActions(for: .reselected)
             }
         }
     }

@@ -17,14 +17,14 @@ class BlockController: WKInterfaceController {
     @IBOutlet weak var formationImageBottom: WKInterfaceImage!
     @IBOutlet weak var formationName: WKInterfaceLabel!
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
 
         guard let config = context as? [String: Int], let index = config["index"] else { return }
 
         // Configure interface objects here.
 
-        if  let path        = NSBundle.mainBundle().pathForResource("Formations", ofType: "plist"),
+        if  let path        = Bundle.main.path(forResource: "Formations", ofType: "plist"),
             let formations  = NSDictionary(contentsOfFile: path),
             let blocks      = formations["Blocks"] as? [[String : String]]
         {

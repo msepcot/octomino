@@ -14,7 +14,7 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let tap = UITapGestureRecognizer(target: self, action: #selector(InfoViewController.dismiss))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(InfoViewController.hide))
         view.addGestureRecognizer(tap)
     }
 
@@ -25,8 +25,8 @@ class InfoViewController: UIViewController {
 
 // MARK: - UITapGestureRecognizer
 
-    func dismiss() {
-        dismissViewControllerAnimated(true, completion: nil)
+    func hide() {
+        dismiss(animated: true, completion: nil)
     }
 
 }
