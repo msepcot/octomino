@@ -59,7 +59,7 @@ class TwoKeyFormationCell: FormationCell {
         }
     }
 
-    @IBAction func buildButtonPressed(sender: AnyObject) {
+    @IBAction func buildButtonPressed(_ sender: AnyObject) {
         flipViews(front: cardFront, back: cardBack)
     }
 
