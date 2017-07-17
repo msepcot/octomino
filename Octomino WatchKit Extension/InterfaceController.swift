@@ -12,8 +12,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    func pushRandom(index: Int) {
-        pushControllerWithName("Random", context: [ "index" : index ])
+    func pushRandom(_ index: Int) {
+        pushController(withName: "Random", context: [ "index" : index ])
     }
 
     @IBAction func buttonTapX() { pushRandom(0)  }
@@ -34,8 +34,8 @@ class InterfaceController: WKInterfaceController {
     @IBAction func buttonTapP() { pushRandom(15) }
     @IBAction func buttonTapQ() { pushRandom(16) }
 
-    func pushBlock(index: Int) {
-        pushControllerWithName("Block", context: [ "index" : index ])
+    func pushBlock(_ index: Int) {
+        pushController(withName: "Block", context: [ "index" : index ])
     }
 
     @IBAction func buttonTap1()  { pushBlock(0)  }

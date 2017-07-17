@@ -265,6 +265,20 @@ On the key, flakers reference across and squeeze in to build the donut. See the 
 			<key>Class</key>
 			<string>OneKeyFormationCell</string>
 			<key>Identifier</key>
+			<string>2</string>
+			<key>Name</key>
+			<string>Swiss Bear - Swiss Bear</string>
+			<key>KeyPosition</key>
+			<string>TBD</string>
+			<key>KeyDescription</key>
+			<string>TBD</string>
+			<key>CoachNotes</key>
+			<string>TBD</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
 			<string>3</string>
 			<key>Name</key>
 			<string>Double Chinese Tees - Double Donuts</string>
@@ -369,6 +383,20 @@ Solo Flyers: step forward, turn left 270, watch donuts rotate, keeping an eye on
 			<key>Class</key>
 			<string>OneKeyFormationCell</string>
 			<key>Identifier</key>
+			<string>9</string>
+			<key>Name</key>
+			<string>Taj - Mahal</string>
+			<key>KeyPosition</key>
+			<string>TBD</string>
+			<key>KeyDescription</key>
+			<string>TBD</string>
+			<key>CoachNotes</key>
+			<string>TBD</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
 			<string>10</string>
 			<key>Name</key>
 			<string>Donut - Donut</string>
@@ -380,6 +408,34 @@ Solo Flyers: step forward, turn left 270, watch donuts rotate, keeping an eye on
 			<string>Build across from your clone. Set up in a star picture, then everyone turns left, ending up parallel with your clone.
 
 On key, everyone turns 450 degrees to an infacing star picture, then continues the turn together to close the donut.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>11</string>
+			<key>Name</key>
+			<string>Norwegian Box - Norwegian Donut</string>
+			<key>KeyPosition</key>
+			<string>TBD</string>
+			<key>KeyDescription</key>
+			<string>TBD</string>
+			<key>CoachNotes</key>
+			<string>TBD</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>12</string>
+			<key>Name</key>
+			<string>Stereo Bipole - Stereo Bipole</string>
+			<key>KeyPosition</key>
+			<string>TBD</string>
+			<key>KeyDescription</key>
+			<string>TBD</string>
+			<key>CoachNotes</key>
+			<string>TBD</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -412,6 +468,20 @@ On key, front of cats make a small step toward solo flyers. Fronts should priori
 			<string>Build double high grips with piece partner, low grips otherwise. Keep the build open enough to give room for the move. Build parallel with your side of the accordion and straight along the grip line. 
 
 The block move is a 1-2 staged move with P/IF and OC/IR going over and IC/OF and T/OR going under. Center pieces lead, rotate the piece 180 degrees and stop. Time the second rotation together. Centers see that outsides are done with the first move before continuing to the second move. The second move is less than 180 degrees to build a stairstep along the same line as the original accordion. Build the center stairstep first. Outsides follow the timing on 1 and 2 moves, see the centers start before you go, and watch through the center to guarantee the piece stays on the correct side of the formation.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>15</string>
+			<key>Name</key>
+			<string>Opal and Zipper - Zipper and Opal</string>
+			<key>KeyPosition</key>
+			<string>TBD</string>
+			<key>KeyDescription</key>
+			<string>TBD</string>
+			<key>CoachNotes</key>
+			<string>TBD</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -487,6 +557,20 @@ On key, heads of diamond step out SMALL at 45, look long over left shoulder, squ
 			<key>Class</key>
 			<string>OneKeyFormationCell</string>
 			<key>Identifier</key>
+			<string>20</string>
+			<key>Name</key>
+			<string>Cat Diamond - Cat Accordian</string>
+			<key>KeyPosition</key>
+			<string>TBD</string>
+			<key>KeyDescription</key>
+			<string>TBD</string>
+			<key>CoachNotes</key>
+			<string>TBD</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
 			<string>21</string>
 			<key>Name</key>
 			<string>Stereopod - Stereopod</string>
@@ -500,6 +584,20 @@ On key, heads of diamond step out SMALL at 45, look long over left shoulder, squ
 On key, front of pods step out small toward cat, looking over inside shoulder. Tail and Inside Rear drive hips toward cat to cog with Inside Rear going through the center first. After crossing the center, Tail and Inside Rear anchor and help Outside Rear and Inside Front do the same. Pods should look through center to keep levels and proximity. Cat turns 180 degrees to create a 3-Way picture with Tail and Inside Rear, then is patient as Outside Rear and Inside Front make the same picture, staying on level and in center between pieces. As Outside Rear and Inside Front pass through center, cat initiates the second 180 to guarantee legs to Inside Center and Outside Center. Point squeezes back and drives in and Outside Front switches places with Point in the first 180 degree turn. Point fades out easy as Outside Front drives the second 180 degree turn.
 
 Alternate engineering with Inside Center and Inside Front switched.</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>OneKeyFormationCell</string>
+			<key>Identifier</key>
+			<string>22</string>
+			<key>Name</key>
+			<string>Old Bone - Compressed Stairstep Diamonds</string>
+			<key>KeyPosition</key>
+			<string>TBD</string>
+			<key>KeyDescription</key>
+			<string>TBD</string>
+			<key>CoachNotes</key>
+			<string>TBD</string>
 		</dict>
 	</array>
 </dict>

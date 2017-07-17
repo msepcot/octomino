@@ -33,8 +33,8 @@ class OneKeyFormationCell: FormationCell {
     override func prepareForReuse() {
         super.prepareForReuse()
 
-        cardFront.hidden = false
-        cardBack.hidden  = true
+        cardFront.isHidden = false
+        cardBack.isHidden  = true
     }
 
     override func populateCell(dictionary: [String: String]) {
@@ -49,24 +49,24 @@ class OneKeyFormationCell: FormationCell {
         formationCoachNotes.text     = dictionary["CoachNotes"]
 
         if formationCoachNotes.text.isEmpty {
-            formationBuildButton.hidden = true
+            formationBuildButton.isHidden = true
         } else {
-            formationBuildButton.hidden = false
-            formationCoachNotes.contentOffset = CGPointZero
+            formationBuildButton.isHidden = false
+            formationCoachNotes.contentOffset = .zero
         }
 
         if let _ = dictionary["KeyPosition"] {
-            keyImageView.hidden = false
-            formationKeyPosition.hidden = false
-            formationKeyDescription.hidden = false
+            keyImageView.isHidden = false
+            formationKeyPosition.isHidden = false
+            formationKeyDescription.isHidden = false
         } else {
-            keyImageView.hidden = true
-            formationKeyPosition.hidden = true
-            formationKeyDescription.hidden = true
+            keyImageView.isHidden = true
+            formationKeyPosition.isHidden = true
+            formationKeyDescription.isHidden = true
         }
     }
 
-    @IBAction func buildButtonPressed(sender: AnyObject) {
+    @IBAction func buildButtonPressed(_ sender: AnyObject) {
         flipViews(front: cardFront, back: cardBack)
     }
 
