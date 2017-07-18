@@ -19,21 +19,21 @@
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "29 - Settings@2x.png",
+      "filename" : "29 - Watch Companion Setting@2x.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "29 - Settings@3x.png",
+      "filename" : "29 - Watch Companion Setting@3x.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "watch",
-      "filename" : "40 - Spotlight@2x.png",
+      "filename" : "40 - Watch Home Screen@2x.png",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"

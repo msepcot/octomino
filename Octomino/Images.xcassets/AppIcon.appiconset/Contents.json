@@ -51,7 +51,7 @@
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "20 - Notification@1x.png",
+      "filename" : "20 - Notification.png",
       "scale" : "1x"
     },
     {
@@ -63,7 +63,7 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "29 - Settings@1x.png",
+      "filename" : "29 - Settings.png",
       "scale" : "1x"
     },
     {
