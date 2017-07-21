@@ -39,19 +39,26 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func buttonTap1()  { pushBlock(0)  }
-    @IBAction func buttonTap3()  { pushBlock(1)  }
-    @IBAction func buttonTap4()  { pushBlock(2)  }
-    @IBAction func buttonTap5()  { pushBlock(3)  }
-    @IBAction func buttonTap6()  { pushBlock(4)  }
-    @IBAction func buttonTap7()  { pushBlock(5)  }
-    @IBAction func buttonTap8()  { pushBlock(6)  }
-    @IBAction func buttonTap10() { pushBlock(7)  }
-    @IBAction func buttonTap13() { pushBlock(8)  }
-    @IBAction func buttonTap14() { pushBlock(9)  }
-    @IBAction func buttonTap16() { pushBlock(10) }
-    @IBAction func buttonTap17() { pushBlock(11) }
-    @IBAction func buttonTap18() { pushBlock(12) }
-    @IBAction func buttonTap19() { pushBlock(13) }
-    @IBAction func buttonTap21() { pushBlock(14) }
+    @IBAction func buttonTap2()  { pushBlock(1)  }
+    @IBAction func buttonTap3()  { pushBlock(2)  }
+    @IBAction func buttonTap4()  { pushBlock(3)  }
+    @IBAction func buttonTap5()  { pushBlock(4)  }
+    @IBAction func buttonTap6()  { pushBlock(5)  }
+    @IBAction func buttonTap7()  { pushBlock(6)  }
+    @IBAction func buttonTap8()  { pushBlock(7)  }
+    @IBAction func buttonTap9()  { pushBlock(8)  }
+    @IBAction func buttonTap10() { pushBlock(9)  }
+    @IBAction func buttonTap11() { pushBlock(10) }
+    @IBAction func buttonTap12() { pushBlock(11) }
+    @IBAction func buttonTap13() { pushBlock(12) }
+    @IBAction func buttonTap14() { pushBlock(13) }
+    @IBAction func buttonTap15() { pushBlock(14) }
+    @IBAction func buttonTap16() { pushBlock(15) }
+    @IBAction func buttonTap17() { pushBlock(16) }
+    @IBAction func buttonTap18() { pushBlock(17) }
+    @IBAction func buttonTap19() { pushBlock(18) }
+    @IBAction func buttonTap20() { pushBlock(19) }
+    @IBAction func buttonTap21() { pushBlock(20) }
+    @IBAction func buttonTap22() { pushBlock(21) }
 
 }

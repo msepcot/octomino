@@ -269,9 +269,10 @@ On the key, flakers reference across and squeeze in to build the donut. See the 
 			<key>Name</key>
 			<string>Swiss Bear - Swiss Bear</string>
 			<key>KeyPosition</key>
-			<string>TBD</string>
+			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
-			<string>TBD</string>
+			<string>Top: Check the solo on your side then look across.
+Bottom: Check that the solos are on.</string>
 			<key>CoachNotes</key>
 			<string>TBD</string>
 		</dict>
@@ -381,15 +382,19 @@ Solo Flyers: step forward, turn left 270, watch donuts rotate, keeping an eye on
 		</dict>
 		<dict>
 			<key>Class</key>
-			<string>OneKeyFormationCell</string>
+			<string>TwoKeyFormationCell</string>
 			<key>Identifier</key>
 			<string>9</string>
 			<key>Name</key>
 			<string>Taj - Mahal</string>
-			<key>KeyPosition</key>
-			<string>TBD</string>
-			<key>KeyDescription</key>
-			<string>TBD</string>
+			<key>Top-KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>Top-KeyDescription</key>
+			<string>Top: Inside Center checks the top sidebody and feels cat, while Outside Center checks the star grip and the back sidebody.</string>
+			<key>Bottom-KeyPosition</key>
+			<string>Inside Center</string>
+			<key>Bottom-KeyDescription</key>
+			<string>Bottom: Take grips on the sidebody pieces and check that the half-star is on.</string>
 			<key>CoachNotes</key>
 			<string>TBD</string>
 		</dict>
@@ -417,23 +422,27 @@ On key, everyone turns 450 degrees to an infacing star picture, then continues t
 			<key>Name</key>
 			<string>Norwegian Box - Norwegian Donut</string>
 			<key>KeyPosition</key>
-			<string>TBD</string>
+			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
-			<string>TBD</string>
+			<string>Check forward.</string>
 			<key>CoachNotes</key>
 			<string>TBD</string>
 		</dict>
 		<dict>
 			<key>Class</key>
-			<string>OneKeyFormationCell</string>
+			<string>TwoKeyFormationCell</string>
 			<key>Identifier</key>
 			<string>12</string>
 			<key>Name</key>
 			<string>Stereo Bipole - Stereo Bipole</string>
-			<key>KeyPosition</key>
-			<string>TBD</string>
-			<key>KeyDescription</key>
-			<string>TBD</string>
+			<key>Top-KeyPosition</key>
+			<string>Outside Front and Inside Rear</string>
+			<key>Top-KeyDescription</key>
+			<string>Top: Check their piece partner, the star grip to their left, and then eyes to their clone.</string>
+			<key>Bottom-KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>Bottom-KeyDescription</key>
+			<string>Bottom: Check their piece partner, then eyes to their clone.</string>
 			<key>CoachNotes</key>
 			<string>TBD</string>
 		</dict>
@@ -477,9 +486,9 @@ The block move is a 1-2 staged move with P/IF and OC/IR going over and IC/OF and
 			<key>Name</key>
 			<string>Opal and Zipper - Zipper and Opal</string>
 			<key>KeyPosition</key>
-			<string>TBD</string>
+			<string>Outside Center and Inside Center</string>
 			<key>KeyDescription</key>
-			<string>TBD</string>
+			<string>Check piece.</string>
 			<key>CoachNotes</key>
 			<string>TBD</string>
 		</dict>
@@ -555,15 +564,19 @@ On key, heads of diamond step out SMALL at 45, look long over left shoulder, squ
 		</dict>
 		<dict>
 			<key>Class</key>
-			<string>OneKeyFormationCell</string>
+			<string>TwoKeyFormationCell</string>
 			<key>Identifier</key>
 			<string>20</string>
 			<key>Name</key>
 			<string>Cat Diamond - Cat Accordian</string>
-			<key>KeyPosition</key>
-			<string>TBD</string>
-			<key>KeyDescription</key>
-			<string>TBD</string>
+			<key>Top-KeyPosition</key>
+			<string>Inside Rear</string>
+			<key>Top-KeyDescription</key>
+			<string>Top: Scan left to right, checking: left cat; Outside Front looking back after picking up grips; right cat.</string>
+			<key>Bottom-KeyPosition</key>
+			<string>Point</string>
+			<key>Bottom-KeyDescription</key>
+			<string>Bottom: Feel grips and see Inside Front is on.</string>
 			<key>CoachNotes</key>
 			<string>TBD</string>
 		</dict>
@@ -587,15 +600,19 @@ Alternate engineering with Inside Center and Inside Front switched.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
-			<string>OneKeyFormationCell</string>
+			<string>TwoKeyFormationCell</string>
 			<key>Identifier</key>
 			<string>22</string>
 			<key>Name</key>
 			<string>Old Bone - Compressed Stairstep Diamonds</string>
-			<key>KeyPosition</key>
-			<string>TBD</string>
-			<key>KeyDescription</key>
-			<string>TBD</string>
+			<key>Top-KeyPosition</key>
+			<string>Outside Front and Inside Rear</string>
+			<key>Top-KeyDescription</key>
+			<string>Top: Check left sides and then eyes to each other.</string>
+			<key>Bottom-KeyPosition</key>
+			<string>Outside Center and Inside Center</string>
+			<key>Bottom-KeyDescription</key>
+			<string>Bottom: Check the catch on their side is complete and then eyes to each other.</string>
 			<key>CoachNotes</key>
 			<string>TBD</string>
 		</dict>
