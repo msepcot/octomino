@@ -274,7 +274,14 @@ On the key, flakers reference across and squeeze in to build the donut. See the 
 			<string>Top: Check the solo on your side then look across.
 Bottom: Check that the solos are on.</string>
 			<key>CoachNotes</key>
-			<string>TBD</string>
+			<string>For the build, Outside Front and Inside Rear should see a bipole with each other; Outside Center, Tail, Point, and Inside Center should face off, letting the solos fill in the gap with heads over their right shoulder and seeing the line between the four centers.
+
+On key, solos step forward and turn to the right. Point and Tail anchor hard on the first move, then back through at each other. After they cross, reference switches to the opposite center.
+
+Inter pictures:
+1. See a 6-way compressed with Point and Tail on the outside
+2. Mirrored Bears
+3. See a 6-way compressed with Point and Tail on the inside</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -396,7 +403,17 @@ Solo Flyers: step forward, turn left 270, watch donuts rotate, keeping an eye on
 			<key>Bottom-KeyDescription</key>
 			<string>Bottom: Take grips on the sidebody pieces and check that the half-star is on.</string>
 			<key>CoachNotes</key>
-			<string>TBD</string>
+			<string>Inside Center is the center of the formation. Everything builds off the 3-way compressed on the Inside Center.
+
+On key, everyone time the inter pictures:
+1a. Cat piece sees legs in the center at 180°
+1b. Sidebodies see wide side-by-side picture at 90°
+1c. Half-star, like Block 6, see a reverse star picture
+
+Sidebodies - the 270s are shorter than you think. Centers take a small step forward and the people spinning go through their partners to the half picture, not around.
+Half-star - move like Block 6.
+
+Alternate Build: Tail and IR switch roles</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -426,7 +443,13 @@ On key, everyone turns 450 degrees to an infacing star picture, then continues t
 			<key>KeyDescription</key>
 			<string>Check forward.</string>
 			<key>CoachNotes</key>
-			<string>TBD</string>
+			<string>Build a right handed donut picture in the center between Tail, Point, Outside Center, and Inside Center. The tails of the cats should present the sidebodies to the people in the donuts.
+
+On key, cats all work toward snowflake picture (star between the centers) and aim for a sidebody grip on the close to keep it small. Then, think of sliding down the cat in front of you to close the donut.
+
+Inter pictures:
+1. Snowflake picture at 90°
+2. Sidebodies before close</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -444,7 +467,12 @@ On key, everyone turns 450 degrees to an infacing star picture, then continues t
 			<key>Bottom-KeyDescription</key>
 			<string>Bottom: Check their piece partner, then eyes to their clone.</string>
 			<key>CoachNotes</key>
-			<string>TBD</string>
+			<string>Build similar to Block 7 with wide offset bipole pictures between Outside Center and Inside Front, and Inside Center and Outside Rear. There is also a donut picture between clones in the center four.
+
+On key, each sub-group does half of a Block 6 move.
+
+Inter picture:
+1. Donut picture between center four</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -490,7 +518,9 @@ The block move is a 1-2 staged move with P/IF and OC/IR going over and IC/OF and
 			<key>KeyDescription</key>
 			<string>Check piece.</string>
 			<key>CoachNotes</key>
-			<string>TBD</string>
+			<string>Build a Murphy star between center four.
+
+On key, Tail squeezes back though hip and rotates; Inside Rear, is high on Tail, think of going over tail as you drive through them, switching places to the close; Outside Front, rotate about the grip and drive through upper body of point, putting their leg in the hand of Inside Front; and Point, drive through Outside Front&apos;s hips as the door opens up and then switch places.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -578,7 +608,12 @@ On key, heads of diamond step out SMALL at 45, look long over left shoulder, squ
 			<key>Bottom-KeyDescription</key>
 			<string>Bottom: Feel grips and see Inside Front is on.</string>
 			<key>CoachNotes</key>
-			<string>TBD</string>
+			<string>Center four builds with each other. Outside Center and Inside Center, and Outside Rear and Inside Front build offset stairstep pictures with each other.
+
+On key, Outside Center and Outside Rear stay still. Tail and Inside Rear track hard forward. Point and Outside Front turn clockwise. Point, think of rotating around the center point of the Outside Front. Inside Front and Inside Center turn counterclockwise.
+
+Inter Picture:
+1. Outside Center and Outside Rear stay in place providing reference for the compressed build. Everyone uses Outside Center&apos;s heading.</string>
 		</dict>
 		<dict>
 			<key>Class</key>
@@ -614,7 +649,12 @@ Alternate engineering with Inside Center and Inside Front switched.</string>
 			<key>Bottom-KeyDescription</key>
 			<string>Bottom: Check the catch on their side is complete and then eyes to each other.</string>
 			<key>CoachNotes</key>
-			<string>TBD</string>
+			<string>Build a 4-way compressed between Outside Center, Inside Rear, Outside Front and Inside Center.
+
+On key, the grip between Tail and Outside Rear, and Point and Inside Front open up as the pieces slide together. Point and Tail should back up slightly for the catch. Outside Rear and Inside Front present arm for catch. Hopper should think forwards as they hop.
+
+Inter Picture:
+1. Open grips between Tail and Outside Rear, and Point and Inside Front as the pieces slide together below the hoppers.</string>
 		</dict>
 	</array>
 </dict>
