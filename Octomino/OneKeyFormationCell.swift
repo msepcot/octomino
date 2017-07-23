@@ -55,15 +55,10 @@ class OneKeyFormationCell: FormationCell {
             formationCoachNotes.contentOffset = .zero
         }
 
-        if let _ = dictionary["KeyPosition"] {
-            keyImageView.isHidden = false
-            formationKeyPosition.isHidden = false
-            formationKeyDescription.isHidden = false
-        } else {
-            keyImageView.isHidden = true
-            formationKeyPosition.isHidden = true
-            formationKeyDescription.isHidden = true
-        }
+        let shouldHideKey = (dictionary["KeyPosition"] == nil) // should only be `true` for Exit Frame
+        keyImageView.isHidden = shouldHideKey
+        formationKeyPosition.isHidden = shouldHideKey
+        formationKeyDescription.isHidden = shouldHideKey
     }
 
     @IBAction func buildButtonPressed(_ sender: AnyObject) {

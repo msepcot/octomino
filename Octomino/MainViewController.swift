@@ -34,17 +34,20 @@ class MainViewController: UIViewController {
         randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentChanged(_:)), for: .valueChanged)
         randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentReselected(_:)), for: .reselected)
 
-        let oneKeyNib = UINib(nibName: "OneKeyFormationCell", bundle: nil)
-        collectionView.register(oneKeyNib,
-            forCellWithReuseIdentifier: "OneKeyFormationCell-Identifier")
+        collectionView.register(
+            UINib(nibName: "OneKeyFormationCell", bundle: nil),
+            forCellWithReuseIdentifier: "OneKeyFormationCell-Identifier"
+        )
 
-        let twoKeyNib = UINib(nibName: "TwoKeyFormationCell", bundle: nil)
-        collectionView.register(twoKeyNib,
-            forCellWithReuseIdentifier: "TwoKeyFormationCell-Identifier")
+        collectionView.register(
+            UINib(nibName: "TwoKeyFormationCell", bundle: nil),
+            forCellWithReuseIdentifier: "TwoKeyFormationCell-Identifier"
+        )
 
-        let notesNib = UINib(nibName: "NotesCell", bundle: nil)
-        collectionView.register(notesNib,
-            forCellWithReuseIdentifier: "NotesCell-Identifier")
+        collectionView.register(
+            UINib(nibName: "NotesCell", bundle: nil),
+            forCellWithReuseIdentifier: "NotesCell-Identifier"
+        )
 
         if  let path = Bundle.main.path(forResource: "Formations", ofType: "plist"),
             let formations = NSDictionary(contentsOfFile: path)
