@@ -9,33 +9,28 @@
 import WatchKit
 import Foundation
 
-
 class BlockController: WKInterfaceController {
 
-    @IBOutlet weak var formationImageTop: WKInterfaceImage!
-    @IBOutlet weak var formationImageInter: WKInterfaceImage!
-    @IBOutlet weak var formationImageBottom: WKInterfaceImage!
+    @IBOutlet weak var formationImage: WKInterfaceImage!
     @IBOutlet weak var formationName: WKInterfaceLabel!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
-        guard let config = context as? [String: Int], let index = config["index"] else { return }
+        guard let config = context as? [String: Int],
+            let index = config["index"],
+            let path = Bundle.main.path(forResource: "Formations", ofType: "plist"),
+            let formations = NSDictionary(contentsOfFile: path),
+            let blocks = formations["Blocks"] as? [[String : String]]
+            else { return }
 
         // Configure interface objects here.
 
-        if  let path        = Bundle.main.path(forResource: "Formations", ofType: "plist"),
-            let formations  = NSDictionary(contentsOfFile: path),
-            let blocks      = formations["Blocks"] as? [[String : String]]
-        {
-            let formation = blocks[index]
-
-            setTitle("\(formation["Identifier"]!): \(formation["Name"]!)")
-
-            formationImageTop.setImageNamed("\(formation["Identifier"]!)a")
-            formationImageInter.setImageNamed("\(formation["Identifier"]!)b")
-            formationImageBottom.setImageNamed("\(formation["Identifier"]!)c")
-            formationName.setText(formation["Name"])
+        let formation = blocks[index]
+        if let identifier = formation["Identifier"], let name = formation["Name"] {
+            setTitle("\(identifier): \(name)")
+            formationImage.setImageNamed(identifier)
+            formationName.setText(name)
         }
     }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3vP-ji-r3g">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,7 +12,7 @@
         <!--8-Way-->
         <scene sceneID="yED-PK-Qwh">
             <objects>
-                <controller identifier="MainMenu" title="8-Way" spacing="8" id="3vP-ji-r3g" customClass="InterfaceController" customModule="Octomino_WatchKit_Extension">
+                <controller identifier="DivePool" title="8-Way" spacing="8" id="3vP-ji-r3g" customClass="DivePoolController" customModule="Octomino_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Randoms" id="grh-lo-TWL">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
@@ -388,34 +388,6 @@
             </objects>
             <point key="canvasLocation" x="250" y="294.603515625"/>
         </scene>
-        <!--Block-->
-        <scene sceneID="gdW-qn-fo2">
-            <objects>
-                <controller identifier="Block" id="PGa-uf-BQU" customClass="BlockController" customModule="Octomino_WatchKit_Extension">
-                    <items>
-                        <group width="1" alignment="left" layout="vertical" spacing="10" id="Oss-Yf-TrW">
-                            <items>
-                                <imageView width="1" alignment="left" image="1a" contentMode="scaleAspectFit" id="mG5-Du-vMo"/>
-                                <imageView width="1" alignment="left" image="1b" contentMode="scaleAspectFit" id="v3l-KU-d06"/>
-                                <imageView width="1" alignment="left" image="1c" contentMode="scaleAspectFit" id="Wuc-VM-5n5"/>
-                            </items>
-                            <color key="backgroundColor" red="0.79835319519042969" green="0.99856096506118774" blue="0.99966388940811157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
-                        </group>
-                        <label width="1" alignment="left" text="Donut Flake - Donut Flake" textAlignment="center" numberOfLines="0" id="teq-L6-2Us">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                        </label>
-                    </items>
-                    <connections>
-                        <outlet property="formationImageBottom" destination="Wuc-VM-5n5" id="h94-Qa-IJj"/>
-                        <outlet property="formationImageInter" destination="v3l-KU-d06" id="8mB-a4-vA5"/>
-                        <outlet property="formationImageTop" destination="mG5-Du-vMo" id="m0x-g3-Fnr"/>
-                        <outlet property="formationName" destination="teq-L6-2Us" id="SYl-9W-k67"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="470" y="174"/>
-        </scene>
         <!--Random-->
         <scene sceneID="NRV-BO-H8d">
             <objects>
@@ -440,7 +412,31 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="682" y="66"/>
+            <point key="canvasLocation" x="459" y="63"/>
+        </scene>
+        <!--Block-->
+        <scene sceneID="SZB-Ux-9g6">
+            <objects>
+                <controller identifier="Block" id="rMa-Af-02i" customClass="BlockController" customModule="Octomino_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="bsW-sv-iS2">
+                            <items>
+                                <imageView alignment="center" image="1" contentMode="scaleAspectFit" id="URb-t0-x1i"/>
+                            </items>
+                            <color key="backgroundColor" red="0.79835319520000003" green="0.99856096510000003" blue="0.99966388939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                        </group>
+                        <label width="1" alignment="left" text="Donut Flake - Donut Flake" textAlignment="center" numberOfLines="0" id="e5B-h8-SBB">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="formationImage" destination="URb-t0-x1i" id="EzL-wM-XSQ"/>
+                        <outlet property="formationName" destination="e5B-h8-SBB" id="Rsc-6d-lAS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="659" y="160"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.18420898914337158" green="0.65521061420440674" blue="0.58923834562301636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

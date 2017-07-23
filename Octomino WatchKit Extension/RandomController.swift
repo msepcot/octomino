@@ -17,20 +17,20 @@ class RandomController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
-        guard let config = context as? [String: Int], let index = config["index"] else { return }
+        guard let config = context as? [String: Int],
+            let index = config["index"],
+            let path = Bundle.main.path(forResource: "Formations", ofType: "plist"),
+            let formations = NSDictionary(contentsOfFile: path),
+            let randoms = formations["Randoms"] as? [[String : String]]
+        else { return }
 
         // Configure interface objects here.
 
-        if  let path        = Bundle.main.path(forResource: "Formations", ofType: "plist"),
-            let formations  = NSDictionary(contentsOfFile: path),
-            let randoms     = formations["Randoms"] as? [[String : String]]
-        {
-            let formation = randoms[index]
-
-            setTitle("\(formation["Identifier"]!): \(formation["Name"]!)")
-
-            formationImage.setImageNamed(formation["Identifier"])
-            formationName.setText(formation["Name"])
+        let formation = randoms[index]
+        if let identifier = formation["Identifier"], let name = formation["Name"] {
+            setTitle("\(identifier): \(name)")
+            formationImage.setImageNamed(identifier)
+            formationName.setText(name)
         }
     }
 
