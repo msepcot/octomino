@@ -11,6 +11,8 @@
 		212666771AD42E4A00B13622 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
 		2143FA331B06BBF4009AF434 /* RandomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA321B06BBF4009AF434 /* RandomController.swift */; };
 		2143FA351B06BC03009AF434 /* BlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA341B06BC03009AF434 /* BlockController.swift */; };
+		215FE0601F26F7FA000AB59D /* ComplicationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FE05F1F26F7FA000AB59D /* ComplicationDataSource.swift */; };
+		215FE0701F271376000AB59D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215FE06F1F271376000AB59D /* Images.xcassets */; };
 		216703EF1B3F4506003AE4EA /* Octomino WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		216703F21B3F4506003AE4EA /* Octomino WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */; };
 		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
@@ -25,7 +27,6 @@
 		21A0ABB01AD38B7E0015EE54 /* TwoKeyFormationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A0ABAE1AD38B7E0015EE54 /* TwoKeyFormationCell.xib */; };
 		21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A250BB1AD5FBB400B1E8DD /* FormationCell.swift */; };
 		21A860481B039F7E006ED4D3 /* DivePoolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A860471B039F7E006ED4D3 /* DivePoolController.swift */; };
-		21A8604A1B039F7E006ED4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A860491B039F7E006ED4D3 /* Images.xcassets */; };
 		21A860561B039F7E006ED4D3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A860541B039F7E006ED4D3 /* Interface.storyboard */; };
 		21A860581B039F7E006ED4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A860571B039F7E006ED4D3 /* Images.xcassets */; };
 		21A860661B03A552006ED4D3 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
@@ -86,6 +87,8 @@
 		212666761AD42E4A00B13622 /* Formations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Formations.plist; sourceTree = "<group>"; };
 		2143FA321B06BBF4009AF434 /* RandomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomController.swift; sourceTree = "<group>"; };
 		2143FA341B06BC03009AF434 /* BlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockController.swift; sourceTree = "<group>"; };
+		215FE05F1F26F7FA000AB59D /* ComplicationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationDataSource.swift; sourceTree = "<group>"; };
+		215FE06F1F271376000AB59D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		219EE43D1AD0DB8500045DF2 /* Octomino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octomino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EE4411AD0DB8500045DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219EE4421AD0DB8500045DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +107,6 @@
 		21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Octomino WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A860461B039F7E006ED4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21A860471B039F7E006ED4D3 /* DivePoolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivePoolController.swift; sourceTree = "<group>"; };
-		21A860491B039F7E006ED4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Octomino WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A860531B039F7E006ED4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21A860551B039F7E006ED4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -208,11 +210,12 @@
 		21A860441B039F7E006ED4D3 /* Octomino WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				2143FA321B06BBF4009AF434 /* RandomController.swift */,
 				2143FA341B06BC03009AF434 /* BlockController.swift */,
+				215FE05F1F26F7FA000AB59D /* ComplicationDataSource.swift */,
 				21A860471B039F7E006ED4D3 /* DivePoolController.swift */,
-				21A860491B039F7E006ED4D3 /* Images.xcassets */,
+				2143FA321B06BBF4009AF434 /* RandomController.swift */,
 				21A860451B039F7E006ED4D3 /* Supporting Files */,
+				215FE06F1F271376000AB59D /* Images.xcassets */,
 			);
 			path = "Octomino WatchKit Extension";
 			sourceTree = "<group>";
@@ -401,8 +404,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A8604A1B039F7E006ED4D3 /* Images.xcassets in Resources */,
 				21A860661B03A552006ED4D3 /* Formations.plist in Resources */,
+				215FE0701F271376000AB59D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215FE0601F26F7FA000AB59D /* ComplicationDataSource.swift in Sources */,
 				2143FA331B06BBF4009AF434 /* RandomController.swift in Sources */,
 				21A860481B039F7E006ED4D3 /* DivePoolController.swift in Sources */,
 				2143FA351B06BC03009AF434 /* BlockController.swift in Sources */,
@@ -756,6 +760,7 @@
 		21A8605C1B039F7F006ED4D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -772,13 +777,14 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Debug;
 		};
 		21A8605D1B039F7F006ED4D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -792,7 +798,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Release;
 		};
@@ -816,7 +822,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Debug;
 		};
@@ -836,7 +842,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Release;
 		};
