@@ -15,6 +15,8 @@
 		215FE0701F271376000AB59D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215FE06F1F271376000AB59D /* Images.xcassets */; };
 		216703EF1B3F4506003AE4EA /* Octomino WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		216703F21B3F4506003AE4EA /* Octomino WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */; };
+		219511911F5FAFDC00885BB4 /* ControlStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */; };
+		219C21801F56765B0081DDEA /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219C217F1F56765B0081DDEA /* FilterButton.swift */; };
 		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
 		219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4441AD0DB8500045DF2 /* MainViewController.swift */; };
 		219EE4481AD0DB8500045DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219EE4461AD0DB8500045DF2 /* Main.storyboard */; };
@@ -89,6 +91,8 @@
 		2143FA341B06BC03009AF434 /* BlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockController.swift; sourceTree = "<group>"; };
 		215FE05F1F26F7FA000AB59D /* ComplicationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationDataSource.swift; sourceTree = "<group>"; };
 		215FE06F1F271376000AB59D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlStripViewController.swift; sourceTree = "<group>"; };
+		219C217F1F56765B0081DDEA /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		219EE43D1AD0DB8500045DF2 /* Octomino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octomino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EE4411AD0DB8500045DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219EE4421AD0DB8500045DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				21A0ABAE1AD38B7E0015EE54 /* TwoKeyFormationCell.xib */,
 				2122E6581AD8A6070008B92D /* InfoViewController.swift */,
 				21BDC5D51C93D25B00FCF696 /* ReselectableSegmentedControl.swift */,
+				219C217F1F56765B0081DDEA /* FilterButton.swift */,
+				219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */,
 			);
 			path = Octomino;
 			sourceTree = "<group>";
@@ -339,22 +345,22 @@
 					219EE43C1AD0DB8500045DF2 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 33E9WP8948;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					219EE4511AD0DB8600045DF2 = {
 						CreatedOnToolsVersion = 6.2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						TestTargetID = 219EE43C1AD0DB8500045DF2;
 					};
 					21A860421B039F7E006ED4D3 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 33E9WP8948;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					21A8604C1B039F7E006ED4D3 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 33E9WP8948;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -512,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219511911F5FAFDC00885BB4 /* ControlStripViewController.swift in Sources */,
 				21BDC5D61C93D25B00FCF696 /* ReselectableSegmentedControl.swift in Sources */,
 				21A0ABAB1AD38AD50015EE54 /* OneKeyFormationCell.swift in Sources */,
 				21A0ABAF1AD38B7E0015EE54 /* TwoKeyFormationCell.swift in Sources */,
@@ -519,6 +526,7 @@
 				219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */,
 				2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */,
 				21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */,
+				219C21801F56765B0081DDEA /* FilterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +707,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -714,7 +723,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -734,7 +744,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
 			};
 			name = Debug;
@@ -752,7 +763,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
 			};
 			name = Release;
@@ -775,7 +787,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -796,7 +809,8 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -820,7 +834,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -840,7 +855,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};

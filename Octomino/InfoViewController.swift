@@ -25,7 +25,7 @@ class InfoViewController: UIViewController {
 
 // MARK: - UITapGestureRecognizer
 
-    func hide() {
+    @objc func hide() {
         dismiss(animated: true, completion: nil)
     }
 

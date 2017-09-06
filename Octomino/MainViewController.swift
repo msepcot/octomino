@@ -76,7 +76,7 @@ class MainViewController: UIViewController {
 
     // MARK: - UIPageControl notification
 
-    func pageChanged(_ pageControl: UIPageControl) {
+    @objc func pageChanged(_ pageControl: UIPageControl) {
         let page = pageControl.currentPage
         let pageWidth = Int(collectionView.bounds.width)
 
@@ -94,7 +94,7 @@ class MainViewController: UIViewController {
 
     // MARK: - UISegmentedControl notification
 
-    func segmentChanged(_ segmentedControl: UISegmentedControl) {
+    @objc func segmentChanged(_ segmentedControl: UISegmentedControl) {
         let pageWidth = Int(collectionView.bounds.width)
 
         if segmentedControl.selectedSegmentIndex == 0 {
@@ -108,7 +108,7 @@ class MainViewController: UIViewController {
         }
     }
 
-    func segmentReselected(_ segmentedControl: UISegmentedControl) {
+    @objc func segmentReselected(_ segmentedControl: UISegmentedControl) {
         if segmentedControl.selectedSegmentIndex == 0 {
             randomIndex = 1
         } else {
