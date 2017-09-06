@@ -16,6 +16,7 @@
 		216703EF1B3F4506003AE4EA /* Octomino WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		216703F21B3F4506003AE4EA /* Octomino WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */; };
 		219511911F5FAFDC00885BB4 /* ControlStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */; };
+		219511931F5FC24E00885BB4 /* FadeableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219511921F5FC24E00885BB4 /* FadeableButton.swift */; };
 		219C21801F56765B0081DDEA /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219C217F1F56765B0081DDEA /* FilterButton.swift */; };
 		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
 		219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4441AD0DB8500045DF2 /* MainViewController.swift */; };
@@ -92,6 +93,7 @@
 		215FE05F1F26F7FA000AB59D /* ComplicationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationDataSource.swift; sourceTree = "<group>"; };
 		215FE06F1F271376000AB59D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlStripViewController.swift; sourceTree = "<group>"; };
+		219511921F5FC24E00885BB4 /* FadeableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeableButton.swift; sourceTree = "<group>"; };
 		219C217F1F56765B0081DDEA /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		219EE43D1AD0DB8500045DF2 /* Octomino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octomino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219EE4411AD0DB8500045DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				2122E6581AD8A6070008B92D /* InfoViewController.swift */,
 				21BDC5D51C93D25B00FCF696 /* ReselectableSegmentedControl.swift */,
 				219C217F1F56765B0081DDEA /* FilterButton.swift */,
+				219511921F5FC24E00885BB4 /* FadeableButton.swift */,
 				219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */,
 			);
 			path = Octomino;
@@ -523,6 +526,7 @@
 				21A0ABAB1AD38AD50015EE54 /* OneKeyFormationCell.swift in Sources */,
 				21A0ABAF1AD38B7E0015EE54 /* TwoKeyFormationCell.swift in Sources */,
 				219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */,
+				219511931F5FC24E00885BB4 /* FadeableButton.swift in Sources */,
 				219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */,
 				2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */,
 				21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */,
