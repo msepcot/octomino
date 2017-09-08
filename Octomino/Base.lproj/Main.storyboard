@@ -157,16 +157,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXR-Mx-ylb">
-                                <rect key="frame" x="335" y="9.5" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="CO3-mN-NbE"/>
-                                    <constraint firstAttribute="height" constant="30" id="KL4-mM-zkP"/>
-                                </constraints>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSt-J0-M3d" customClass="FilterButton" customModule="Octomino" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="30" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="Filter">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="h7C-z4-UIZ"/>
                                     <constraint firstAttribute="width" constant="30" id="kdB-bG-q8b"/>
@@ -175,11 +172,19 @@
                                     <action selector="filterButtonTapped:" destination="X4m-xM-ldN" eventType="touchUpInside" id="hGl-Rj-0YV"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aw3-jh-C9O" customClass="ShareButton" customModule="Octomino" customModuleProvider="target">
+                                <rect key="frame" x="346" y="11" width="19" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="9KP-de-cza"/>
+                                    <constraint firstAttribute="height" constant="27" id="Kp7-cS-oSe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FXR-Mx-ylb" secondAttribute="trailing" constant="10" id="0jf-bj-xiY"/>
-                            <constraint firstItem="FXR-Mx-ylb" firstAttribute="centerY" secondItem="NPd-kR-z0D" secondAttribute="centerY" id="A4v-e3-wLH"/>
+                            <constraint firstAttribute="trailing" secondItem="Aw3-jh-C9O" secondAttribute="trailing" constant="10" id="X2z-RW-zrS"/>
+                            <constraint firstItem="Aw3-jh-C9O" firstAttribute="centerY" secondItem="NPd-kR-z0D" secondAttribute="centerY" id="YpZ-7L-5Op"/>
                             <constraint firstItem="pSt-J0-M3d" firstAttribute="leading" secondItem="NPd-kR-z0D" secondAttribute="leading" constant="10" id="eTT-f3-t1h"/>
                             <constraint firstItem="pSt-J0-M3d" firstAttribute="centerY" secondItem="NPd-kR-z0D" secondAttribute="centerY" id="rYc-Tb-WBe"/>
                         </constraints>

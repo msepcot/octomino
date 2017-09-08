@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2109060F1F62520100B4E3A7 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2109060E1F62520000B4E3A7 /* ShareButton.swift */; };
 		2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122E6581AD8A6070008B92D /* InfoViewController.swift */; };
 		212666771AD42E4A00B13622 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
 		2143FA331B06BBF4009AF434 /* RandomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA321B06BBF4009AF434 /* RandomController.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2109060E1F62520000B4E3A7 /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		2122E6581AD8A6070008B92D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		212666761AD42E4A00B13622 /* Formations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Formations.plist; sourceTree = "<group>"; };
 		2143FA321B06BBF4009AF434 /* RandomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				2122E6581AD8A6070008B92D /* InfoViewController.swift */,
 				21BDC5D51C93D25B00FCF696 /* ReselectableSegmentedControl.swift */,
 				219C217F1F56765B0081DDEA /* FilterButton.swift */,
+				2109060E1F62520000B4E3A7 /* ShareButton.swift */,
 				219511921F5FC24E00885BB4 /* FadeableButton.swift */,
 				219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */,
 			);
@@ -524,6 +527,7 @@
 				219511911F5FAFDC00885BB4 /* ControlStripViewController.swift in Sources */,
 				21BDC5D61C93D25B00FCF696 /* ReselectableSegmentedControl.swift in Sources */,
 				21A0ABAB1AD38AD50015EE54 /* OneKeyFormationCell.swift in Sources */,
+				2109060F1F62520100B4E3A7 /* ShareButton.swift in Sources */,
 				21A0ABAF1AD38B7E0015EE54 /* TwoKeyFormationCell.swift in Sources */,
 				219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */,
 				219511931F5FC24E00885BB4 /* FadeableButton.swift in Sources */,
