@@ -20,26 +20,29 @@ import UIKit
     override func draw(_ rect: CGRect) {
         tintColor.setStroke()
 
+        let offsetX = (rect.size.width - 18) / 2
+        let offsetY = (rect.size.height - 26) / 2
+
         let box = UIBezierPath()
-        box.move(to: CGPoint(x: 7, y: 8.5))
-        box.addLine(to: CGPoint(x: 0.5, y: 8.5))
-        box.addLine(to: CGPoint(x: 0.5, y: 26.5))
-        box.addLine(to: CGPoint(x: 18.5, y: 26.5))
-        box.addLine(to: CGPoint(x: 18.5, y: 8.5))
-        box.addLine(to: CGPoint(x: 12, y: 8.5))
+        box.move(to: CGPoint(x: 7 + offsetX, y: 8.5 + offsetY))
+        box.addLine(to: CGPoint(x: 0.5 + offsetX, y: 8.5 + offsetY))
+        box.addLine(to: CGPoint(x: 0.5 + offsetX, y: 26.5 + offsetY))
+        box.addLine(to: CGPoint(x: 18.5 + offsetX, y: 26.5 + offsetY))
+        box.addLine(to: CGPoint(x: 18.5 + offsetX, y: 8.5 + offsetY))
+        box.addLine(to: CGPoint(x: 12 + offsetX, y: 8.5 + offsetY))
         box.lineWidth = 1
         box.stroke()
 
         let arrowHead = UIBezierPath()
-        arrowHead.move(to: CGPoint(x: 5.5, y: 5))
-        arrowHead.addLine(to: CGPoint(x: 9.5, y: 0.5))
-        arrowHead.addLine(to: CGPoint(x: 13.5, y: 5))
+        arrowHead.move(to: CGPoint(x: 5.5 + offsetX, y: 5 + offsetY))
+        arrowHead.addLine(to: CGPoint(x: 9.5 + offsetX, y: 0.5 + offsetY))
+        arrowHead.addLine(to: CGPoint(x: 13.5 + offsetX, y: 5 + offsetY))
         arrowHead.lineWidth = 1
         arrowHead.stroke()
 
         let arrowShaft = UIBezierPath()
-        arrowShaft.move(to: CGPoint(x: 9.5, y: 1))
-        arrowShaft.addLine(to: CGPoint(x: 9.5, y: 17))
+        arrowShaft.move(to: CGPoint(x: 9.5 + offsetX, y: 1 + offsetY))
+        arrowShaft.addLine(to: CGPoint(x: 9.5 + offsetX, y: 17 + offsetY))
         arrowShaft.lineWidth = 1
         arrowShaft.stroke()
     }
