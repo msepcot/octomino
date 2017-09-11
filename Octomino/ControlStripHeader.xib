@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ControlStripHeader" id="AhS-gB-K3F" customClass="ControlStripHeader" customModule="Octomino" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="12"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hU-JH-zud">
+                    <rect key="frame" x="0.0" y="0.0" width="72" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="KSE-he-XaV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GY1-3h-05A" firstAttribute="trailing" secondItem="5hU-JH-zud" secondAttribute="trailing" id="dJE-yo-owV"/>
+                <constraint firstItem="5hU-JH-zud" firstAttribute="top" secondItem="AhS-gB-K3F" secondAttribute="top" id="gcL-WF-6yw"/>
+                <constraint firstItem="5hU-JH-zud" firstAttribute="leading" secondItem="GY1-3h-05A" secondAttribute="leading" id="z1R-hJ-HlX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="GY1-3h-05A"/>
+            <connections>
+                <outlet property="headerLabel" destination="5hU-JH-zud" id="xq7-za-Jak"/>
+            </connections>
+            <point key="canvasLocation" x="28" y="53"/>
+        </collectionReusableView>
+    </objects>
+</document>

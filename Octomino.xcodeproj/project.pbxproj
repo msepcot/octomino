@@ -10,13 +10,18 @@
 		2109060F1F62520100B4E3A7 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2109060E1F62520000B4E3A7 /* ShareButton.swift */; };
 		2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122E6581AD8A6070008B92D /* InfoViewController.swift */; };
 		212666771AD42E4A00B13622 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
+		2127152F1F6500200053B414 /* ControlStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2127152E1F6500200053B414 /* ControlStripViewController.swift */; };
+		212715311F6508A40053B414 /* ControlStripHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212715301F6508A40053B414 /* ControlStripHeader.swift */; };
+		212715331F6508CD0053B414 /* ControlStripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212715321F6508CD0053B414 /* ControlStripCell.swift */; };
 		2143FA331B06BBF4009AF434 /* RandomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA321B06BBF4009AF434 /* RandomController.swift */; };
 		2143FA351B06BC03009AF434 /* BlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA341B06BC03009AF434 /* BlockController.swift */; };
 		215FE0601F26F7FA000AB59D /* ComplicationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FE05F1F26F7FA000AB59D /* ComplicationDataSource.swift */; };
 		215FE0701F271376000AB59D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215FE06F1F271376000AB59D /* Images.xcassets */; };
 		216703EF1B3F4506003AE4EA /* Octomino WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21A860431B039F7E006ED4D3 /* Octomino WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		216703F21B3F4506003AE4EA /* Octomino WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21A8604D1B039F7E006ED4D3 /* Octomino WatchKit App.app */; };
-		219511911F5FAFDC00885BB4 /* ControlStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */; };
+		2167F9F31F6645150097041C /* SeparatorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2167F9F21F6645150097041C /* SeparatorGroup.swift */; };
+		2167F9F51F6652D80097041C /* ControlStripHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2167F9F41F6652D80097041C /* ControlStripHeader.xib */; };
+		2167F9F71F6653970097041C /* ControlStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2167F9F61F6653970097041C /* ControlStripCell.xib */; };
 		219511931F5FC24E00885BB4 /* FadeableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219511921F5FC24E00885BB4 /* FadeableButton.swift */; };
 		219C21801F56765B0081DDEA /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219C217F1F56765B0081DDEA /* FilterButton.swift */; };
 		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
@@ -90,11 +95,16 @@
 		2109060E1F62520000B4E3A7 /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		2122E6581AD8A6070008B92D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		212666761AD42E4A00B13622 /* Formations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Formations.plist; sourceTree = "<group>"; };
+		2127152E1F6500200053B414 /* ControlStripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlStripViewController.swift; sourceTree = "<group>"; };
+		212715301F6508A40053B414 /* ControlStripHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlStripHeader.swift; sourceTree = "<group>"; };
+		212715321F6508CD0053B414 /* ControlStripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlStripCell.swift; sourceTree = "<group>"; };
 		2143FA321B06BBF4009AF434 /* RandomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomController.swift; sourceTree = "<group>"; };
 		2143FA341B06BC03009AF434 /* BlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockController.swift; sourceTree = "<group>"; };
 		215FE05F1F26F7FA000AB59D /* ComplicationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationDataSource.swift; sourceTree = "<group>"; };
 		215FE06F1F271376000AB59D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlStripViewController.swift; sourceTree = "<group>"; };
+		2167F9F21F6645150097041C /* SeparatorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorGroup.swift; sourceTree = "<group>"; };
+		2167F9F41F6652D80097041C /* ControlStripHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlStripHeader.xib; sourceTree = "<group>"; };
+		2167F9F61F6653970097041C /* ControlStripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlStripCell.xib; sourceTree = "<group>"; };
 		219511921F5FC24E00885BB4 /* FadeableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeableButton.swift; sourceTree = "<group>"; };
 		219C217F1F56765B0081DDEA /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		219EE43D1AD0DB8500045DF2 /* Octomino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octomino.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,7 +198,12 @@
 				219C217F1F56765B0081DDEA /* FilterButton.swift */,
 				2109060E1F62520000B4E3A7 /* ShareButton.swift */,
 				219511921F5FC24E00885BB4 /* FadeableButton.swift */,
-				219511901F5FAFDC00885BB4 /* ControlStripViewController.swift */,
+				2127152E1F6500200053B414 /* ControlStripViewController.swift */,
+				212715301F6508A40053B414 /* ControlStripHeader.swift */,
+				2167F9F41F6652D80097041C /* ControlStripHeader.xib */,
+				212715321F6508CD0053B414 /* ControlStripCell.swift */,
+				2167F9F61F6653970097041C /* ControlStripCell.xib */,
+				2167F9F21F6645150097041C /* SeparatorGroup.swift */,
 			);
 			path = Octomino;
 			sourceTree = "<group>";
@@ -396,10 +411,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2167F9F71F6653970097041C /* ControlStripCell.xib in Resources */,
 				21A0ABB01AD38B7E0015EE54 /* TwoKeyFormationCell.xib in Resources */,
 				219EE4481AD0DB8500045DF2 /* Main.storyboard in Resources */,
 				212666771AD42E4A00B13622 /* Formations.plist in Resources */,
 				219EE44D1AD0DB8500045DF2 /* LaunchScreen.xib in Resources */,
+				2167F9F51F6652D80097041C /* ControlStripHeader.xib in Resources */,
 				21A0ABAC1AD38AD50015EE54 /* OneKeyFormationCell.xib in Resources */,
 				219EE44A1AD0DB8500045DF2 /* Images.xcassets in Resources */,
 			);
@@ -524,16 +541,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219511911F5FAFDC00885BB4 /* ControlStripViewController.swift in Sources */,
 				21BDC5D61C93D25B00FCF696 /* ReselectableSegmentedControl.swift in Sources */,
 				21A0ABAB1AD38AD50015EE54 /* OneKeyFormationCell.swift in Sources */,
 				2109060F1F62520100B4E3A7 /* ShareButton.swift in Sources */,
 				21A0ABAF1AD38B7E0015EE54 /* TwoKeyFormationCell.swift in Sources */,
 				219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */,
+				2127152F1F6500200053B414 /* ControlStripViewController.swift in Sources */,
 				219511931F5FC24E00885BB4 /* FadeableButton.swift in Sources */,
+				212715311F6508A40053B414 /* ControlStripHeader.swift in Sources */,
 				219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */,
 				2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */,
 				21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */,
+				2167F9F31F6645150097041C /* SeparatorGroup.swift in Sources */,
+				212715331F6508CD0053B414 /* ControlStripCell.swift in Sources */,
 				219C21801F56765B0081DDEA /* FilterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

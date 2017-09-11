@@ -94,27 +94,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wX-SV-6n9">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsA-gm-Okg" customClass="SeparatorGroup" customModule="Octomino" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wX-SV-6n9">
+                                        <rect key="frame" x="46" y="1" width="283" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="GB7-UX-6ga"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="Y5b-El-ZEf" kind="embed" id="CbP-jA-pWA"/>
+                                        </connections>
+                                    </containerView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aw3-jh-C9O" customClass="ShareButton" customModule="Octomino" customModuleProvider="target">
+                                        <rect key="frame" x="337" y="10" width="30" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="9KP-de-cza"/>
+                                            <constraint firstAttribute="height" constant="30" id="Kp7-cS-oSe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSt-J0-M3d" customClass="FilterButton" customModule="Octomino" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="10" width="30" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" label="Filter">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="h7C-z4-UIZ"/>
+                                            <constraint firstAttribute="width" constant="30" id="kdB-bG-q8b"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="GB7-UX-6ga"/>
+                                    <constraint firstAttribute="bottom" secondItem="6wX-SV-6n9" secondAttribute="bottom" id="KjJ-B1-9im"/>
+                                    <constraint firstAttribute="bottom" secondItem="pSt-J0-M3d" secondAttribute="bottom" constant="9" id="N1Q-Um-cLW"/>
+                                    <constraint firstItem="pSt-J0-M3d" firstAttribute="leading" secondItem="EsA-gm-Okg" secondAttribute="leading" constant="8" id="QGD-Qm-gGC"/>
+                                    <constraint firstItem="6wX-SV-6n9" firstAttribute="leading" secondItem="pSt-J0-M3d" secondAttribute="trailing" constant="8" id="QHM-9U-ldy"/>
+                                    <constraint firstItem="Aw3-jh-C9O" firstAttribute="leading" secondItem="6wX-SV-6n9" secondAttribute="trailing" constant="8" id="Va2-AV-xBV"/>
+                                    <constraint firstAttribute="bottom" secondItem="Aw3-jh-C9O" secondAttribute="bottom" constant="9" id="i62-eN-37T"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aw3-jh-C9O" secondAttribute="trailing" constant="8" id="v4F-qZ-PM4"/>
+                                    <constraint firstAttribute="height" constant="49" id="vRO-jk-YTR"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="X4m-xM-ldN" kind="embed" id="XaJ-YJ-Lpd"/>
-                                </connections>
-                            </containerView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6wX-SV-6n9" firstAttribute="leading" secondItem="SAg-C2-tMo" secondAttribute="leading" id="54R-pM-fCv"/>
-                            <constraint firstAttribute="trailing" secondItem="6wX-SV-6n9" secondAttribute="trailing" id="FQV-kS-XiK"/>
-                            <constraint firstItem="jcH-nL-fQ2" firstAttribute="top" secondItem="6wX-SV-6n9" secondAttribute="bottom" id="PyN-6P-Kok"/>
+                            <constraint firstItem="EsA-gm-Okg" firstAttribute="leading" secondItem="SAg-C2-tMo" secondAttribute="leading" id="GKi-K8-BgL"/>
+                            <constraint firstAttribute="bottom" secondItem="EsA-gm-Okg" secondAttribute="bottom" id="TLs-JQ-iPv"/>
+                            <constraint firstAttribute="trailing" secondItem="EsA-gm-Okg" secondAttribute="trailing" id="pwA-EJ-ZZE"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKS-9d-ArJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="363" y="952"/>
+            <point key="canvasLocation" x="362.39999999999998" y="951.27436281859082"/>
+        </scene>
+        <!--Control Strip View Controller-->
+        <scene sceneID="7IB-Aw-JpP">
+            <objects>
+                <collectionViewController id="Y5b-El-ZEf" customClass="ControlStripViewController" customModule="Octomino" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="l2q-ID-ydR">
+                        <rect key="frame" x="0.0" y="0.0" width="283" height="48"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LzP-fh-idc">
+                            <size key="itemSize" width="36" height="36"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Y5b-El-ZEf" id="rvd-xD-XcX"/>
+                            <outlet property="delegate" destination="Y5b-El-ZEf" id="zQr-d2-v4D"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbL-71-oMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="1419"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="AzS-wl-3kK">
@@ -144,55 +205,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plD-9S-uod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1046" y="247"/>
-        </scene>
-        <!--Control Strip View Controller-->
-        <scene sceneID="Cvg-2H-s4s">
-            <objects>
-                <viewController id="X4m-xM-ldN" customClass="ControlStripViewController" customModule="Octomino" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aH5-o1-sgn"/>
-                        <viewControllerLayoutGuide type="bottom" id="FxX-FB-Lq5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NPd-kR-z0D">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSt-J0-M3d" customClass="FilterButton" customModule="Octomino" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="30" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration" label="Filter">
-                                    <accessibilityTraits key="traits" button="YES"/>
-                                    <bool key="isElement" value="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="h7C-z4-UIZ"/>
-                                    <constraint firstAttribute="width" constant="30" id="kdB-bG-q8b"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="filterButtonTapped:" destination="X4m-xM-ldN" eventType="touchUpInside" id="hGl-Rj-0YV"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aw3-jh-C9O" customClass="ShareButton" customModule="Octomino" customModuleProvider="target">
-                                <rect key="frame" x="346" y="11" width="19" height="27"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="19" id="9KP-de-cza"/>
-                                    <constraint firstAttribute="height" constant="27" id="Kp7-cS-oSe"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Aw3-jh-C9O" secondAttribute="trailing" constant="10" id="X2z-RW-zrS"/>
-                            <constraint firstItem="Aw3-jh-C9O" firstAttribute="centerY" secondItem="NPd-kR-z0D" secondAttribute="centerY" id="YpZ-7L-5Op"/>
-                            <constraint firstItem="pSt-J0-M3d" firstAttribute="leading" secondItem="NPd-kR-z0D" secondAttribute="leading" constant="10" id="eTT-f3-t1h"/>
-                            <constraint firstItem="pSt-J0-M3d" firstAttribute="centerY" secondItem="NPd-kR-z0D" secondAttribute="centerY" id="rYc-Tb-WBe"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5g8-UO-qcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1072.8" y="950.37481259370327"/>
         </scene>
     </scenes>
     <resources>
