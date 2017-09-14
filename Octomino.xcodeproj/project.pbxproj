@@ -40,6 +40,7 @@
 		21A860581B039F7E006ED4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A860571B039F7E006ED4D3 /* Images.xcassets */; };
 		21A860661B03A552006ED4D3 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
 		21BDC5D61C93D25B00FCF696 /* ReselectableSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BDC5D51C93D25B00FCF696 /* ReselectableSegmentedControl.swift */; };
+		21F68FC91F68ED98003C1950 /* HorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F68FC81F68ED98003C1950 /* HorizontalFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		21A860551B039F7E006ED4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		21A860571B039F7E006ED4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		21BDC5D51C93D25B00FCF696 /* ReselectableSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReselectableSegmentedControl.swift; sourceTree = "<group>"; };
+		21F68FC81F68ED98003C1950 /* HorizontalFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				2109060E1F62520000B4E3A7 /* ShareButton.swift */,
 				219511921F5FC24E00885BB4 /* FadeableButton.swift */,
 				2127152E1F6500200053B414 /* ControlStripViewController.swift */,
+				21F68FC81F68ED98003C1950 /* HorizontalFlowLayout.swift */,
 				212715301F6508A40053B414 /* ControlStripHeader.swift */,
 				2167F9F41F6652D80097041C /* ControlStripHeader.xib */,
 				212715321F6508CD0053B414 /* ControlStripCell.swift */,
@@ -544,6 +547,7 @@
 				21BDC5D61C93D25B00FCF696 /* ReselectableSegmentedControl.swift in Sources */,
 				21A0ABAB1AD38AD50015EE54 /* OneKeyFormationCell.swift in Sources */,
 				2109060F1F62520100B4E3A7 /* ShareButton.swift in Sources */,
+				21F68FC91F68ED98003C1950 /* HorizontalFlowLayout.swift in Sources */,
 				21A0ABAF1AD38B7E0015EE54 /* TwoKeyFormationCell.swift in Sources */,
 				219EE4451AD0DB8500045DF2 /* MainViewController.swift in Sources */,
 				2127152F1F6500200053B414 /* ControlStripViewController.swift in Sources */,

@@ -12,10 +12,12 @@ import UIKit
     override func draw(_ rect: CGRect) {
         UIColor.lightGray.setStroke()
 
+        let pixel = 1.0 / UIScreen.main.scale
+
         let separator = UIBezierPath()
-        separator.move(to: CGPoint(x: 0, y: 0.5))
-        separator.addLine(to: CGPoint(x: rect.maxX, y: 0.5))
-        separator.lineWidth = 1
+        separator.move(to: CGPoint(x: 0, y: pixel))
+        separator.addLine(to: CGPoint(x: rect.maxX, y: pixel))
+        separator.lineWidth = pixel
         separator.stroke()
     }
 }

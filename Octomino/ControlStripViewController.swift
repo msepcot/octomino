@@ -10,6 +10,23 @@ import UIKit
 
 private let cellIdentifier = String(describing: ControlStripCell.self)
 private let headerIdentifier = String(describing: ControlStripHeader.self)
+private let formations = [
+    ["Randoms", "X", "A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "O", "P", "Q"],
+    ["Blocks", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"]
+]
+private let nationals2015 = [
+    ["Round 1", "M", "J", "17"],
+    ["Round 2", "E", "F", "H", "C"],
+    ["Round 3", "N", "O", "8"],
+    ["Round 4", "L", "19", "13"],
+    ["Round 5", "21", "G", "14"],
+    ["Round 6", "6", "P", "10"],
+    ["Round 7", "1", "K", "D"],
+    ["Round 8", "7", "Q", "B"],
+    ["Round 9", "A", "18", "16"],
+    ["Round 10", "3", "4"],
+    ["TB Round", "B", "K", "E", "F"]
+]
 
 class ControlStripViewController: UICollectionViewController {
 
@@ -23,24 +40,16 @@ class ControlStripViewController: UICollectionViewController {
         self.collectionView!.register(UINib(nibName: "ControlStripCell", bundle: nil),
                                       forCellWithReuseIdentifier: cellIdentifier)
         self.collectionView!.register(UINib(nibName: "ControlStripHeader", bundle: nil),
-                                      forSupplementaryViewOfKind: "header",
+                                      forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
                                       withReuseIdentifier: headerIdentifier)
 
         // Adjust flow layout sizing
         let flowLayout = self.collectionViewLayout as! UICollectionViewFlowLayout
-        flowLayout.headerReferenceSize = CGSize(width: 72, height: 12)
+        flowLayout.footerReferenceSize = CGSize.zero
+        flowLayout.headerReferenceSize = CGSize(width: 72, height: 14)
         flowLayout.sectionHeadersPinToVisibleBounds = true
 
-        flowLayout.sectionInset = UIEdgeInsets(top: 12, left: -72, bottom: 0, right: 0)
-
-        flowLayout.footerReferenceSize = CGSize(width: 72, height: 12)
-
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     /*
@@ -56,30 +65,29 @@ class ControlStripViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 3
+        return formations.count
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 7
+        return formations[section].count - 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! ControlStripCell
     
         // Configure the cell
-        cell.formationLabel.text = "\(indexPath.last ?? -1)"
+        let round = indexPath.first ?? 0
+        let formation = (indexPath.last ?? 0) + 1
+        cell.formationLabel.text = formations[round][formation]
     
         return cell
     }
 
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let cell = collectionView.dequeueReusableSupplementaryView(ofKind: "header", withReuseIdentifier: headerIdentifier, for: indexPath) as! ControlStripHeader
+        let cell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerIdentifier, for: indexPath) as! ControlStripHeader
 
         // Configure the cell
-        cell.headerLabel.text = "TESTING \(indexPath.first ?? -1)"
+        cell.headerLabel.text = formations[indexPath.first ?? 0].first?.uppercased()
 
         return cell
     }
@@ -114,5 +122,17 @@ class ControlStripViewController: UICollectionViewController {
     
     }
     */
+
+}
+
+extension ControlStripViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+        if section == formations.count - 1 {
+            return UIEdgeInsets(top: 12, left: -72, bottom: 0, right: collectionView.bounds.size.width - 36)
+        }
+        return UIEdgeInsets(top: 12, left: -72, bottom: 0, right: 36)
+    }
 
 }
