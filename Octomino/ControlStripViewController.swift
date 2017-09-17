@@ -37,11 +37,16 @@ class ControlStripViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UINib(nibName: "ControlStripCell", bundle: nil),
-                                      forCellWithReuseIdentifier: cellIdentifier)
-        self.collectionView!.register(UINib(nibName: "ControlStripHeader", bundle: nil),
-                                      forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
-                                      withReuseIdentifier: headerIdentifier)
+        self.collectionView!.register(
+            UINib(nibName: "ControlStripCell", bundle: nil),
+            forCellWithReuseIdentifier: cellIdentifier
+        )
+
+        self.collectionView!.register(
+            UINib(nibName: "ControlStripHeader", bundle: nil),
+            forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+            withReuseIdentifier: headerIdentifier
+        )
 
         // Adjust flow layout sizing
         let flowLayout = self.collectionViewLayout as! UICollectionViewFlowLayout
@@ -69,7 +74,7 @@ class ControlStripViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return formations[section].count - 1
+        return formations[section].count - 1 // Name of section is in slot 0
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -130,6 +135,7 @@ extension ControlStripViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
 
         if section == formations.count - 1 {
+            // Extend the right inset so the last item in a section can be left aligned when scrolling
             return UIEdgeInsets(top: 12, left: -72, bottom: 0, right: collectionView.bounds.size.width - 36)
         }
         return UIEdgeInsets(top: 12, left: -72, bottom: 0, right: 36)

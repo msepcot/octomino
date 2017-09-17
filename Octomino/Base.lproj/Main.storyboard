@@ -95,9 +95,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haB-ZI-4gi" userLabel="Formation">
-                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
-                                    <segue destination="DVn-8f-Bel" kind="embed" id="3cH-ef-3W2"/>
+                                    <segue destination="xEd-MO-PwD" kind="embed" id="Pie-Rc-dVM"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsA-gm-Okg" customClass="SeparatorGroup" customModule="Octomino" customModuleProvider="target">
@@ -149,18 +149,43 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EsA-gm-Okg" firstAttribute="leading" secondItem="SAg-C2-tMo" secondAttribute="leading" id="GKi-K8-BgL"/>
-                            <constraint firstItem="EsA-gm-Okg" firstAttribute="top" secondItem="haB-ZI-4gi" secondAttribute="bottom" id="HG6-d4-CP9"/>
+                            <constraint firstItem="jcH-nL-fQ2" firstAttribute="top" secondItem="haB-ZI-4gi" secondAttribute="bottom" id="HG6-d4-CP9"/>
+                            <constraint firstItem="haB-ZI-4gi" firstAttribute="leading" secondItem="SAg-C2-tMo" secondAttribute="leading" id="Hdw-eE-2hB"/>
                             <constraint firstItem="haB-ZI-4gi" firstAttribute="top" secondItem="Osg-Qf-6vh" secondAttribute="bottom" id="PJh-4U-Opo"/>
                             <constraint firstItem="jcH-nL-fQ2" firstAttribute="top" secondItem="EsA-gm-Okg" secondAttribute="bottom" id="TLs-JQ-iPv"/>
                             <constraint firstAttribute="trailing" secondItem="EsA-gm-Okg" secondAttribute="trailing" id="pwA-EJ-ZZE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="haB-ZI-4gi" secondAttribute="trailing" id="sFS-ed-7Ey"/>
-                            <constraint firstItem="haB-ZI-4gi" firstAttribute="leading" secondItem="SAg-C2-tMo" secondAttribute="leadingMargin" id="v38-7v-Qgr"/>
+                            <constraint firstAttribute="trailing" secondItem="haB-ZI-4gi" secondAttribute="trailing" id="yZh-aD-qYS"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKS-9d-ArJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="362.39999999999998" y="951.27436281859082"/>
+        </scene>
+        <!--Formation Collection View Controller-->
+        <scene sceneID="HV4-dG-dUW">
+            <objects>
+                <collectionViewController id="xEd-MO-PwD" customClass="FormationCollectionViewController" customModule="Octomino" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="PPk-T4-Ewn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EEy-zu-yxH">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="xEd-MO-PwD" id="gw4-3L-UJh"/>
+                            <outlet property="delegate" destination="xEd-MO-PwD" id="f0S-tf-kBL"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8f-Wr-5Ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="951"/>
         </scene>
         <!--Control Strip View Controller-->
         <scene sceneID="7IB-Aw-JpP">
@@ -215,23 +240,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plD-9S-uod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1046" y="247"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="sZq-JP-ufj">
-            <objects>
-                <viewController id="DVn-8f-Bel" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5mD-Bb-npL"/>
-                        <viewControllerLayoutGuide type="bottom" id="rKW-ZI-7t1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="77j-hK-PYP">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="598"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lb-lU-RIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1046" y="951"/>
         </scene>
     </scenes>
     <resources>

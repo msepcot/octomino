@@ -22,6 +22,7 @@
 		2167F9F31F6645150097041C /* SeparatorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2167F9F21F6645150097041C /* SeparatorGroup.swift */; };
 		2167F9F51F6652D80097041C /* ControlStripHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2167F9F41F6652D80097041C /* ControlStripHeader.xib */; };
 		2167F9F71F6653970097041C /* ControlStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2167F9F61F6653970097041C /* ControlStripCell.xib */; };
+		2174E81C1F6E2D3D00CDEC8E /* FormationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2174E81B1F6E2D3D00CDEC8E /* FormationCollectionViewController.swift */; };
 		219511931F5FC24E00885BB4 /* FadeableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219511921F5FC24E00885BB4 /* FadeableButton.swift */; };
 		219C21801F56765B0081DDEA /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219C217F1F56765B0081DDEA /* FilterButton.swift */; };
 		219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EE4421AD0DB8500045DF2 /* AppDelegate.swift */; };
@@ -106,6 +107,7 @@
 		2167F9F21F6645150097041C /* SeparatorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorGroup.swift; sourceTree = "<group>"; };
 		2167F9F41F6652D80097041C /* ControlStripHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlStripHeader.xib; sourceTree = "<group>"; };
 		2167F9F61F6653970097041C /* ControlStripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlStripCell.xib; sourceTree = "<group>"; };
+		2174E81B1F6E2D3D00CDEC8E /* FormationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewController.swift; sourceTree = "<group>"; };
 		219511921F5FC24E00885BB4 /* FadeableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeableButton.swift; sourceTree = "<group>"; };
 		219C217F1F56765B0081DDEA /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		219EE43D1AD0DB8500045DF2 /* Octomino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octomino.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 				219EE4421AD0DB8500045DF2 /* AppDelegate.swift */,
 				219EE4441AD0DB8500045DF2 /* MainViewController.swift */,
 				219EE4461AD0DB8500045DF2 /* Main.storyboard */,
+				2174E81B1F6E2D3D00CDEC8E /* FormationCollectionViewController.swift */,
 				219EE4491AD0DB8500045DF2 /* Images.xcassets */,
 				219EE44B1AD0DB8500045DF2 /* LaunchScreen.xib */,
 				219EE4401AD0DB8500045DF2 /* Supporting Files */,
@@ -556,6 +559,7 @@
 				219EE4431AD0DB8500045DF2 /* AppDelegate.swift in Sources */,
 				2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */,
 				21A250BC1AD5FBB400B1E8DD /* FormationCell.swift in Sources */,
+				2174E81C1F6E2D3D00CDEC8E /* FormationCollectionViewController.swift in Sources */,
 				2167F9F31F6645150097041C /* SeparatorGroup.swift in Sources */,
 				212715331F6508CD0053B414 /* ControlStripCell.swift in Sources */,
 				219C21801F56765B0081DDEA /* FilterButton.swift in Sources */,
