@@ -10,22 +10,39 @@ import UIKit
 
 private let cellIdentifier = String(describing: ControlStripCell.self)
 private let headerIdentifier = String(describing: ControlStripHeader.self)
+
+//private let formations = [
+//    ["Randoms", "X", "A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "O", "P", "Q"],
+//    ["Blocks", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"]
+//]
+//
+//private let nationals2015 = [
+//    ["Round 1", "M", "J", "17"],
+//    ["Round 2", "E", "F", "H", "C"],
+//    ["Round 3", "N", "O", "8"],
+//    ["Round 4", "L", "19", "13"],
+//    ["Round 5", "21", "G", "14"],
+//    ["Round 6", "6", "P", "10"],
+//    ["Round 7", "1", "K", "D"],
+//    ["Round 8", "7", "Q", "B"],
+//    ["Round 9", "A", "18", "16"],
+//    ["Round 10", "3", "4"],
+//    ["TB Round", "B", "K", "E", "F"]
+//]
+//
+//private let nationals2017 = [
 private let formations = [
-    ["Randoms", "X", "A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "O", "P", "Q"],
-    ["Blocks", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"]
-]
-private let nationals2015 = [
-    ["Round 1", "M", "J", "17"],
-    ["Round 2", "E", "F", "H", "C"],
-    ["Round 3", "N", "O", "8"],
-    ["Round 4", "L", "19", "13"],
-    ["Round 5", "21", "G", "14"],
-    ["Round 6", "6", "P", "10"],
-    ["Round 7", "1", "K", "D"],
-    ["Round 8", "7", "Q", "B"],
-    ["Round 9", "A", "18", "16"],
-    ["Round 10", "3", "4"],
-    ["TB Round", "B", "K", "E", "F"]
+    ["Round 1", "G", "22", "F", "1"],
+    ["Round 2", "9", "6", "2"],
+    ["Round 3", "D", "7", "L", "17"],
+    ["Round 4", "8", "J", "C", "K"],
+    ["Round 5", "Q", "B", "14", "20"],
+    ["Round 6", "19", "15", "4"],
+    ["Round 7", "A", "10", "13"],
+    ["Round 8", "12", "M", "N", "P"],
+    ["Round 9", "H", "O", "3", "16"],
+    ["Round 10", "5", "21", "11"],
+    ["TB Round", "E", "18", "4"]
 ]
 
 class ControlStripViewController: UICollectionViewController {

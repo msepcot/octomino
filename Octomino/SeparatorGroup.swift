@@ -15,7 +15,7 @@ import UIKit
         let pixel = 1.0 / UIScreen.main.scale
 
         let separator = UIBezierPath()
-        separator.move(to: CGPoint(x: 0, y: pixel))
+        separator.move(to: CGPoint(x: rect.origin.x, y: pixel))
         separator.addLine(to: CGPoint(x: rect.maxX, y: pixel))
         separator.lineWidth = pixel
         separator.stroke()
