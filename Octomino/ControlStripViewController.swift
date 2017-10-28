@@ -46,7 +46,6 @@ private let formations = [
 ]
 
 class ControlStripViewController: UICollectionViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -144,11 +143,9 @@ class ControlStripViewController: UICollectionViewController {
     
     }
     */
-
 }
 
 extension ControlStripViewController: UICollectionViewDelegateFlowLayout {
-
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
 
         if section == formations.count - 1 {
@@ -157,5 +154,4 @@ extension ControlStripViewController: UICollectionViewDelegateFlowLayout {
         }
         return UIEdgeInsets(top: 12, left: -72, bottom: 0, right: 36)
     }
-
 }
