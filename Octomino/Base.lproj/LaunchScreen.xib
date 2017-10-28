@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -62,7 +63,7 @@
                 <constraint firstAttribute="trailing" secondItem="1s1-t6-9Qg" secondAttribute="trailing" constant="32" id="o2H-k1-v7Y"/>
                 <constraint firstItem="3Yd-u6-1Np" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="tEz-2B-X17"/>
                 <constraint firstAttribute="bottom" secondItem="d54-eW-RPA" secondAttribute="bottom" constant="23" id="udn-wt-eyx"/>
-                <constraint firstItem="3Yd-u6-1Np" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28" id="xNt-9R-wcr"/>
+                <constraint firstItem="3Yd-u6-1Np" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="8" id="xNt-9R-wcr"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
