@@ -2,279 +2,673 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Randoms</key>
-	<array>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>X</string>
-			<key>Name</key>
-			<string>Exit Frame</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>A</string>
-			<key>Name</key>
-			<string>Caterpillar</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check forward and look at each other.</string>
-			<key>CoachNotes</key>
-			<string>First, set up a star. Then, turn out to a donut while watching clone the entire time. Build like a donut, referencing across, then take grips: first right, then left.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>B</string>
-			<key>Name</key>
-			<string>Stairstep</string>
-			<key>KeyPosition</key>
-			<string>Inside Rear</string>
-			<key>KeyDescription</key>
-			<string>Tail guarantees left grip on Outside Rear.</string>
-			<key>CoachNotes</key>
-			<string>First, set up the center diamond. Outside Center and Inside Center set up parallel with each other, one body width apart. Outside Front and Inside Front set up and present legs first before taking grips on Point.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>C</string>
-			<key>Name</key>
-			<string>Hourglass</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right. See Outside Front and Inside Rear headswitch to know their sides are built.</string>
-			<key>CoachNotes</key>
-			<string>First, set up the center bipole. Outside Front and Inside Rear set up in bipole before looking out to take grips, then headswitch over left shoulder. Point, Inside Front, Outside Rear, and Tail wait for Outside Front and Inside Rear to be in place before turning out.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>D</string>
-			<key>Name</key>
-			<string>Hope Diamond</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right.</string>
-			<key>CoachNotes</key>
-			<string>First, set up between Outside Front, Inside Front, Inside Rear, and Outside Rear. All infacing in square, then turn out together. Continue to reference off each other and reference strong with center four. Point and Tail wait to turn out last after the rest is built. Inside Front/Outside Front and Inside Rear/Outside Rear see grips out of periphery. Continue to work levels and setups.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>E</string>
-			<key>Name</key>
-			<string>Rubick</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right.</string>
-			<key>CoachNotes</key>
-			<string>First, set up a stairstep picture between Outside Center, Inside Center, Outside Rear, and Inside Front. Inside Front and Outside Rear keep referencing stairstep setup and take grips out of corner of eye. Outside Front and Inside Rear wait long and then turn out, stay looking over left shoulder. Point and Tail present last, building deeply compressed.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>F</string>
-			<key>Name</key>
-			<string>Diamond Flake</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check left.</string>
-			<key>CoachNotes</key>
-			<string>First, build the center stairstep diamond, then take outside grips. Outside Rear and Inside Front can cheat cat. Point and Tail build the compresseds deep. Outsides build off of the opposite center to avoid orbiting.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>G</string>
-			<key>Name</key>
-			<string>Arrowhead</string>
-			<key>KeyPosition</key>
-			<string>Inside Rear</string>
-			<key>KeyDescription</key>
-			<string>Outside Rear and Tail guarantee outside grips.</string>
-			<key>CoachNotes</key>
-			<string>Centers set up in a line with Inside Rear, one body width apart. Outside Front and Inside Front set up even with each other and present legs first, before looking out for Point&apos;s grip. Point waits long before turning out. Outside Rear and Tail guarantee outside grips for Inside Rear.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>H</string>
-			<key>Name</key>
-			<string>Iriquois</string>
-			<key>KeyPosition</key>
-			<string>Outside Center</string>
-			<key>KeyDescription</key>
-			<string>Check front, eyes from Tail to ensure compressed.</string>
-			<key>CoachNotes</key>
-			<string>Set up like a 4-Way Block 9 for the center four. Outsides let center four set up the Block 9 picture first. Work levels, keeping the fall rate of the compressed. The compressed will tend to float.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>J</string>
-			<key>Name</key>
-			<string>Springbok</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Build center donut first, then check outsides.</string>
-			<key>CoachNotes</key>
-			<string>First, build the center donut. Inside Front and Outside Rear wait long for Inside Center and Outside Center to look out to guarantee grips.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>K</string>
-			<key>Name</key>
-			<string>Crossbow</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right.</string>
-			<key>CoachNotes</key>
-			<string>Outside Center and Inside Center prioritize the center compressed. Inside Front and Outside Front build with hips close to each other to make it easy for Point to take grips. Inside Rear and Outside Rear do the same for Tail.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>L</string>
-			<key>Name</key>
-			<string>Open Facing Diamond</string>
-			<key>KeyPosition</key>
-			<string>Inside Rear</string>
-			<key>KeyDescription</key>
-			<string>Tail guarantees grip.</string>
-			<key>CoachNotes</key>
-			<string>Outside Center and Inside Center set up with each other and Inside Rear and Outside Rear in a 4-Way infacing box picture. Inside Front and Outside Front wait to see picture, then turn out (inside turn), guaranteeing pictures and grips first, then see Point grips in periphery, continuing to work the center picture. Outside Front escalates global thermonuclear war. Point waits the longest, turning out to guarantee grips.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>M</string>
-			<key>Name</key>
-			<string>Double Spiders</string>
-			<key>KeyPosition</key>
-			<string>Tail</string>
-			<key>KeyDescription</key>
-			<string>Inside Center and Outside Center look back when grips are complete.</string>
-			<key>CoachNotes</key>
-			<string>First, build the center diamond. Then, line up in even lines with the front line guaranteeing grips. Outside Center and Inside Center build one body width apart.
-
-Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap positions depending on the previous and next points.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>N</string>
-			<key>Name</key>
-			<string>Zipper Flake</string>
-			<key>KeyPosition</key>
-			<string>Outside Center</string>
-			<key>KeyDescription</key>
-			<string>Point and Inside Front wait to see center build, then guarantee grips.</string>
-			<key>CoachNotes</key>
-			<string>First, Outside Center, Inside Center, Outside Front, and Inside Rear build center for angle. Then, Inside Center and Outside Front look out to build cats. Inside Center and Outside Front should be close enought to almost take arm grips. Point and Inside Front wait to see the center build, then guarantee grips. Inside Front and Point keep hips close.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>O</string>
-			<key>Name</key>
-			<string>Compressed Accordion</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check left, see heads looking back at them.</string>
-			<key>CoachNotes</key>
-			<string>First, build on level and deeply compressed. Then, take grips. Outsides watch inward the entire time as it builds. Let it build from the center out. Keep working LEVELS even after the build. Outsides should see themselves on level with the rest of compressed. If you see backpacks, ARCH!</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>P</string>
-			<key>Name</key>
-			<string>Venus</string>
-			<key>KeyPosition</key>
-			<string>Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Inside Front or Outside Front guarantees bipole grips, taking Point first, then Inside Center.</string>
-			<key>CoachNotes</key>
-			<string>Inside Rear and Inside Center set up in a cat picture with Outside Center perpendicular. Outside Front and Tail are parallel with Outside Center. Tail and Outside Rear set up a donut picture. Point waits to present grips after Inside Front and Outside Front are ready.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>Q</string>
-			<key>Name</key>
-			<string>Compass</string>
-			<key>KeyPosition</key>
-			<string>Inside Rear</string>
-			<key>KeyDescription</key>
-			<string>See donuts build and Outside Front headswitch left.</string>
-			<key>CoachNotes</key>
-			<string>First, Outside Front builds cat grips with Inside Rear, looking over right shoulder. Then, looks out to take grips and headswitches left to let Inside Rear know it is complete. Outside Rear and Inside Front should be parallel with the cat in the center, about one body width apart and centerpoint in line with grips. Outside Center, Inside Center, Point, and Tail let Outside Rear and Inside Front set up before building donuts. Present legs first, then take grips.</string>
-		</dict>
-	</array>
-	<key>Blocks</key>
-	<array>
-		<dict>
-			<key>Class</key>
-			<string>TwoKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>1</string>
-			<key>Name</key>
-			<string>Donut Flake - Donut Flake</string>
-			<key>Top-KeyPosition</key>
-			<string>Outside Front and Inside Rear</string>
-			<key>Top-KeyDescription</key>
-			<string>Top: See pod build in front and feel grips behind.</string>
-			<key>Bottom-KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>Bottom-KeyDescription</key>
-			<string>Bottom: See pod build in front and feel grips behind.</string>
-			<key>CoachNotes</key>
-			<string>First, build the center donut. Outsides build straight on picture with clones, with a straight line bisecting the outsides going through the donut grips.
+	<key>4way</key>
+	<dict>
+		<key>Blocks</key>
+		<array>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>1</string>
+				<key>Image</key>
+				<string>4way-1</string>
+				<key>Name</key>
+				<string>Molar - Molar</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>2</string>
+				<key>Image</key>
+				<string>4way-2</string>
+				<key>Name</key>
+				<string>Sidebody Donut - Sideflake Donut</string>
+				<key>Top-KeyPosition</key>
+				<string>Point</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>3</string>
+				<key>Image</key>
+				<string>4way-3</string>
+				<key>Name</key>
+				<string>Sideflake Opal - Turf</string>
+				<key>Top-KeyPosition</key>
+				<string>Inside Center</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Point</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>4</string>
+				<key>Image</key>
+				<string>4way-4</string>
+				<key>Name</key>
+				<string>Monopod - Monopod</string>
+				<key>KeyPosition</key>
+				<string>Outside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>5</string>
+				<key>Image</key>
+				<string>4way-5</string>
+				<key>Name</key>
+				<string>Opal - Opal</string>
+				<key>Top-KeyPosition</key>
+				<string>Inside Center and Outside Center</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Point</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>6</string>
+				<key>Image</key>
+				<string>4way-6</string>
+				<key>Name</key>
+				<string>Stardian - Stardian</string>
+				<key>Top-KeyPosition</key>
+				<string>Inside Center and Outside Center</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Inside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>7</string>
+				<key>Image</key>
+				<string>4way-7</string>
+				<key>Name</key>
+				<string>Sidebuddies - Sidebuddies</string>
+				<key>KeyPosition</key>
+				<string>Point</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>8</string>
+				<key>Image</key>
+				<string>4way-8</string>
+				<key>Name</key>
+				<string>Canadian Tee - Canadian Tee</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>9</string>
+				<key>Image</key>
+				<string>4way-9</string>
+				<key>Name</key>
+				<string>Cat+Accordian - Cat+Accordian</string>
+				<key>Top-KeyPosition</key>
+				<string>Outside Center</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Point</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>10</string>
+				<key>Image</key>
+				<string>4way-10</string>
+				<key>Name</key>
+				<string>Diamond - Bunyip</string>
+				<key>KeyPosition</key>
+				<string>Tail</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>11</string>
+				<key>Image</key>
+				<string>4way-11</string>
+				<key>Name</key>
+				<string>Photon - Photon</string>
+				<key>KeyPosition</key>
+				<string>Inside Center and Outside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>12</string>
+				<key>Image</key>
+				<string>4way-12</string>
+				<key>Name</key>
+				<string>Bundy - Bundy</string>
+				<key>Top-KeyPosition</key>
+				<string>Inside Center</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Inside Center and Point</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>13</string>
+				<key>Image</key>
+				<string>4way-13</string>
+				<key>Name</key>
+				<string>Mixed Accordian - Mixed Accordian</string>
+				<key>KeyPosition</key>
+				<string>Inside Center and Outside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>14</string>
+				<key>Image</key>
+				<string>4way-14</string>
+				<key>Name</key>
+				<string>Bipole - Bipole</string>
+				<key>Top-KeyPosition</key>
+				<string>Point</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Inside Center and Outside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>15</string>
+				<key>Image</key>
+				<string>4way-15</string>
+				<key>Name</key>
+				<string>Caterpillar - Caterpillar</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>16</string>
+				<key>Image</key>
+				<string>4way-16</string>
+				<key>Name</key>
+				<string>Compressed - Box</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Inside Center and Point</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>17</string>
+				<key>Image</key>
+				<string>4way-17</string>
+				<key>Name</key>
+				<string>Danish Tee - Murphy</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>18</string>
+				<key>Image</key>
+				<string>4way-18</string>
+				<key>Name</key>
+				<string>Zircon - Zircon</string>
+				<key>KeyPosition</key>
+				<string>Point</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>19</string>
+				<key>Image</key>
+				<string>4way-19</string>
+				<key>Name</key>
+				<string>Ritz - Icepick</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>20</string>
+				<key>Image</key>
+				<string>4way-20</string>
+				<key>Name</key>
+				<string>Piver - Viper</string>
+				<key>Top-KeyPosition</key>
+				<string>Point</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>21</string>
+				<key>Image</key>
+				<string>4way-21</string>
+				<key>Name</key>
+				<string>Zig Zag - Marquis</string>
+				<key>KeyPosition</key>
+				<string>Inside Center and Outside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>22</string>
+				<key>Image</key>
+				<string>4way-22</string>
+				<key>Name</key>
+				<string>Tee - Chinese Tee</string>
+				<key>Top-KeyPosition</key>
+				<string>Point</string>
+				<key>Top-KeyDescription</key>
+				<string></string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string></string>
+				<key>CoachNotes</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Randoms</key>
+		<array>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>A</string>
+				<key>Image</key>
+				<string>4way-A</string>
+				<key>Name</key>
+				<string>Unipod</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>B</string>
+				<key>Image</key>
+				<string>4way-B</string>
+				<key>Name</key>
+				<string>Stairstep Diamond</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>C</string>
+				<key>Image</key>
+				<string>4way-C</string>
+				<key>Name</key>
+				<string>Murphy Flake</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>D</string>
+				<key>Image</key>
+				<string>4way-D</string>
+				<key>Name</key>
+				<string>Yuan</string>
+				<key>KeyPosition</key>
+				<string>Outside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>E</string>
+				<key>Image</key>
+				<string>4way-E</string>
+				<key>Name</key>
+				<string>Meeker</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>F</string>
+				<key>Image</key>
+				<string>4way-F</string>
+				<key>Name</key>
+				<string>Open Accordian</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>G</string>
+				<key>Image</key>
+				<string>4way-G</string>
+				<key>Name</key>
+				<string>Catacord</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>H</string>
+				<key>Image</key>
+				<string>4way-H</string>
+				<key>Name</key>
+				<string>Bow</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>J</string>
+				<key>Image</key>
+				<string>4way-J</string>
+				<key>Name</key>
+				<string>Donut</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>K</string>
+				<key>Image</key>
+				<string>4way-K</string>
+				<key>Name</key>
+				<string>Hook</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>L</string>
+				<key>Image</key>
+				<string>4way-L</string>
+				<key>Name</key>
+				<string>Adder</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>M</string>
+				<key>Image</key>
+				<string>4way-M</string>
+				<key>Name</key>
+				<string>Star</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>N</string>
+				<key>Image</key>
+				<string>4way-N</string>
+				<key>Name</key>
+				<string>Crank</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>O</string>
+				<key>Image</key>
+				<string>4way-O</string>
+				<key>Name</key>
+				<string>Satallite</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>P</string>
+				<key>Image</key>
+				<string>4way-P</string>
+				<key>Name</key>
+				<string>Sidebody</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>Q</string>
+				<key>Image</key>
+				<string>4way-Q</string>
+				<key>Name</key>
+				<string>Phalanx</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>8way</key>
+	<dict>
+		<key>Blocks</key>
+		<array>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>1</string>
+				<key>Image</key>
+				<string>8way-1</string>
+				<key>Name</key>
+				<string>Donut Flake - Donut Flake</string>
+				<key>Top-KeyPosition</key>
+				<string>Outside Front and Inside Rear</string>
+				<key>Top-KeyDescription</key>
+				<string>Top: See pod build in front and feel grips behind.</string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string>Bottom: See pod build in front and feel grips behind.</string>
+				<key>CoachNotes</key>
+				<string>First, build the center donut. Outsides build straight on picture with clones, with a straight line bisecting the outsides going through the donut grips.
 
 On the key, flakers reference across and squeeze in to build the donut. See the intermediate tight star picture. Donut references clone to straight on picture, resisting backing out too far. Reference across through the move. The first donut minimizes the step out, forcing the outsides to push in.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>2</string>
-			<key>Name</key>
-			<string>Swiss Bear - Swiss Bear</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Top: Check the solo on your side then look across.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>2</string>
+				<key>Image</key>
+				<string>8way-2</string>
+				<key>Name</key>
+				<string>Swiss Bear - Swiss Bear</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Top: Check the solo on your side then look across.
 Bottom: Check that the solos are on.</string>
-			<key>CoachNotes</key>
-			<string>For the build, Outside Front and Inside Rear should see a bipole with each other; Outside Center, Tail, Point, and Inside Center should face off, letting the solos fill in the gap with heads over their right shoulder and seeing the line between the four centers.
+				<key>CoachNotes</key>
+				<string>For the build, Outside Front and Inside Rear should see a bipole with each other; Outside Center, Tail, Point, and Inside Center should face off, letting the solos fill in the gap with heads over their right shoulder and seeing the line between the four centers.
 
 On key, solos step forward and turn to the right. Point and Tail anchor hard on the first move, then back through at each other. After they cross, reference switches to the opposite center.
 
@@ -282,128 +676,142 @@ Inter pictures:
 1. See a 6-way compressed with Point and Tail on the outside
 2. Mirrored Bears
 3. See a 6-way compressed with Point and Tail on the inside</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>3</string>
-			<key>Name</key>
-			<string>Double Chinese Tees - Double Donuts</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Top: Check their chinese tee and look at each other. Bottom: Check their donut and look at each other.</string>
-			<key>CoachNotes</key>
-			<string>The build should look like a 4-Way Bunyip for Outside Center, Inside Center, Outside Front, and Inside Rear. Outside Front and Inside Rear face in until they can see where Outside Center and Inside Center are set. Then, turn in toward center while looking over left shoulder to keep a strong reference on the other center. As the piece builds, the center keeps flying and working the Bunyip picture. Keep looking over left shoulder, seeing the outside compressed grip out of the corner of your eye. Take grips, then focus back on the center build, maintaining levels. Centers keep a fast fall rate. The compressed tends to fload.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>3</string>
+				<key>Image</key>
+				<string>8way-3</string>
+				<key>Name</key>
+				<string>Double Chinese Tees - Double Donuts</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Top: Check their chinese tee and look at each other. Bottom: Check their donut and look at each other.</string>
+				<key>CoachNotes</key>
+				<string>The build should look like a 4-Way Bunyip for Outside Center, Inside Center, Outside Front, and Inside Rear. Outside Front and Inside Rear face in until they can see where Outside Center and Inside Center are set. Then, turn in toward center while looking over left shoulder to keep a strong reference on the other center. As the piece builds, the center keeps flying and working the Bunyip picture. Keep looking over left shoulder, seeing the outside compressed grip out of the corner of your eye. Take grips, then focus back on the center build, maintaining levels. Centers keep a fast fall rate. The compressed tends to fload.
 
 On key, Outside Front and Inside Rear build a bipole with a late head switch to build the donut. Bipole build for Outside Center, Inside Center, Outside Front, and Inside Rear. Outsides take donut grips only after the center bipole setup is complete.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>TwoKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>4</string>
-			<key>Name</key>
-			<string>Snowflake - In-Out</string>
-			<key>Top-KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>Top-KeyDescription</key>
-			<string>Top: Feel grips on cats and check right.</string>
-			<key>Bottom-KeyPosition</key>
-			<string>Outside Rear and Inside Front</string>
-			<key>Bottom-KeyDescription</key>
-			<string>Bottom: Check right.</string>
-			<key>CoachNotes</key>
-			<string>Outsides build a tight cat picture, cheated to the right side, with their head next to their piece partner&apos;s right knee. Look across at clone and be prepared to squeeze in on the key. Cats build with grips at eye level, not high.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>4</string>
+				<key>Image</key>
+				<string>8way-4</string>
+				<key>Name</key>
+				<string>Snowflake - In-Out</string>
+				<key>Top-KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>Top-KeyDescription</key>
+				<string>Top: Feel grips on cats and check right.</string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Rear and Inside Front</string>
+				<key>Bottom-KeyDescription</key>
+				<string>Bottom: Check right.</string>
+				<key>CoachNotes</key>
+				<string>Outsides build a tight cat picture, cheated to the right side, with their head next to their piece partner&apos;s right knee. Look across at clone and be prepared to squeeze in on the key. Cats build with grips at eye level, not high.
 
 On key, insides, looking at the wing next to them, turn out left. Outsides drive in toward their clone, not toward the grip. Outsides keep looking over right shoulder, working off what they can see for clues on levels and squeezing in toward center. Insides work to keep their centerpoints from drifting out. Keep driving in to create an even circle shape. Target the right leg grip just to the left of where the arm grip was.
 
 Alternate Build: Outsides can cheat left, with the insides turning out to the right on the key.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>5</string>
-			<key>Name</key>
-			<string>Crank - Crank</string>
-			<key>KeyPosition</key>
-			<string>Outside Front and Inside Rear</string>
-			<key>KeyDescription</key>
-			<string>Check cat and sidebodies in front of them.</string>
-			<key>CoachNotes</key>
-			<string>First, build the star between Outside Front and Inside Rear. Inside Front and Inside Center set up off of Outside Front. Outside Center and Outside Rear set up off of Inside Rear.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>5</string>
+				<key>Image</key>
+				<string>8way-5</string>
+				<key>Name</key>
+				<string>Crank - Crank</string>
+				<key>KeyPosition</key>
+				<string>Outside Front and Inside Rear</string>
+				<key>KeyDescription</key>
+				<string>Check cat and sidebodies in front of them.</string>
+				<key>CoachNotes</key>
+				<string>First, build the star between Outside Front and Inside Rear. Inside Front and Inside Center set up off of Outside Front. Outside Center and Outside Rear set up off of Inside Rear.
 
 On the key, Inside Front, Outside Center, Inside Center, and Inside Rear wait for the outsides to let go. The person being sidebodied has a mellow move. Make a late, mellow headswitch, maintaining levels and keep the sidebody square. For the people taking the sidebodies, keep the build square, pull in and turn on center, making late and mellow headswitches. The front two pieces watch Inside Rear. The rear two pieces watch Outside Front. Pause at 180 degrees, seeing all four people taking sidebodies in a line.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>6</string>
-			<key>Name</key>
-			<string>Star - Star</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right.</string>
-			<key>CoachNotes</key>
-			<string>The pieces move clockwise. The partner on the left steps into the center, creating a 4-Way donut picture while looking long over their left shoulder. The partner on the right stays hip to hip with their partner throughout the move. See a picture with all legs in, facing out. Stop in this picture. Stay looking long over left shoulder to see where the grip is targeted before headswitching. See the second donut picture before the close. Continue to work on keeping levels the same between all pieces.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>7</string>
-			<key>Name</key>
-			<string>Nacho - Nacho</string>
-			<key>KeyPosition</key>
-			<string>Outside Front and Inside Rear</string>
-			<key>KeyDescription</key>
-			<string>Check left.</string>
-			<key>CoachNotes</key>
-			<string>First, build two-way stars. Outside Center and Inside Center set up in an offset open picture. Outside Rear and Inside Front do the same. Half-stars set up across from each other.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>6</string>
+				<key>Image</key>
+				<string>8way-6</string>
+				<key>Name</key>
+				<string>Star - Star</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right.</string>
+				<key>CoachNotes</key>
+				<string>The pieces move clockwise. The partner on the left steps into the center, creating a 4-Way donut picture while looking long over their left shoulder. The partner on the right stays hip to hip with their partner throughout the move. See a picture with all legs in, facing out. Stop in this picture. Stay looking long over left shoulder to see where the grip is targeted before headswitching. See the second donut picture before the close. Continue to work on keeping levels the same between all pieces.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>7</string>
+				<key>Image</key>
+				<string>8way-7</string>
+				<key>Name</key>
+				<string>Nacho - Nacho</string>
+				<key>KeyPosition</key>
+				<string>Outside Front and Inside Rear</string>
+				<key>KeyDescription</key>
+				<string>Check left.</string>
+				<key>CoachNotes</key>
+				<string>First, build two-way stars. Outside Center and Inside Center set up in an offset open picture. Outside Rear and Inside Front do the same. Half-stars set up across from each other.
 
 On key, Outside Rear and Inside Front drive hips in toward the center, making bipole picture with each other as Outside Center and Inside Center squeeze pieces to assist in making that picture happen. Two-way stars see halfway picture that looks like a Nacho with half-stars facing outward. Then, Outside Rear and Inside Front switch roles with Outside Center and Inside Center to complete the 360. Outside Center and Inside Center watch long over their right shoulder, headswitching after they make a bipole picture with each other. Outside Rear and Inside Front anchor hard on the close, building an offset picture with each other. Keep the fall rate fast for the half-stars.
 
 Half-Stars: The partner on the right steps into the center, creating a half donut picture with the opposite (like Block 6). Look long over right shoulder. The left partner stays hip to hip with their partner throughout the move. See a picture with all legs in, facing out. Stop in this picture. Stay looking long over left shoulder to see where the grip is targeted before headswitching. See the second half-donut picture before closing. Work to keep levels the same between pieces.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>8</string>
-			<key>Name</key>
-			<string>Frisbee - Frisbee</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check their side.</string>
-			<key>CoachNotes</key>
-			<string>First, build the center bipole. Outsides present their leg first, then take grips. Donuts take high grips.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>8</string>
+				<key>Image</key>
+				<string>8way-8</string>
+				<key>Name</key>
+				<string>Frisbee - Frisbee</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check their side.</string>
+				<key>CoachNotes</key>
+				<string>First, build the center bipole. Outsides present their leg first, then take grips. Donuts take high grips.
 
 On the key, donut pieces spin forward first, seeing a compressed picture as they cross. The remaining pairs coordinate to do the same, seeing compressed pictures as they cross. On close, Outside Front and Inside Rear step forward toward each other and hold their headswitch long to guarantee positioning. Everyone in the donuts should work to keep levels the same and keep a good donut shape.
 
 Solo Flyers: step forward, turn left 270, watch donuts rotate, keeping an eye on Inside Rear and Outside Front targets. Present leg, then finish the turn. Expect gap at the close of the formation to be clockwise from where it started.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>TwoKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>9</string>
-			<key>Name</key>
-			<string>Taj - Mahal</string>
-			<key>Top-KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>Top-KeyDescription</key>
-			<string>Top: Inside Center checks the top sidebody and feels cat, while Outside Center checks the star grip and the back sidebody.</string>
-			<key>Bottom-KeyPosition</key>
-			<string>Inside Center</string>
-			<key>Bottom-KeyDescription</key>
-			<string>Bottom: Take grips on the sidebody pieces and check that the half-star is on.</string>
-			<key>CoachNotes</key>
-			<string>Inside Center is the center of the formation. Everything builds off the 3-way compressed on the Inside Center.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>9</string>
+				<key>Image</key>
+				<string>8way-9</string>
+				<key>Name</key>
+				<string>Taj - Mahal</string>
+				<key>Top-KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>Top-KeyDescription</key>
+				<string>Top: Inside Center checks the top sidebody and feels cat, while Outside Center checks the star grip and the back sidebody.</string>
+				<key>Bottom-KeyPosition</key>
+				<string>Inside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string>Bottom: Take grips on the sidebody pieces and check that the half-star is on.</string>
+				<key>CoachNotes</key>
+				<string>Inside Center is the center of the formation. Everything builds off the 3-way compressed on the Inside Center.
 
 On key, everyone time the inter pictures:
 1a. Cat piece sees legs in the center at 180°
@@ -414,248 +822,546 @@ Sidebodies - the 270s are shorter than you think. Centers take a small step forw
 Half-star - move like Block 6.
 
 Alternate Build: Tail and IR switch roles</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>10</string>
-			<key>Name</key>
-			<string>Donut - Donut</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check forward.</string>
-			<key>CoachNotes</key>
-			<string>Build across from your clone. Set up in a star picture, then everyone turns left, ending up parallel with your clone.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>10</string>
+				<key>Image</key>
+				<string>8way-10</string>
+				<key>Name</key>
+				<string>Donut - Donut</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check forward.</string>
+				<key>CoachNotes</key>
+				<string>Build across from your clone. Set up in a star picture, then everyone turns left, ending up parallel with your clone.
 
 On key, everyone turns 450 degrees to an infacing star picture, then continues the turn together to close the donut.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>11</string>
-			<key>Name</key>
-			<string>Norwegian Box - Norwegian Donut</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check forward.</string>
-			<key>CoachNotes</key>
-			<string>Build a right handed donut picture in the center between Tail, Point, Outside Center, and Inside Center. The tails of the cats should present the sidebodies to the people in the donuts.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>11</string>
+				<key>Image</key>
+				<string>8way-11</string>
+				<key>Name</key>
+				<string>Norwegian Box - Norwegian Donut</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check forward.</string>
+				<key>CoachNotes</key>
+				<string>Build a right handed donut picture in the center between Tail, Point, Outside Center, and Inside Center. The tails of the cats should present the sidebodies to the people in the donuts.
 
 On key, cats all work toward snowflake picture (star between the centers) and aim for a sidebody grip on the close to keep it small. Then, think of sliding down the cat in front of you to close the donut.
 
 Inter pictures:
 1. Snowflake picture at 90°
 2. Sidebodies before close</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>TwoKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>12</string>
-			<key>Name</key>
-			<string>Stereo Bipole - Stereo Bipole</string>
-			<key>Top-KeyPosition</key>
-			<string>Outside Front and Inside Rear</string>
-			<key>Top-KeyDescription</key>
-			<string>Top: Check their piece partner, the star grip to their left, and then eyes to their clone.</string>
-			<key>Bottom-KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>Bottom-KeyDescription</key>
-			<string>Bottom: Check their piece partner, then eyes to their clone.</string>
-			<key>CoachNotes</key>
-			<string>Build similar to Block 7 with wide offset bipole pictures between Outside Center and Inside Front, and Inside Center and Outside Rear. There is also a donut picture between clones in the center four.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>12</string>
+				<key>Image</key>
+				<string>8way-12</string>
+				<key>Name</key>
+				<string>Stereo Bipole - Stereo Bipole</string>
+				<key>Top-KeyPosition</key>
+				<string>Outside Front and Inside Rear</string>
+				<key>Top-KeyDescription</key>
+				<string>Top: Check their piece partner, the star grip to their left, and then eyes to their clone.</string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string>Bottom: Check their piece partner, then eyes to their clone.</string>
+				<key>CoachNotes</key>
+				<string>Build similar to Block 7 with wide offset bipole pictures between Outside Center and Inside Front, and Inside Center and Outside Rear. There is also a donut picture between clones in the center four.
 
 On key, each sub-group does half of a Block 6 move.
 
 Inter picture:
 1. Donut picture between center four</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>13</string>
-			<key>Name</key>
-			<string>Double Satellite - Double Satellite</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Outside Front</string>
-			<key>KeyDescription</key>
-			<string>Check their sides, see grips between Inside Center and Inside Rear, then look in.</string>
-			<key>CoachNotes</key>
-			<string>Cats should build in a straight line. Reference off the next person in the cat for set up. Point, Outside Center, and Tail reference Inside Center. Outside Front, Outside Rear, and Inside Front reference Inside Rear.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>13</string>
+				<key>Image</key>
+				<string>8way-13</string>
+				<key>Name</key>
+				<string>Double Satellite - Double Satellite</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Outside Front</string>
+				<key>KeyDescription</key>
+				<string>Check their sides, see grips between Inside Center and Inside Rear, then look in.</string>
+				<key>CoachNotes</key>
+				<string>Cats should build in a straight line. Reference off the next person in the cat for set up. Point, Outside Center, and Tail reference Inside Center. Outside Front, Outside Rear, and Inside Front reference Inside Rear.
 
 On key, front of cats make a small step toward solo flyers. Fronts should prioritize levels within piece first, then with the other cat. Back of cats get in tight on grips and turn on center in a 1-2 move. See legs cross the center close together on the 1, while the fronts make a mellow headswitch. Solo flyers turn out, looking long over shoulder, and move aggressively toward the closing cats. Squeeze in at the piece to avoid stepping backward.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>14</string>
-			<key>Name</key>
-			<string>Accordion - Opposed Stairstep</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right.</string>
-			<key>CoachNotes</key>
-			<string>Build double high grips with piece partner, low grips otherwise. Keep the build open enough to give room for the move. Build parallel with your side of the accordion and straight along the grip line. 
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>14</string>
+				<key>Image</key>
+				<string>8way-14</string>
+				<key>Name</key>
+				<string>Accordion - Opposed Stairstep</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right.</string>
+				<key>CoachNotes</key>
+				<string>Build double high grips with piece partner, low grips otherwise. Keep the build open enough to give room for the move. Build parallel with your side of the accordion and straight along the grip line. 
 
 The block move is a 1-2 staged move with P/IF and OC/IR going over and IC/OF and T/OR going under. Center pieces lead, rotate the piece 180 degrees and stop. Time the second rotation together. Centers see that outsides are done with the first move before continuing to the second move. The second move is less than 180 degrees to build a stairstep along the same line as the original accordion. Build the center stairstep first. Outsides follow the timing on 1 and 2 moves, see the centers start before you go, and watch through the center to guarantee the piece stays on the correct side of the formation.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>15</string>
-			<key>Name</key>
-			<string>Opal and Zipper - Zipper and Opal</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check piece.</string>
-			<key>CoachNotes</key>
-			<string>Build a Murphy star between center four.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>15</string>
+				<key>Image</key>
+				<string>8way-15</string>
+				<key>Name</key>
+				<string>Opal and Zipper - Zipper and Opal</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check piece.</string>
+				<key>CoachNotes</key>
+				<string>Build a Murphy star between center four.
 
 On key, Tail squeezes back though hip and rotates; Inside Rear, is high on Tail, think of going over tail as you drive through them, switching places to the close; Outside Front, rotate about the grip and drive through upper body of point, putting their leg in the hand of Inside Front; and Point, drive through Outside Front&apos;s hips as the door opens up and then switch places.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>TwoKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>16</string>
-			<key>Name</key>
-			<string>Canadian Tees - Monopods</string>
-			<key>Top-KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>Top-KeyDescription</key>
-			<string>Top: Check their piece and look at each other.</string>
-			<key>Bottom-KeyPosition</key>
-			<string>Outside Front and Inside Rear</string>
-			<key>Bottom-KeyDescription</key>
-			<string>Bottom: Check their piece and look at each other.</string>
-			<key>CoachNotes</key>
-			<string>Build pieces close together, with Outside Center and Inside Center in a donut picture. Tails of cats should be close to the insides on the front of the other piece to minimize their move. Outside Front and Inside Rear face in long until they can see where Inside Center and Outside Center are setting up, then set up in out-turned stairstep picture with each other and IC/OC, looking over right should the entire time. Picture should be right knee even with the opposite center. Work fall rate and proximity the entire time. Let Point and Tail have complete responsibility for the outside grip. Centers keep referencing and flying strong pictures as the pieces build.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>16</string>
+				<key>Image</key>
+				<string>8way-16</string>
+				<key>Name</key>
+				<string>Canadian Tees - Monopods</string>
+				<key>Top-KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>Top-KeyDescription</key>
+				<string>Top: Check their piece and look at each other.</string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Front and Inside Rear</string>
+				<key>Bottom-KeyDescription</key>
+				<string>Bottom: Check their piece and look at each other.</string>
+				<key>CoachNotes</key>
+				<string>Build pieces close together, with Outside Center and Inside Center in a donut picture. Tails of cats should be close to the insides on the front of the other piece to minimize their move. Outside Front and Inside Rear face in long until they can see where Inside Center and Outside Center are setting up, then set up in out-turned stairstep picture with each other and IC/OC, looking over right should the entire time. Picture should be right knee even with the opposite center. Work fall rate and proximity the entire time. Let Point and Tail have complete responsibility for the outside grip. Centers keep referencing and flying strong pictures as the pieces build.
 
 On key, heads should already be close to cat grip. Back of cats slide over to present grips to fronts of pieces. All 6 (except Point and Tail) look across at clone and set up a 6-Way donut picture. Outside Front and Inside Rear go from bipole picture looking over right shoulder, to the donut picture, then take grips, check off outside grip, and mutually key.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>17</string>
-			<key>Name</key>
-			<string>Buzzard - Buzzard</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right.</string>
-			<key>CoachNotes</key>
-			<string>First, build the center stairstep, then the compresseds. Build the pieces deep, with high grips and bent arms, and hold them tight.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>17</string>
+				<key>Image</key>
+				<string>8way-17</string>
+				<key>Name</key>
+				<string>Buzzard - Buzzard</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right.</string>
+				<key>CoachNotes</key>
+				<string>First, build the center stairstep, then the compresseds. Build the pieces deep, with high grips and bent arms, and hold them tight.
 
 On key, solo flyers watch long to maintain levels. Compresseds turn 360 degrees forward, keeping up fall rate and squeezing hip in through their piece partner. As insides of compresseds step out, look long over right shoulder. Outsides step into center, seeing opposite compressed picture, looking long as rotation continues. Turn piece slowly and under control. Prioritize center grips.
 
 Alternatively, try spinning the copresseds backward for more control.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>18</string>
-			<key>Name</key>
-			<string>Sidebody Donut - Sidebody Donut</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check right. Either center can key the bottom.</string>
-			<key>CoachNotes</key>
-			<string>First, centers build the donut. Outsides let the center build, then set up straight sidebodies, perpendicular and on level.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>18</string>
+				<key>Image</key>
+				<string>8way-18</string>
+				<key>Name</key>
+				<string>Sidebody Donut - Sidebody Donut</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right. Either center can key the bottom.</string>
+				<key>CoachNotes</key>
+				<string>First, centers build the donut. Outsides let the center build, then set up straight sidebodies, perpendicular and on level.
 
 On key, centers step out short and stop, making sure timing is the same. Look long over right shoulder, see reverse star picture, and let outsides finish the turn. Focus on maintaining levels. Outsides let centers step out, keep them from stepping out too far (communicating through grips), then drive forward as you turn. See all of the outsides&apos; legs cross through the center at the same time. Anchor and rotate the centers back into a donut. Continue to work levels, timing, and proximity.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>19</string>
-			<key>Name</key>
-			<string>Compressed Diamonds - Compressed Diamonds</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Check their diamond, back of diamonds guarantee right grip.</string>
-			<key>CoachNotes</key>
-			<string>Set up deep compressed between Inside Center and Outside Center. Inside Rear and Outside Front set up in a stairstep picture. Back of diamonds take high grips. Outsides of diamonds set up parallel with Inside Center and Outside Center, keeping hips close in and parallel for the back of the diamond.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>19</string>
+				<key>Image</key>
+				<string>8way-19</string>
+				<key>Name</key>
+				<string>Compressed Diamonds - Compressed Diamonds</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check their diamond, back of diamonds guarantee right grip.</string>
+				<key>CoachNotes</key>
+				<string>Set up deep compressed between Inside Center and Outside Center. Inside Rear and Outside Front set up in a stairstep picture. Back of diamonds take high grips. Outsides of diamonds set up parallel with Inside Center and Outside Center, keeping hips close in and parallel for the back of the diamond.
 
 On key, heads of diamond step out SMALL at 45, look long over left shoulder, squeeze back, and keep level. Rear of diamonds drive toward each other. Outside Rear goes over Inside Front. As soon as the backs cross, stop with right knee down. Anchor where clone was and pull back. Once Outside Rear and Inside Front have crossed, diamonds go backward until fronts pass each other, then Inside Rear goes over Outside Front, and diamonds move forward. Sides of diamonds stay even with each other. Stop together.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>TwoKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>20</string>
-			<key>Name</key>
-			<string>Cat Diamond - Cat Accordian</string>
-			<key>Top-KeyPosition</key>
-			<string>Inside Rear</string>
-			<key>Top-KeyDescription</key>
-			<string>Top: Scan left to right, checking: left cat; Outside Front looking back after picking up grips; right cat.</string>
-			<key>Bottom-KeyPosition</key>
-			<string>Point</string>
-			<key>Bottom-KeyDescription</key>
-			<string>Bottom: Feel grips and see Inside Front is on.</string>
-			<key>CoachNotes</key>
-			<string>Center four builds with each other. Outside Center and Inside Center, and Outside Rear and Inside Front build offset stairstep pictures with each other.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>20</string>
+				<key>Image</key>
+				<string>8way-20</string>
+				<key>Name</key>
+				<string>Cat Diamond - Cat Accordian</string>
+				<key>Top-KeyPosition</key>
+				<string>Inside Rear</string>
+				<key>Top-KeyDescription</key>
+				<string>Top: Scan left to right, checking: left cat; Outside Front looking back after picking up grips; right cat.</string>
+				<key>Bottom-KeyPosition</key>
+				<string>Point</string>
+				<key>Bottom-KeyDescription</key>
+				<string>Bottom: Feel grips and see Inside Front is on.</string>
+				<key>CoachNotes</key>
+				<string>Center four builds with each other. Outside Center and Inside Center, and Outside Rear and Inside Front build offset stairstep pictures with each other.
 
 On key, Outside Center and Outside Rear stay still. Tail and Inside Rear track hard forward. Point and Outside Front turn clockwise. Point, think of rotating around the center point of the Outside Front. Inside Front and Inside Center turn counterclockwise.
 
 Inter Picture:
 1. Outside Center and Outside Rear stay in place providing reference for the compressed build. Everyone uses Outside Center&apos;s heading.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>OneKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>21</string>
-			<key>Name</key>
-			<string>Stereopod - Stereopod</string>
-			<key>KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>KeyDescription</key>
-			<string>Feel their pods, back of pods guarantee grips. Inside Center waits for Outside Front to look back when they pick up Point.</string>
-			<key>CoachNotes</key>
-			<string>Pods build cheated around to side so that Outside Rear and Inside Front are in a cat picutre on Outside Center and Inside Center. Tail and Inside Rear are perpendicular, forming a quasi-donut picture between Inside Center, Outside Center, Tail, and Inside Rear. Point cheats right. OR/T and IF/IR take double high grips between pod.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>21</string>
+				<key>Image</key>
+				<string>8way-21</string>
+				<key>Name</key>
+				<string>Stereopod - Stereopod</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Feel their pods, back of pods guarantee grips. Inside Center waits for Outside Front to look back when they pick up Point.</string>
+				<key>CoachNotes</key>
+				<string>Pods build cheated around to side so that Outside Rear and Inside Front are in a cat picutre on Outside Center and Inside Center. Tail and Inside Rear are perpendicular, forming a quasi-donut picture between Inside Center, Outside Center, Tail, and Inside Rear. Point cheats right. OR/T and IF/IR take double high grips between pod.
 
 On key, front of pods step out small toward cat, looking over inside shoulder. Tail and Inside Rear drive hips toward cat to cog with Inside Rear going through the center first. After crossing the center, Tail and Inside Rear anchor and help Outside Rear and Inside Front do the same. Pods should look through center to keep levels and proximity. Cat turns 180 degrees to create a 3-Way picture with Tail and Inside Rear, then is patient as Outside Rear and Inside Front make the same picture, staying on level and in center between pieces. As Outside Rear and Inside Front pass through center, cat initiates the second 180 to guarantee legs to Inside Center and Outside Center. Point squeezes back and drives in and Outside Front switches places with Point in the first 180 degree turn. Point fades out easy as Outside Front drives the second 180 degree turn.
 
 Alternate engineering with Inside Center and Inside Front switched.</string>
-		</dict>
-		<dict>
-			<key>Class</key>
-			<string>TwoKeyFormationCell</string>
-			<key>Identifier</key>
-			<string>22</string>
-			<key>Name</key>
-			<string>Old Bone - Compressed Stairstep Diamonds</string>
-			<key>Top-KeyPosition</key>
-			<string>Outside Front and Inside Rear</string>
-			<key>Top-KeyDescription</key>
-			<string>Top: Check left sides and then eyes to each other.</string>
-			<key>Bottom-KeyPosition</key>
-			<string>Outside Center and Inside Center</string>
-			<key>Bottom-KeyDescription</key>
-			<string>Bottom: Check the catch on their side is complete and then eyes to each other.</string>
-			<key>CoachNotes</key>
-			<string>Build a 4-way compressed between Outside Center, Inside Rear, Outside Front and Inside Center.
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>TwoKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>22</string>
+				<key>Image</key>
+				<string>8way-22</string>
+				<key>Name</key>
+				<string>Old Bone - Compressed Stairstep Diamonds</string>
+				<key>Top-KeyPosition</key>
+				<string>Outside Front and Inside Rear</string>
+				<key>Top-KeyDescription</key>
+				<string>Top: Check left sides and then eyes to each other.</string>
+				<key>Bottom-KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>Bottom-KeyDescription</key>
+				<string>Bottom: Check the catch on their side is complete and then eyes to each other.</string>
+				<key>CoachNotes</key>
+				<string>Build a 4-way compressed between Outside Center, Inside Rear, Outside Front and Inside Center.
 
 On key, the grip between Tail and Outside Rear, and Point and Inside Front open up as the pieces slide together. Point and Tail should back up slightly for the catch. Outside Rear and Inside Front present arm for catch. Hopper should think forwards as they hop.
 
 Inter Picture:
 1. Open grips between Tail and Outside Rear, and Point and Inside Front as the pieces slide together below the hoppers.</string>
-		</dict>
-	</array>
+			</dict>
+		</array>
+		<key>Randoms</key>
+		<array>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>X</string>
+				<key>Image</key>
+				<string>8way-X</string>
+				<key>Name</key>
+				<string>Exit Frame</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>A</string>
+				<key>Image</key>
+				<string>8way-A</string>
+				<key>Name</key>
+				<string>Caterpillar</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check forward and look at each other.</string>
+				<key>CoachNotes</key>
+				<string>First, set up a star. Then, turn out to a donut while watching clone the entire time. Build like a donut, referencing across, then take grips: first right, then left.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>B</string>
+				<key>Image</key>
+				<string>8way-B</string>
+				<key>Name</key>
+				<string>Stairstep</string>
+				<key>KeyPosition</key>
+				<string>Inside Rear</string>
+				<key>KeyDescription</key>
+				<string>Tail guarantees left grip on Outside Rear.</string>
+				<key>CoachNotes</key>
+				<string>First, set up the center diamond. Outside Center and Inside Center set up parallel with each other, one body width apart. Outside Front and Inside Front set up and present legs first before taking grips on Point.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>C</string>
+				<key>Image</key>
+				<string>8way-C</string>
+				<key>Name</key>
+				<string>Hourglass</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right. See Outside Front and Inside Rear headswitch to know their sides are built.</string>
+				<key>CoachNotes</key>
+				<string>First, set up the center bipole. Outside Front and Inside Rear set up in bipole before looking out to take grips, then headswitch over left shoulder. Point, Inside Front, Outside Rear, and Tail wait for Outside Front and Inside Rear to be in place before turning out.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>D</string>
+				<key>Image</key>
+				<string>8way-D</string>
+				<key>Name</key>
+				<string>Hope Diamond</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right.</string>
+				<key>CoachNotes</key>
+				<string>First, set up between Outside Front, Inside Front, Inside Rear, and Outside Rear. All infacing in square, then turn out together. Continue to reference off each other and reference strong with center four. Point and Tail wait to turn out last after the rest is built. Inside Front/Outside Front and Inside Rear/Outside Rear see grips out of periphery. Continue to work levels and setups.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>E</string>
+				<key>Image</key>
+				<string>8way-E</string>
+				<key>Name</key>
+				<string>Rubick</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right.</string>
+				<key>CoachNotes</key>
+				<string>First, set up a stairstep picture between Outside Center, Inside Center, Outside Rear, and Inside Front. Inside Front and Outside Rear keep referencing stairstep setup and take grips out of corner of eye. Outside Front and Inside Rear wait long and then turn out, stay looking over left shoulder. Point and Tail present last, building deeply compressed.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>F</string>
+				<key>Image</key>
+				<string>8way-F</string>
+				<key>Name</key>
+				<string>Diamond Flake</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check left.</string>
+				<key>CoachNotes</key>
+				<string>First, build the center stairstep diamond, then take outside grips. Outside Rear and Inside Front can cheat cat. Point and Tail build the compresseds deep. Outsides build off of the opposite center to avoid orbiting.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>G</string>
+				<key>Image</key>
+				<string>8way-G</string>
+				<key>Name</key>
+				<string>Arrowhead</string>
+				<key>KeyPosition</key>
+				<string>Inside Rear</string>
+				<key>KeyDescription</key>
+				<string>Outside Rear and Tail guarantee outside grips.</string>
+				<key>CoachNotes</key>
+				<string>Centers set up in a line with Inside Rear, one body width apart. Outside Front and Inside Front set up even with each other and present legs first, before looking out for Point&apos;s grip. Point waits long before turning out. Outside Rear and Tail guarantee outside grips for Inside Rear.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>H</string>
+				<key>Image</key>
+				<string>8way-H</string>
+				<key>Name</key>
+				<string>Iriquois</string>
+				<key>KeyPosition</key>
+				<string>Outside Center</string>
+				<key>KeyDescription</key>
+				<string>Check front, eyes from Tail to ensure compressed.</string>
+				<key>CoachNotes</key>
+				<string>Set up like a 4-Way Block 9 for the center four. Outsides let center four set up the Block 9 picture first. Work levels, keeping the fall rate of the compressed. The compressed will tend to float.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>J</string>
+				<key>Image</key>
+				<string>8way-J</string>
+				<key>Name</key>
+				<string>Springbok</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Build center donut first, then check outsides.</string>
+				<key>CoachNotes</key>
+				<string>First, build the center donut. Inside Front and Outside Rear wait long for Inside Center and Outside Center to look out to guarantee grips.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>K</string>
+				<key>Image</key>
+				<string>8way-K</string>
+				<key>Name</key>
+				<string>Crossbow</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check right.</string>
+				<key>CoachNotes</key>
+				<string>Outside Center and Inside Center prioritize the center compressed. Inside Front and Outside Front build with hips close to each other to make it easy for Point to take grips. Inside Rear and Outside Rear do the same for Tail.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>L</string>
+				<key>Image</key>
+				<string>8way-L</string>
+				<key>Name</key>
+				<string>Open Facing Diamond</string>
+				<key>KeyPosition</key>
+				<string>Inside Rear</string>
+				<key>KeyDescription</key>
+				<string>Tail guarantees grip.</string>
+				<key>CoachNotes</key>
+				<string>Outside Center and Inside Center set up with each other and Inside Rear and Outside Rear in a 4-Way infacing box picture. Inside Front and Outside Front wait to see picture, then turn out (inside turn), guaranteeing pictures and grips first, then see Point grips in periphery, continuing to work the center picture. Outside Front escalates global thermonuclear war. Point waits the longest, turning out to guarantee grips.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>M</string>
+				<key>Image</key>
+				<string>8way-M</string>
+				<key>Name</key>
+				<string>Double Spiders</string>
+				<key>KeyPosition</key>
+				<string>Tail</string>
+				<key>KeyDescription</key>
+				<string>Inside Center and Outside Center look back when grips are complete.</string>
+				<key>CoachNotes</key>
+				<string>First, build the center diamond. Then, line up in even lines with the front line guaranteeing grips. Outside Center and Inside Center build one body width apart.
+
+Alternate Build: Point and Outside Front and/or Tail and Inside Rear can swap positions depending on the previous and next points.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>N</string>
+				<key>Image</key>
+				<string>8way-N</string>
+				<key>Name</key>
+				<string>Zipper Flake</string>
+				<key>KeyPosition</key>
+				<string>Outside Center</string>
+				<key>KeyDescription</key>
+				<string>Point and Inside Front wait to see center build, then guarantee grips.</string>
+				<key>CoachNotes</key>
+				<string>First, Outside Center, Inside Center, Outside Front, and Inside Rear build center for angle. Then, Inside Center and Outside Front look out to build cats. Inside Center and Outside Front should be close enought to almost take arm grips. Point and Inside Front wait to see the center build, then guarantee grips. Inside Front and Point keep hips close.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>O</string>
+				<key>Image</key>
+				<string>8way-O</string>
+				<key>Name</key>
+				<string>Compressed Accordion</string>
+				<key>KeyPosition</key>
+				<string>Outside Center and Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Check left, see heads looking back at them.</string>
+				<key>CoachNotes</key>
+				<string>First, build on level and deeply compressed. Then, take grips. Outsides watch inward the entire time as it builds. Let it build from the center out. Keep working LEVELS even after the build. Outsides should see themselves on level with the rest of compressed. If you see backpacks, ARCH!</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>P</string>
+				<key>Image</key>
+				<string>8way-P</string>
+				<key>Name</key>
+				<string>Venus</string>
+				<key>KeyPosition</key>
+				<string>Inside Center</string>
+				<key>KeyDescription</key>
+				<string>Inside Front or Outside Front guarantees bipole grips, taking Point first, then Inside Center.</string>
+				<key>CoachNotes</key>
+				<string>Inside Rear and Inside Center set up in a cat picture with Outside Center perpendicular. Outside Front and Tail are parallel with Outside Center. Tail and Outside Rear set up a donut picture. Point waits to present grips after Inside Front and Outside Front are ready.</string>
+			</dict>
+			<dict>
+				<key>Class</key>
+				<string>OneKeyFormationCell</string>
+				<key>Identifier</key>
+				<string>Q</string>
+				<key>Image</key>
+				<string>8way-Q</string>
+				<key>Name</key>
+				<string>Compass</string>
+				<key>KeyPosition</key>
+				<string>Inside Rear</string>
+				<key>KeyDescription</key>
+				<string>See donuts build and Outside Front headswitch left.</string>
+				<key>CoachNotes</key>
+				<string>First, Outside Front builds cat grips with Inside Rear, looking over right shoulder. Then, looks out to take grips and headswitches left to let Inside Rear know it is complete. Outside Rear and Inside Front should be parallel with the cat in the center, about one body width apart and centerpoint in line with grips. Outside Center, Inside Center, Point, and Tail let Outside Rear and Inside Front set up before building donuts. Present legs first, then take grips.</string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>

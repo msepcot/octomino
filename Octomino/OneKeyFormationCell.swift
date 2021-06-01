@@ -39,7 +39,7 @@ class OneKeyFormationCell: FormationCell {
 
     override func populateCell(dictionary: [String: String]) {
         formationIdentifier.text     = dictionary["Identifier"]
-        formationImageView.image     = UIImage(named: dictionary["Identifier"]!)
+        formationImageView.image     = UIImage(named: dictionary["Image"]!)
         formationName.text           = dictionary["Name"]
         formationKeyPosition.text    = dictionary["KeyPosition"]
         formationKeyDescription.text = dictionary["KeyDescription"]

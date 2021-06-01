@@ -9,11 +9,11 @@
 
 import UIKit
 
-extension UIControlEvents {
-    static let reselected = UIControlEvents(rawValue: 1 << 28)
+extension UIControl.Event {
+    static let reselected = UIControl.Event(rawValue: 1 << 28)
 }
 
-let reselected = UIControlEvents(rawValue: 1 << 28)
+let reselected = UIControl.Event(rawValue: 1 << 28)
 
 class ReselectableSegmentedControl: UISegmentedControl {
     @IBInspectable var allowReselection: Bool = true

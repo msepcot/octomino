@@ -15,13 +15,11 @@ class FormationCell: UICollectionViewCell {
     func flipViews(front: UIView, back: UIView) {
         let hidden = !front.isHidden
 
-        UIView.beginAnimations("cardFlip", context: nil)
-        UIView.setAnimationDuration(0.8)
-        UIView.setAnimationTransition(hidden ? .flipFromRight : .flipFromLeft, for: self, cache: true)
-
+      UIView.transition(with: self, duration: 0.8, options: (hidden ? .transitionFlipFromRight : .transitionFlipFromLeft)) {
         front.isHidden = hidden
         back.isHidden  = !hidden
-
-        UIView.commitAnimations()
+      } completion: { _ in
+        // nothing to see here, flip happens in the animation block
+      }
     }
 }

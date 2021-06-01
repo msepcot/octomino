@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
     var blocks:  [[String: String]]!
     var blockIndex = 0
 
+    var discipline: String!
     var firstLoad = true
 
     override func viewDidLoad() {
@@ -33,6 +34,12 @@ class MainViewController: UIViewController {
         formationPageControl.addTarget(self, action: #selector(MainViewController.pageChanged(_:)), for: .valueChanged)
         randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentChanged(_:)), for: .valueChanged)
         randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentReselected(_:)), for: .reselected)
+
+        // Can't set this in the storyboard? iOS 14.5 shows up white
+        // Default colors don't work for the selected tint color either, matches background
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        randomOrBlockControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
+        randomOrBlockControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
 
         collectionView.register(
             UINib(nibName: "OneKeyFormationCell", bundle: nil),
@@ -49,11 +56,16 @@ class MainViewController: UIViewController {
             forCellWithReuseIdentifier: "NotesCell-Identifier"
         )
 
+        let userDefaults = UserDefaults.init(suiteName: "com.sepcot.octomino")
+        let formationSize = userDefaults?.string(forKey: "formation.discipline") ?? "8way"
+
         if  let path = Bundle.main.path(forResource: "Formations", ofType: "plist"),
-            let formations = NSDictionary(contentsOfFile: path)
+            let formations = NSDictionary(contentsOfFile: path),
+            let divePool = formations[formationSize] as? [String: [[String: String]]]
         {
-            randoms = formations["Randoms"] as! [[String: String]]
-            blocks  = formations["Blocks"]  as! [[String: String]]
+          self.discipline = formationSize
+          randoms = divePool["Randoms"]
+          blocks  = divePool["Blocks"]
         }
 
         formationPageControl.numberOfPages = randoms.count
@@ -110,7 +122,7 @@ class MainViewController: UIViewController {
 
     @objc func segmentReselected(_ segmentedControl: UISegmentedControl) {
         if segmentedControl.selectedSegmentIndex == 0 {
-            randomIndex = 1
+            randomIndex = (discipline == "8way" ? 1 : 0)
         } else {
             blockIndex = 0
         }
@@ -219,4 +231,35 @@ extension MainViewController: UIScrollViewDelegate {
         adjustPaging(scrollView: scrollView)
     }
 
+}
+
+// MARK: -
+
+extension MainViewController {
+  func unwindToMain() {
+    let userDefaults = UserDefaults.init(suiteName: "com.sepcot.octomino")
+    let formationSize = userDefaults?.string(forKey: "formation.discipline") ?? "8way"
+
+    if formationSize != discipline {
+      discipline = formationSize
+      if  let path = Bundle.main.path(forResource: "Formations", ofType: "plist"),
+          let formations = NSDictionary(contentsOfFile: path),
+          let divePool = formations[formationSize] as? [String: [[String: String]]]
+      {
+        randoms = divePool["Randoms"]
+        blocks  = divePool["Blocks"]
+      }
+
+      formationPageControl.numberOfPages = randoms.count
+      formationPageControl.currentPage   = 0
+
+      randomIndex = 0
+      blockIndex = 0
+
+      randomOrBlockControl.selectedSegmentIndex = 0
+
+      collectionView.reloadData()
+      collectionView.contentOffset = CGPoint(x: collectionView.bounds.width, y: 0)
+    }
+  }
 }

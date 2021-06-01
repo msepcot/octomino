@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,19 +20,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="16" translatesAutoresizingMaskIntoConstraints="NO" id="JCs-ei-EBN">
-                                <rect key="frame" x="16" y="578" width="343" height="37"/>
+                                <rect key="frame" x="16" y="596.5" width="343" height="27.5"/>
                                 <color key="pageIndicatorTintColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.28627450980000002" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-CZ-IqZ" customClass="ReselectableSegmentedControl" customModule="Octomino" customModuleProvider="target">
-                                <rect key="frame" x="116" y="619" width="143" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-CZ-IqZ" customClass="ReselectableSegmentedControl" customModule="Octomino" customModuleProvider="target">
+                                <rect key="frame" x="111" y="628" width="153" height="32"/>
                                 <segments>
                                     <segment title="Randoms"/>
                                     <segment title="Blocks"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpZ-OF-I1a">
-                                <rect key="frame" x="337" y="622" width="22" height="22"/>
+                                <rect key="frame" x="339" y="639" width="20" height="20"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -44,7 +42,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="duJ-lt-lIl">
-                                <rect key="frame" x="0.0" y="28" width="375" height="546"/>
+                                <rect key="frame" x="0.0" y="8" width="375" height="584.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="94Q-Ru-JPX">
                                     <size key="itemSize" width="50" height="50"/>
@@ -61,12 +59,12 @@
                             <constraint firstItem="CpZ-OF-I1a" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2iS-fG-CMi"/>
                             <constraint firstAttribute="centerX" secondItem="LBG-CZ-IqZ" secondAttribute="centerX" id="8B3-Rd-O6T"/>
                             <constraint firstItem="duJ-lt-lIl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9hA-15-Rbm"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CpZ-OF-I1a" secondAttribute="bottom" constant="23" id="BW9-fc-xgQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="duJ-lt-lIl" secondAttribute="trailing" constant="-16" id="Ch2-Gd-0fV"/>
                             <constraint firstItem="JCs-ei-EBN" firstAttribute="top" secondItem="duJ-lt-lIl" secondAttribute="bottom" constant="4" id="EWQ-dG-6rP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LBG-CZ-IqZ" secondAttribute="bottom" constant="20" id="IQa-XG-KIR"/>
                             <constraint firstItem="LBG-CZ-IqZ" firstAttribute="top" secondItem="JCs-ei-EBN" secondAttribute="bottom" constant="4" id="TzK-Pj-i1e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LBG-CZ-IqZ" secondAttribute="bottom" constant="8" symbolic="YES" id="UQ5-mL-R2Z"/>
                             <constraint firstItem="JCs-ei-EBN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aJf-Pk-uVl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CpZ-OF-I1a" secondAttribute="bottom" constant="8" symbolic="YES" id="oPN-WJ-H3t"/>
                             <constraint firstItem="duJ-lt-lIl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="uQV-4u-73O"/>
                             <constraint firstItem="JCs-ei-EBN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vwC-88-Iju"/>
                         </constraints>
@@ -91,29 +89,49 @@
                         <viewControllerLayoutGuide type="bottom" id="CaM-an-wpt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ruy-fv-HgJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Positions" translatesAutoresizingMaskIntoConstraints="NO" id="1cl-R6-WVY">
-                                <rect key="frame" x="48" y="52" width="279" height="583"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Wr-B2-brk" customClass="ReselectableSegmentedControl" customModule="Octomino" customModuleProvider="target">
+                                <rect key="frame" x="136" y="608" width="103" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="ZS1-l1-Ma5"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="4way"/>
+                                    <segment title="8way"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="HmI-NB-Ozi" eventType="valueChanged" id="BdD-QQ-phd"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8way-Positions" translatesAutoresizingMaskIntoConstraints="NO" id="1cl-R6-WVY">
+                                <rect key="frame" x="48" y="8" width="279" height="592"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1cl-R6-WVY" firstAttribute="top" secondItem="Ruy-fv-HgJ" secondAttribute="topMargin" constant="32" id="FhW-aW-9Oz"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="1cl-R6-WVY" secondAttribute="bottom" constant="32" id="a9J-4b-euE"/>
+                            <constraint firstItem="4Wr-B2-brk" firstAttribute="top" secondItem="1cl-R6-WVY" secondAttribute="bottom" constant="8" symbolic="YES" id="1mE-NC-brq"/>
+                            <constraint firstItem="CaM-an-wpt" firstAttribute="top" secondItem="4Wr-B2-brk" secondAttribute="bottom" constant="8" symbolic="YES" id="5Ax-hB-QaF"/>
+                            <constraint firstItem="1cl-R6-WVY" firstAttribute="top" secondItem="z4E-pn-SCG" secondAttribute="bottom" constant="8" symbolic="YES" id="DjH-5l-P8h"/>
+                            <constraint firstItem="4Wr-B2-brk" firstAttribute="centerX" secondItem="Ruy-fv-HgJ" secondAttribute="centerX" id="ahl-jQ-CUc"/>
                             <constraint firstItem="1cl-R6-WVY" firstAttribute="leading" secondItem="Ruy-fv-HgJ" secondAttribute="leadingMargin" constant="32" id="eQM-Ud-hYW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1cl-R6-WVY" secondAttribute="trailing" constant="32" id="l4M-u1-s1O"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="multiwayControl" destination="4Wr-B2-brk" id="01m-NJ-jto"/>
+                        <outlet property="positionsImageView" destination="1cl-R6-WVY" id="nIw-5l-RcY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plD-9S-uod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="247"/>
+            <point key="canvasLocation" x="1045.5999999999999" y="246.9265367316342"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Positions" width="310" height="625"/>
-    </resources>
     <color key="tintColor" red="0.28627450980000002" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="8way-Positions" width="310" height="625"/>
+    </resources>
 </document>

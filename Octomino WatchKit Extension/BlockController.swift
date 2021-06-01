@@ -21,12 +21,12 @@ class BlockController: WKInterfaceController {
             let index = config["index"],
             let path = Bundle.main.path(forResource: "Formations", ofType: "plist"),
             let formations = NSDictionary(contentsOfFile: path),
-            let blocks = formations["Blocks"] as? [[String : String]]
+            let multiway = formations["8way"] as? [String: [[String: String]]]
             else { return }
 
         // Configure interface objects here.
 
-        let formation = blocks[index]
+        let formation = multiway["Blocks"]![index]
         if let identifier = formation["Identifier"], let name = formation["Name"] {
             setTitle("\(identifier): \(name)")
             formationImage.setImageNamed(identifier)

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2122E6591AD8A6070008B92D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122E6581AD8A6070008B92D /* InfoViewController.swift */; };
+		212324E02665935A00D43E62 /* AppIcon-Paragon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 212324DE2665935A00D43E62 /* AppIcon-Paragon@2x.png */; };
+		212324E12665935A00D43E62 /* AppIcon-Paragon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 212324DF2665935A00D43E62 /* AppIcon-Paragon@3x.png */; };
 		212666771AD42E4A00B13622 /* Formations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 212666761AD42E4A00B13622 /* Formations.plist */; };
 		2143FA331B06BBF4009AF434 /* RandomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA321B06BBF4009AF434 /* RandomController.swift */; };
 		2143FA351B06BC03009AF434 /* BlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143FA341B06BC03009AF434 /* BlockController.swift */; };
@@ -84,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		2122E6581AD8A6070008B92D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		212324DE2665935A00D43E62 /* AppIcon-Paragon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-Paragon@2x.png"; sourceTree = "<group>"; };
+		212324DF2665935A00D43E62 /* AppIcon-Paragon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-Paragon@3x.png"; sourceTree = "<group>"; };
 		212666761AD42E4A00B13622 /* Formations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Formations.plist; sourceTree = "<group>"; };
 		2143FA321B06BBF4009AF434 /* RandomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomController.swift; sourceTree = "<group>"; };
 		2143FA341B06BC03009AF434 /* BlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212324DD2665934400D43E62 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				212324DE2665935A00D43E62 /* AppIcon-Paragon@2x.png */,
+				212324DF2665935A00D43E62 /* AppIcon-Paragon@3x.png */,
+			);
+			path = "App Icons";
+			sourceTree = "<group>";
+		};
 		219EE4341AD0DB8500045DF2 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +177,7 @@
 		219EE43F1AD0DB8500045DF2 /* Octomino */ = {
 			isa = PBXGroup;
 			children = (
+				212324DD2665934400D43E62 /* App Icons */,
 				219EE4421AD0DB8500045DF2 /* AppDelegate.swift */,
 				219EE4441AD0DB8500045DF2 /* MainViewController.swift */,
 				219EE4461AD0DB8500045DF2 /* Main.storyboard */,
@@ -333,21 +347,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Head Down Development";
 				TargetAttributes = {
 					219EE43C1AD0DB8500045DF2 = {
 						CreatedOnToolsVersion = 6.2;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1250;
 					};
 					219EE4511AD0DB8600045DF2 = {
 						CreatedOnToolsVersion = 6.2;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1250;
 						TestTargetID = 219EE43C1AD0DB8500045DF2;
 					};
 					21A860421B039F7E006ED4D3 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1250;
 					};
 					21A8604C1B039F7E006ED4D3 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -357,7 +371,7 @@
 			};
 			buildConfigurationList = 219EE4381AD0DB8500045DF2 /* Build configuration list for PBXProject "Octomino" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -384,6 +398,8 @@
 				21A0ABB01AD38B7E0015EE54 /* TwoKeyFormationCell.xib in Resources */,
 				219EE4481AD0DB8500045DF2 /* Main.storyboard in Resources */,
 				212666771AD42E4A00B13622 /* Formations.plist in Resources */,
+				212324E12665935A00D43E62 /* AppIcon-Paragon@3x.png in Resources */,
+				212324E02665935A00D43E62 /* AppIcon-Paragon@2x.png in Resources */,
 				219EE44D1AD0DB8500045DF2 /* LaunchScreen.xib in Resources */,
 				21A0ABAC1AD38AD50015EE54 /* OneKeyFormationCell.xib in Resources */,
 				219EE44A1AD0DB8500045DF2 /* Images.xcassets in Resources */,
@@ -430,7 +446,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\n# Set the build number to the current git commit count.\n# Based on: https://blog.curtisherbert.com/automated-xcode-build-numbers-late-2016-edition/\n#\n\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list HEAD --count`\n\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${PRODUCT_SETTINGS_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${PRODUCT_SETTINGS_PATH}\"\nfi\necho \"Updated the build number to ${appBuild} in ${PRODUCT_SETTINGS_PATH}\"\n";
+			shellScript = "#\n# Set the build number to the current git commit count.\n# Based on: https://blog.curtisherbert.com/automated-xcode-build-numbers-late-2016-edition/\n#\n\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list HEAD --count`\n\nif [ $CONFIGURATION = \"Debug\" ]; then\n#branchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${PRODUCT_SETTINGS_PATH}\"\necho \"skipping\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${PRODUCT_SETTINGS_PATH}\"\nfi\necho \"Updated the build number to ${appBuild} in ${PRODUCT_SETTINGS_PATH}\"\n";
 		};
 		215D7E801F1B22000077B324 /* Set Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -444,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\n# Set the build number to the current git commit count.\n# Based on: https://blog.curtisherbert.com/automated-xcode-build-numbers-late-2016-edition/\n#\n\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list HEAD --count`\n\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${PRODUCT_SETTINGS_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${PRODUCT_SETTINGS_PATH}\"\nfi\necho \"Updated the build number to ${appBuild} in ${PRODUCT_SETTINGS_PATH}\"\n";
+			shellScript = "#\n# Set the build number to the current git commit count.\n# Based on: https://blog.curtisherbert.com/automated-xcode-build-numbers-late-2016-edition/\n#\n\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list HEAD --count`\n\nif [ $CONFIGURATION = \"Debug\" ]; then\n#branchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${PRODUCT_SETTINGS_PATH}\"\necho \"skipping\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${PRODUCT_SETTINGS_PATH}\"\nfi\necho \"Updated the build number to ${appBuild} in ${PRODUCT_SETTINGS_PATH}\"\n";
 		};
 		215D7E811F1B22EC0077B324 /* Clear Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -472,7 +488,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\n# Set the build number to the current git commit count.\n# Based on: https://blog.curtisherbert.com/automated-xcode-build-numbers-late-2016-edition/\n#\n\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list HEAD --count`\n\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${PRODUCT_SETTINGS_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${PRODUCT_SETTINGS_PATH}\"\nfi\necho \"Updated the build number to ${appBuild} in ${PRODUCT_SETTINGS_PATH}\"\n";
+			shellScript = "#\n# Set the build number to the current git commit count.\n# Based on: https://blog.curtisherbert.com/automated-xcode-build-numbers-late-2016-edition/\n#\n\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list HEAD --count`\n\nif [ $CONFIGURATION = \"Debug\" ]; then\n#branchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${PRODUCT_SETTINGS_PATH}\"\necho \"skipping\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${PRODUCT_SETTINGS_PATH}\"\nfi\necho \"Updated the build number to ${appBuild} in ${PRODUCT_SETTINGS_PATH}\"\n";
 		};
 		21FCBFB21C6C7FA000CE339C /* Clear Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -590,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -598,14 +615,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -630,7 +650,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -643,6 +663,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -651,14 +672,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -677,7 +701,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -693,12 +717,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33E9WP8948;
 				INFOPLIST_FILE = Octomino/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -709,13 +733,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 33E9WP8948;
 				INFOPLIST_FILE = Octomino/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -734,7 +758,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sepcot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
 			};
 			name = Debug;
@@ -751,7 +775,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octomino.app/Octomino";
 			};
 			name = Release;
@@ -769,14 +793,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Octomino WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sepcot.Octomino.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -791,7 +815,7 @@
 				DEVELOPMENT_TEAM = 33E9WP8948;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Octomino WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sepcot.Octomino.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -799,7 +823,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
