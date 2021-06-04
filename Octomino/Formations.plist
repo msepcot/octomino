@@ -92,7 +92,7 @@
 				<key>Top-KeyDescription</key>
 				<string></string>
 				<key>Bottom-KeyPosition</key>
-				<string>Point</string>
+				<string>Point and Tail</string>
 				<key>Bottom-KeyDescription</key>
 				<string></string>
 				<key>CoachNotes</key>
@@ -128,7 +128,7 @@
 				<key>Name</key>
 				<string>Sidebuddies - Sidebuddies</string>
 				<key>KeyPosition</key>
-				<string>Point</string>
+				<string>Point and Tail</string>
 				<key>KeyDescription</key>
 				<string></string>
 				<key>CoachNotes</key>
@@ -248,7 +248,7 @@
 				<key>Name</key>
 				<string>Bipole - Bipole</string>
 				<key>Top-KeyPosition</key>
-				<string>Point</string>
+				<string>Point and Tail</string>
 				<key>Top-KeyDescription</key>
 				<string></string>
 				<key>Bottom-KeyPosition</key>
@@ -283,9 +283,9 @@
 				<string>4way-16</string>
 				<key>Name</key>
 				<string>Compressed - Box</string>
-				<key>KeyPosition</key>
+				<key>Top-KeyPosition</key>
 				<string>Inside Center</string>
-				<key>KeyDescription</key>
+				<key>Top-KeyDescription</key>
 				<string></string>
 				<key>Bottom-KeyPosition</key>
 				<string>Inside Center and Point</string>
@@ -320,7 +320,7 @@
 				<key>Name</key>
 				<string>Zircon - Zircon</string>
 				<key>KeyPosition</key>
-				<string>Point</string>
+				<string>Point and Tail</string>
 				<key>KeyDescription</key>
 				<string></string>
 				<key>CoachNotes</key>
@@ -352,7 +352,7 @@
 				<key>Name</key>
 				<string>Piver - Viper</string>
 				<key>Top-KeyPosition</key>
-				<string>Point</string>
+				<string>Point and Tail</string>
 				<key>Top-KeyDescription</key>
 				<string></string>
 				<key>Bottom-KeyPosition</key>
