@@ -35,12 +35,6 @@ class MainViewController: UIViewController {
         randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentChanged(_:)), for: .valueChanged)
         randomOrBlockControl.addTarget(self, action: #selector(MainViewController.segmentReselected(_:)), for: .reselected)
 
-        // Can't set this in the storyboard? iOS 14.5 shows up white
-        // Default colors don't work for the selected tint color either, matches background
-        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        randomOrBlockControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
-        randomOrBlockControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
-
         collectionView.register(
             UINib(nibName: "OneKeyFormationCell", bundle: nil),
             forCellWithReuseIdentifier: "OneKeyFormationCell-Identifier"

@@ -21,11 +21,6 @@ class InfoViewController: UIViewController {
         positionsImageView.image = UIImage(named: "\(discipline)-Positions")
         multiwayControl.selectedSegmentIndex = (discipline == "4way") ? 0 : 1
 
-        // Can't set this in the storyboard? iOS 14.5 shows up white
-        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        multiwayControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
-        multiwayControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
-
         // Do any additional setup after loading the view.
         let tap = UITapGestureRecognizer(target: self, action: #selector(InfoViewController.hide))
         view.addGestureRecognizer(tap)
